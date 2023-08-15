@@ -1,12 +1,18 @@
 {
   "files": {
-    "main.css": "/graph-website/static/css/main.31d6cfe0.css",
-    "main.js": "/graph-website/static/js/main.54277093.js",
+    "main.css": "/graph-website/static/css/main.893e9524.css",
+    "main.js": "/graph-website/static/js/main.92ea1ac8.js",
+    "static/media/graphileaf.svg": "/graph-website/static/media/graphileaf.a8d1c7c10d8a2ec01a0126cfc00102c8.svg",
     "index.html": "/graph-website/index.html",
-    "main.54277093.js.map": "/graph-website/static/js/main.54277093.js.map"
+    "static/media/Arrow.svg": "/graph-website/static/media/Arrow.d5b80ed077d2f174cae98cb061c334b0.svg",
+    "static/media/ArrowBleu.svg": "/graph-website/static/media/ArrowBleu.b7b92c40cd9fdd62fd71b2cc88218971.svg",
+    "static/media/Arrow2.svg": "/graph-website/static/media/Arrow2.3d2538c6edbe434bec49f8962e3cf333.svg",
+    "static/media/Arrow2Bleu.svg": "/graph-website/static/media/Arrow2Bleu.ad93300bfdb50d8c6f8e1720af1e591e.svg",
+    "main.893e9524.css.map": "/graph-website/static/css/main.893e9524.css.map",
+    "main.92ea1ac8.js.map": "/graph-website/static/js/main.92ea1ac8.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.54277093.js"
+    "static/css/main.893e9524.css",
+    "static/js/main.92ea1ac8.js"
   ]
 }
