@@ -29,12 +29,12 @@ const Nav = () => {
     return (
         <Fragment>
            <nav className='navbar'>
-                <Link to={'/'}>
+                <Link to={'/graphiLeaf'}>
                     <img src={logo} alt='logo graphileaf' className='logo'/>
                 </Link>
                 <ul className='nav-link-list'>
                     <li className='nav-link declencheur'>
-                        <Link to={'/'} className="sub-nav-container">
+                        <Link to={'/graphiLeaf'} className="sub-nav-container">
                             <p>Nos solutions</p> 
                             <span><img src={arrowBleu} alt='arrow' className='arrow'/></span>
                             <ul className='sub-nav'>
@@ -54,13 +54,13 @@ const Nav = () => {
                         </Link>
                     </li>
                     <li className='nav-link'>
-                        <Link to={'/'}>Nos projets</Link>
+                        <Link to={'/graphiLeaf'}>Nos projets</Link>
                     </li>   
                     <li className='nav-link'>
-                        <Link to={'/'}>Notre agence</Link>
+                        <Link to={'/graphiLeaf'}>Notre agence</Link>
                     </li>   
                     <li>
-                        <Link to={'/'} className="contactBtn">
+                        <Link to={'/graphiLeaf'} className="contactBtn">
                             Nous contacter
                             <span>
                                 <img src={arrow} alt="arrow" className='arrow'/>
