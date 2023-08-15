@@ -1,10 +1,15 @@
-import './App.css';
+import './App.scss';
+import { Routes, Route } from 'react-router-dom'
+import Nav from './components/nav/nav.component.jsx'
+import Home from './pages/home/home.component.jsx'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-
-    </div>
+    <Routes>
+      <Route path='/' element={<Nav/>}>
+        <Route index element={<Home/>}/>
+      </Route>
+    </Routes>
   );
 }
 
