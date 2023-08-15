@@ -6,7 +6,7 @@ import Home from './pages/home/home.component.jsx'
 const App = () => {
   return (
     <Routes>
-      <Route path='/' element={<Nav/>}>
+      <Route path='/graphiLeaf' element={<Nav/>}>
         <Route index element={<Home/>}/>
       </Route>
     </Routes>
