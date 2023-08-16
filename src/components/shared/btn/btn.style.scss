@@ -1,0 +1,52 @@
+@import "../../../App.scss";
+
+.contactBtn 
+{
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 8px 0 8px 20px;
+    font-size: $f-s20;
+    color: #FAF9F2;
+    transition: transform 0.3s ease-in-out;
+    span
+    {
+        position: relative;
+        height: 33px;
+        width:33px;
+        border-radius: 100%;
+        margin-left: 13px;
+        margin-right: 5px;
+        transition: all 0.3s ease-in-out;
+        img
+        {
+            position: absolute;
+            top: 50%;
+            left: 53%;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease-in-out;
+        }
+        img:last-of-type  {
+            opacity: 0;
+            transform: translate(-15px, -8px);
+          }
+          
+    }
+    &:hover
+    {
+        transform: translate(3px, -3px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        img:first-of-type
+        {
+            opacity: 0;
+            transform: translate(1px, -8px);
+        }
+          
+        img:last-of-type 
+        {
+            opacity: 1;
+            transform: translate(-10px, -8px);
+        }
+          
+    }
+}

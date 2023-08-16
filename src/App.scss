@@ -60,6 +60,27 @@ body
 {
   background-color: #faf9f2;
   font-family: 'Poppins', sans-serif;
+
+}
+
+.title
+{
+  margin-top: 180px;
+  font-size: 48px;
+  font-weight: 700;
+  max-width: 52%;
+  line-height: 72px;
+  .underline
+  {
+    border-bottom: 5px solid #018EBB;
+  }
+  .blue
+  {
+    color: #018EBB;
+  }
 }
 
 
+$f-s12: 12px;
+$f-s16: 16px;
+$f-s20: 20px;

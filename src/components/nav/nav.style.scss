@@ -1,6 +1,4 @@
-$f-s12: 12px;
-$f-s16: 16px;
-$f-s20: 20px;
+@import '../../App.scss';
 
 
 
@@ -64,70 +62,21 @@ $f-s20: 20px;
                 @include effetHover;
             }
         }
-
-        .contactBtn 
+        .btn 
         {
-            display: flex;
-            align-items: center;
-            border-radius: 100px;
             margin-left: 50px;
-            height: 30px;
-            padding: 8px 0 8px 20px;
-            font-size: $f-s20;
-            color: #FAF9F2;
-            background-color: #018EBB;
-            transition: transform 0.3s ease-in-out;
-            span
-            {
-                position: relative;
-                background-color: #005570;
-                height: 33px;
-                width:33px;
-                border-radius: 100%;
-                margin-left: 13px;
-                margin-right: 5px;
-                transition: all 0.3s ease-in-out;
-                img
-                {
-                    position: absolute;
-                    top: 50%;
-                    left: 53%;
-                    transform: translate(-50%, -50%);
-                    transition: all 0.3s ease-in-out;
-                }
-                .arrow2 {
-                    opacity: 0;
-                    transform: translate(-15px, -8px);
-                  }
-                  
-            }
-            &:hover
-            {
-                transform: translate(3px, -3px);
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-                .arrow
-                {
-                    opacity: 0;
-                    transform: translate(1px, -8px);
-                }
-                  
-                .arrow2 
-                {
-                    opacity: 1;
-                    transform: translate(-10px, -8px);
-                }
-                  
-            }
         }
+
+       
     }
 }
 
 .sub-nav 
 {
     display: none;
-    left: -530%;
     top: 9px;
-    width: 1300px;
+    transform: translateX(-54.5%);
+    width: 1500px;
     height: 270px;
     background-color: #FAF9F2;
     border-radius: 36px;
@@ -135,7 +84,7 @@ $f-s20: 20px;
 
     align-items: center;
     justify-content: space-evenly;
-    grid-template-columns: 350px 350px 350px;
+    grid-template-columns: 350px 350px 350px 350px;
     gap: 10px 0;
     margin: 25px;
 

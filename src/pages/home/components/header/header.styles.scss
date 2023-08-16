@@ -1,0 +1,32 @@
+@import '../../../../App.scss';
+
+
+.homeHeader 
+{
+    position: relative;
+    margin-left: 150px;
+    height: calc(100vh - 180px);
+    .homeCitation
+    {
+
+        font-size: 33px;
+        font-weight: 400;
+        font-style: italic;
+        margin:40px 0;
+    }
+    .description 
+    {
+        font-size: $f-s20;
+        max-width: 50%;
+        line-height: 30px;
+        margin-bottom: 70px;
+    }
+    .headerImage 
+    {
+        height: 457px;
+        position: absolute;
+        bottom: 5%;
+        right: 250px;
+    }
+
+}
