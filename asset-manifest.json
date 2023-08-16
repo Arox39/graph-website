@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/graphiLeaf/static/css/main.893e9524.css",
-    "main.js": "/graphiLeaf/static/js/main.761f9093.js",
-    "static/media/graphileaf.svg": "/graphiLeaf/static/media/graphileaf.a8d1c7c10d8a2ec01a0126cfc00102c8.svg",
+    "main.css": "/graphiLeaf/static/css/main.3ea736bd.css",
+    "main.js": "/graphiLeaf/static/js/main.6d45bb6d.js",
+    "static/media/Phone.png": "/graphiLeaf/static/media/Phone.c754649f0a92518a8505.png",
+    "static/media/Logo - G.svg": "/graphiLeaf/static/media/Logo - G.52d8fff5e930be7b7dd2b07d4920170b.svg",
     "index.html": "/graphiLeaf/index.html",
     "static/media/Arrow.svg": "/graphiLeaf/static/media/Arrow.d5b80ed077d2f174cae98cb061c334b0.svg",
+    "static/media/ArrowB.svg": "/graphiLeaf/static/media/ArrowB.0f2d867bf294efd9abb9083f13f3f521.svg",
     "static/media/ArrowBleu.svg": "/graphiLeaf/static/media/ArrowBleu.b7b92c40cd9fdd62fd71b2cc88218971.svg",
+    "static/media/Arrow2B.svg": "/graphiLeaf/static/media/Arrow2B.abe372d96680430a7cd52b56f655606a.svg",
     "static/media/Arrow2.svg": "/graphiLeaf/static/media/Arrow2.3d2538c6edbe434bec49f8962e3cf333.svg",
     "static/media/Arrow2Bleu.svg": "/graphiLeaf/static/media/Arrow2Bleu.ad93300bfdb50d8c6f8e1720af1e591e.svg",
-    "main.893e9524.css.map": "/graphiLeaf/static/css/main.893e9524.css.map",
-    "main.761f9093.js.map": "/graphiLeaf/static/js/main.761f9093.js.map"
+    "main.3ea736bd.css.map": "/graphiLeaf/static/css/main.3ea736bd.css.map",
+    "main.6d45bb6d.js.map": "/graphiLeaf/static/js/main.6d45bb6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.893e9524.css",
-    "static/js/main.761f9093.js"
+    "static/css/main.3ea736bd.css",
+    "static/js/main.6d45bb6d.js"
   ]
 }
