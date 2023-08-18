@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import './nav.style.scss'
 import { Outlet, Link } from 'react-router-dom'
 import logo from '../../assets/img/Logo - G.svg'
@@ -26,9 +26,28 @@ const SubNavEl = ({title, content}) => {
 
 
 const Nav = () => {
+
+    const [scrollY, setScrollY] = useState(0)
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollY(window.scrollY)
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+
+    }, [])
+
+    const navClassName = scrollY !== 0 ? 'scroll' : ''
+
     return (
         <Fragment>
-           <nav className='navbar'>
+           <nav className={`${navClassName} navbar`}>
                 <Link to={'/graphiLeaf'}>
                     <img src={logo} alt='logo graphileaf' className='logo'/>
                 </Link>

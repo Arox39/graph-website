@@ -21,16 +21,33 @@
     transform-origin: bottom left;
 }
 
+.scroll 
+{
+    box-shadow: 0px 2px 15px rgba(0, 0, 24, 0.07);
+    background-color: #FAF9F2;
+    top: 20px !important;
+    width: 90% !important;
+
+    .sub-nav
+    {
+        transform: translateX(-50.5%);
+    }
+}
+
+
 .navbar 
 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px; 
     width: calc(100% - 50px);
-    padding: 0 15px;
-    margin: 0 10px;
+    padding: 0 25px;
+    z-index: 1000;
     background-color: none;
     position: fixed;
     top: 32px;
@@ -73,9 +90,11 @@
 
 .sub-nav 
 {
+    position: fixed;
     display: none;
     top: 9px;
-    transform: translateX(-54.5%);
+    z-index: 10;
+    transform: translateX(-54%);
     width: 1500px;
     height: 270px;
     background-color: #FAF9F2;
@@ -154,6 +173,7 @@
 {
     display: grid;
     position: absolute;
+    z-index: 20;
 }
 
 

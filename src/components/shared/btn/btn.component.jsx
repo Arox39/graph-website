@@ -25,7 +25,7 @@ const Btn = ({title, color, height, width, padding}) => {
         arrow = arrowW
         arrow2 = arrowW2
     }
-    console.log(primaryColor);
+
 
     return (
         <Link to={'/graphiLeaf'} className="contactBtn" style={{backgroundColor:primaryColor,height:height,padding:padding, width:width}}>

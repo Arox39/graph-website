@@ -1,0 +1,90 @@
+.discover-container 
+{
+    position: relative;
+    z-index: 3;
+    background-color: #018EBB;
+    width: 75%;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 36px;
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    .big 
+    {
+        flex: 2;
+    }
+    .small 
+    {
+        flex: 1;
+    }
+    .button 
+    {
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+        height: 75%;
+        background-color: #FAF9F2;
+        border-radius: 34px;
+        width: auto;
+        font-size: 20px;
+        margin: 10px;
+        line-height: 18px;
+
+        .content
+        {
+            margin: 35px 35px;
+            line-height: 30px;
+            span 
+            {
+                font-size: 24px;
+                color: #000018;
+                font-weight: 600;
+                border-bottom: 4px solid #018EBB;
+            }
+        }
+
+        .go
+        {
+            position: absolute;
+            background-color: #000018;
+            height: 43px;
+            width:43px;
+            border-radius: 100%;
+            right: 20px;
+            bottom: 20px;
+            transition: all 0.3s ease-in-out;
+            img
+            {
+                position: absolute;
+                top: 50%;
+                left: 53%;
+                transform: translate(-50%, -50%);
+                transition: all 0.3s ease-in-out;
+            }
+            img:last-of-type  {
+                opacity: 0;
+                transform: translate(-15px, -8px);
+              }
+              
+        }
+        &:hover
+        {
+            transform: translate(3px, -3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            img:first-of-type
+            {
+                opacity: 0;
+                transform: translate(1px, -8px);
+            }
+              
+            img:last-of-type 
+            {
+                opacity: 1;
+                transform: translate(-10px, -8px);
+            }
+              
+        }
+    }
+}

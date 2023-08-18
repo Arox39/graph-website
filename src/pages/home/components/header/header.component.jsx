@@ -1,7 +1,6 @@
 import Btn from '../../../../components/shared/btn/btn.component'
 import './header.styles.scss'
 import headerImage from "../../../../assets/img/Phone.png"
-
 const Header = () => {
 
     return (
