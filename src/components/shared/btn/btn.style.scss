@@ -5,15 +5,15 @@
     display: flex;
     align-items: center;
     border-radius: 100px;
-    padding: 7px 0 7px 20px;
-    font-size: $f-s20;
+    padding: 0.4vw 0 0.4vw 1.3vw;
+    font-size: 1.3vw;
     color: #FAF9F2;
     transition: transform 0.3s ease-in-out;
     span
     {
         position: relative;
-        height: 33px;
-        width:33px;
+        height: 2.1vw;
+        width:2.1vw;
         border-radius: 100%;
         margin-left: 13px;
         margin-right: 4px;
@@ -23,6 +23,7 @@
             position: absolute;
             top: 50%;
             left: 53%;
+            height:1vw;
             transform: translate(-50%, -50%);
             transition: all 0.3s ease-in-out;
         }

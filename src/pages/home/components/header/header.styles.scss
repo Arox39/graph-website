@@ -4,37 +4,37 @@
 .homeHeader 
 {
     height: 200vh;
-    margin-left: 160px;
+    margin-left: 10.5vw;
     height: calc(100vh - 180px);
     .contactBtn 
     {
         span 
         {
             margin-left: auto;
-            margin-right: 5px;
+            margin-right: 0.3vw;
         }
     }
     .homeCitation
     {
 
-        font-size: 33px;
+        font-size: 2.15vw;
         font-weight: 400;
         font-style: italic;
-        margin:40px 0;
+        margin: 2.6vw 0;
     }
     .description 
     {
-        font-size: $f-s20;
+        font-size: 1.3vw;
         max-width: 50%;
-        line-height: 30px;
-        margin-bottom: 70px;
+        line-height: 2vw;
+        margin-bottom: 4.5vw;
     }
     .headerImage 
     {
-        height: 457px;
+        height: 30vw;
         position: absolute;
         bottom: 3.5%;
-        right: 220px;
+        right: 14.5%;
         z-index: -1;
     }
 

@@ -10,7 +10,7 @@ const Header = () => {
             
             <h3 className='homeCitation'>"Cultivons ensemble votre image"</h3>
             <p className='description'>GraphiLeaf cultive l'image de marque de ses clients et aide les entreprises à raconter leur histoire unique grâce à une stratégie de communication efficace et des designs visuels de qualité.</p>
-            <Btn title="Je prend contact" color="black" width="225px" padding="0 0 0 20px" height="41px" />
+            <Btn title="Je prend contact" color="black" width="14.5vw" padding="0 0 0 1.4vw" height="2.7vw" />
             <img className='headerImage' src={headerImage} alt='phone illustration'/>
 
         </header>
