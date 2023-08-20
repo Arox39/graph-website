@@ -1,4 +1,3 @@
-import './home.style.scss'
 
 import Header from './components/header/header.component'
 import Discover from './components/discover/discover.component'

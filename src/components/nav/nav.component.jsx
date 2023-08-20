@@ -77,7 +77,7 @@ const Nav = () => {
                         </Link>
                     </li>
                     <li className='nav-link'>
-                        <Link to={'/graphiLeaf'}>Nos projets</Link>
+                        <Link to={'project'}>Nos projets</Link>
                     </li>   
                     <li className='nav-link'>
                         <Link to={'/graphiLeaf'}>Notre agence</Link>

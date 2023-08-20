@@ -68,7 +68,6 @@ body
   margin-top: 180px;
   font-size: 48px;
   font-weight: 700;
-  max-width: 52%;
   line-height: 72px;
   .underline
   {
@@ -79,7 +78,13 @@ body
     color: #018EBB;
   }
 }
-
+.citation 
+{
+  font-size: 20px;
+  margin-top: 60px;
+  line-height: 30px;
+  font-style: italic;
+}
 
 $f-s12: 12px;
 $f-s16: 16px;
