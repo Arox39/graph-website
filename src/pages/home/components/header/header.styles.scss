@@ -6,6 +6,14 @@
     height: 200vh;
     margin-left: 150px;
     height: calc(100vh - 180px);
+    .contactBtn 
+    {
+        span 
+        {
+            margin-left: auto;
+            margin-right: 5px;
+        }
+    }
     .homeCitation
     {
 
