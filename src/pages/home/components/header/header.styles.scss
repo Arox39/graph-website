@@ -6,13 +6,16 @@
     height: 200vh;
     margin-left: 10.5vw;
     height: calc(100vh - 180px);
-    .contactBtn 
+    .btn 
     {
-        span 
-        {
-            margin-left: auto;
-            margin-right: 0.3vw;
-        }
+        display: inline;
+        align-items: center;
+        border-radius: 100px;
+        padding: 0.3vw 0 0.3vw 1.3vw;
+        font-size: 1.3vw;
+        color: #FAF9F2;
+        transition: transform 0.3s ease-in-out;
+        background-color: #000018;
     }
     .homeCitation
     {

@@ -5,7 +5,7 @@ import logo from '../../assets/img/Logo - G.svg'
 import arrowBleu from '../../assets/img/ArrowBleu.svg'
 import arrowBleu2 from '../../assets/img/Arrow2Bleu.svg'
 
-import Btn from '../shared/btn/btn.component'
+import ArrowEffect from '../shared/arrowEffect/arrowEffect.component'
 
 
 
@@ -48,7 +48,7 @@ const Nav = () => {
     return (
         <Fragment>
            <nav className={`${navClassName} navbar`}>
-                <Link to={'/graphiLeaf'}>
+                <Link to={'/graphiLeaf'} className='logo-container'>
                     <img src={logo} alt='logo graphileaf' className='logo'/>
                 </Link>
                 <ul className='nav-link-list'>
@@ -82,8 +82,11 @@ const Nav = () => {
                     <li className='nav-link'>
                         <Link to={'/graphiLeaf'}>Notre agence</Link>
                     </li>   
-                    <li className='btn'>
-                        <Btn  title="Nous contacter" color="blue"/>
+                    <li className='btn-container'>
+                        <Link className='btn'>
+                            Nous contacter
+                            <ArrowEffect bgcolor='#005570'/>
+                        </Link>
                     </li>
                 </ul>
            </nav>
