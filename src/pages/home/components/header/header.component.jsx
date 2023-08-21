@@ -14,7 +14,7 @@ const Header = () => {
             <p className='description'>GraphiLeaf cultive l'image de marque de ses clients et aide les entreprises à raconter leur histoire unique grâce à une stratégie de communication efficace et des designs visuels de qualité.</p>
             <Link to={'/graphiLeaf'} className='btn'>
                 Je prend contact
-                <ArrowEffect bgcolor='blue'/>
+                <ArrowEffect bgcolor='#f4f9f2' arrowColor='black'/>
             </Link>
             <img className='headerImage' src={headerImage} alt='phone illustration'/>
 

@@ -8,7 +8,8 @@
     height: calc(100vh - 180px);
     .btn 
     {
-        display: inline;
+        display: flex;
+        width: 14.5vw;
         align-items: center;
         border-radius: 100px;
         padding: 0.3vw 0 0.3vw 1.3vw;
