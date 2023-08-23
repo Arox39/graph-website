@@ -1,0 +1,72 @@
+.header 
+{
+    margin-left: 10.5vw;
+    margin-top: 12vw;
+    .presentation 
+    {
+        position: relative;
+        font-size: 1.3vw;
+        margin-top: 4.22vw;
+        padding: 2.27vw;
+        text-align: justify;
+        background-color: #FAF9F2;
+        border-radius: 2.35vw;
+        max-width: 48%;
+        line-height: 2vw;
+        box-shadow: -0.13vw 0.26vw 0.5vw rgba(0, 0, 24, 0.15);
+    }
+    .agence-illustration 
+    {
+        position: absolute;
+        height: 32.53vw;
+        top: 22.3vw;
+        z-index: 1;
+        right: 15vw;
+    }
+}
+
+.team 
+{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 42.6vw;
+    margin-left: auto;
+    margin-top: 12vw;
+    margin-right: 10.5vw;
+    padding: 3.57vw 5.2vw;
+    background-color: #E9E8E3;
+    border-radius: 2.34vw;
+    .title 
+    {
+        margin-top: 0;
+        font-size: 2.6vw;
+        text-align: right;
+    }
+
+    .team-content
+    {
+        text-align: justify;
+        margin-top: 2.6vw;
+        margin-right: 3.25vw;
+        font-size: 1.3vw;
+        line-height: 2vw;
+        .blue 
+        {
+            font-weight: 500;
+        }
+    }
+
+
+    .blue-grid 
+    {
+        position: absolute;
+        transform: rotate(90deg) translateY(48%);
+        z-index: -10;
+        left: -3vw;
+        top: 1.7vw;
+    }
+
+}
