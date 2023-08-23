@@ -1,6 +1,55 @@
 import './project.style.scss'
 import Footer from '../../components/footer/footer.component'
 import desktop from '../../assets/img/Ordi graph.png'
+import CardContainer from './component/card-container/card-container.component'
+import image1 from '../../assets/img/projets/13krea.png'
+import image2 from "../../assets/img/projets/Raphystole.png"
+import image3 from '../../assets/img/projets/AFP.png'
+import image4 from '../../assets/img/projets/Eliott.png'
+import image5 from '../../assets/img/projets/SleepAndWork.png'
+
+
+const cards = [
+    {
+        id:1,
+        title: '13Krea',
+        img: image1,
+        description: 'Identité visuelle',
+        categorie: 'graphisme',
+    },
+    {
+        id:2,
+        title: "raphy'Stole",
+        img: image2,
+        description: 'Description du projet de graphisme 2.',
+        categorie: 'graphisme',
+
+    },
+    {
+        id:3,
+        title: 'AFP',
+        img: image3,
+        description: 'Identité Twitch',
+        categorie: 'graphisme',
+    },
+    {
+        id:4,
+        title: 'Eliott Brenner',
+        img: image4,
+        description: 'Description du projet vidéo 1.',
+        categorie: 'video',
+    },
+    {
+        id:5,
+        title: 'Sleep And Work',
+        img: image5,
+        description: 'Description du projet de social media 1.',
+        categorie: 'social',
+    },
+
+]
+
+
 
 const Project = () => {
 
@@ -16,7 +65,7 @@ const Project = () => {
                 <p className='more'>Cliquez sur les projets pour en savoir plus !</p>
                 <img src={desktop} alt='illustration'/>
             </header>
-
+            <CardContainer cards={cards}/>
             <Footer/>
         </div>
     )

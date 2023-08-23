@@ -1,20 +1,19 @@
 .projectHeader 
 {
-    margin-left: 160px;
-    height: calc(100vh - 180px); // 180px = margin du titre pour ne pas etre sous la nav
+    margin-left: 10.4vw;
     position: relative;
     .more 
     {
-        margin-top: 35px;
-        font-size: 18px;
+        margin-top: 2.27vw;
+        font-size: 1.2vw;
         font-style: italic;
     }
 
     img 
     {
-        height: 400px;
+        height: 26vw;
         position: absolute;
-        right: 160px;
+        right: 10.4vw;
         top: 0;
     }
 }

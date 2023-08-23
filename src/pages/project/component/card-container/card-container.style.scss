@@ -1,0 +1,42 @@
+.example-container
+{
+    margin-top: 10vw;
+    margin-bottom: 6vw;
+
+    .sort-bar
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.25vw;
+        margin-bottom: 3vw;
+
+        .active 
+        {
+            background-color: #018EBB;
+            color: #FAF9F2;
+        }
+        .sort-element
+        {
+            margin-right:1.5vw;
+            font-size: 1.3vw;
+            border-radius: 6.5vw;
+            font-weight: 500;
+            padding: 1vw;
+            box-shadow: 0 0 25px rgba(0, 0, 24, 0.15);
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            
+        }
+    }
+
+    .card-container 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80.8vw;
+        margin: 0 10vw;
+    }
+
+}
