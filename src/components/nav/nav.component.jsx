@@ -12,12 +12,9 @@ import ArrowEffect from '../shared/arrowEffect/arrowEffect.component'
 const SubNavEl = ({title, content}) => {
     return (
         <li className='sub-nav-element'>
-            <h1>
+            <h1 className='sub-nav-title'>
             {title}
-            <span>
-                <img src={arrowBleu} alt="arrow" className='arrowBleu'/>
-                <img src={arrowBleu2} alt="arrow" className='arrowBleu2'/>
-            </span>
+            <ArrowEffect arrowColor='blue' />
             </h1>
             <p className='content'>{content}</p>
         </li> 

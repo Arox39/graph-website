@@ -1,11 +1,12 @@
 import './footer.style.scss'
 
 import { Link } from 'react-router-dom'
+import ArrowEffect from '../../components/shared/arrowEffect/arrowEffect.component'
 
 import logo from  '../../assets/img/Logo - G - W.svg'
 import greyGrid from '../../assets/img/BG-PG.svg'
-import arrow from '../../assets/img/Arrow.svg'
-import arrow2 from '../../assets/img/Arrow2.svg'
+
+
 import instagram from '../../assets/img/instagram.svg'
 import twitter from '../../assets/img/twitter-3.svg'
 import discord from '../../assets/img/discord-6.svg'
@@ -20,10 +21,7 @@ const Footer =  () => {
                 <Link to={'/graphiLeaf'} className='footer-btn'>
                     <h1 className='footer-title'>Vous avez des projets ?</h1>
                     <p className='footer-content'>Boostez votre présence en ligne dès maintenant !</p>
-                    <span>
-                        <img src={arrow} alt="arrow" className='arrow'/>
-                        <img src={arrow2} alt="arrow" className='arrow2'/>
-                    </span>
+                    <ArrowEffect />
                 </Link>
                 <div className='greybg'></div>
                 <img className='grey-grid' src={greyGrid} alt='grey grid' />

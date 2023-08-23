@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom'
 
 import grid from '../../../../assets/img/BG-PB.svg'
-import arrow from '../../../../assets/img/Arrow.svg'
-import arrow2 from '../../../../assets/img/Arrow2.svg'
+import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
 import './solution.style.scss'
-import { Fragment } from 'react'
 
 
 
@@ -12,14 +10,11 @@ const SolutionBubble = ({title, content, gridVisible}) => {
 
 
     return (
-        <div className='bubble'>
+        <div className='bubble btn'>
         <Link to={'/graphiLeaf'} className='bubble-link'>
             <h1 className='bubble-title'>{title}</h1>
             <p className='bubble-content'>{content}</p>
-            <span>
-            <img src={arrow} alt="arrow" className="arrow"/>
-            <img src={arrow2} className="arrow2"/>
-            </span>
+            <ArrowEffect />
         </Link>
         <img className={`blue-grid ${gridVisible}`} src={grid} alt='grid of circle'/> 
         </div>

@@ -26,8 +26,8 @@
     }
     .btn:hover
     {
-        transform: translate(3px, -3px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        transform: translate(0.2vw, -0.2vw);
+        box-shadow: 0 0.25vw 0.52vw rgba(0, 0, 0, 0.15);
         img:first-of-type
         {
             opacity: 0;

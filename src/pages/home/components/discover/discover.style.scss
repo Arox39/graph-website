@@ -4,14 +4,14 @@
     z-index: 3;
     background-color: #018EBB;
     width: 75%;
-    height: 200px;
+    height: 13vw;
     margin: 0 auto;
-    border-radius: 36px;
+    border-radius: 2.3vw;
     display: flex;
-    margin-top: 16px;
+    margin-top: 1vw;
     align-items: center;
     justify-content: center;
-    padding: 0 15px;
+    padding: 0 1vw;
     .big 
     {
         flex: 2;
@@ -20,71 +20,42 @@
     {
         flex: 1;
     }
-    .button 
+    .btn 
     {
         position: relative;
         transition: transform 0.3s ease-in-out;
         height: 75%;
         background-color: #FAF9F2;
-        border-radius: 34px;
+        border-radius: 2.21vw;
         width: auto;
-        font-size: 20px;
-        margin: 10px;
-        line-height: 18px;
+        font-size: 1.3vw;
+        margin: 0.65vw;
+        line-height: 1.17vw;
 
         .content
         {
-            margin: 35px 35px;
-            line-height: 30px;
+            margin:2.27vw;
+            line-height: 1.95vw;
             span 
             {
-                font-size: 24px;
+                font-size: 1.56vw;
                 color: #000018;
                 font-weight: 600;
-                border-bottom: 4px solid #018EBB;
+                border-bottom: 0.25vw solid #018EBB;
             }
         }
 
-        .go
+        .arrow-effect 
         {
             position: absolute;
             background-color: #000018;
-            height: 43px;
-            width:43px;
+            height: 2.8vw;
+            width:2.8vw;
             border-radius: 100%;
-            right: 20px;
-            bottom: 20px;
+            right: 1.3vw;
+            bottom: 1.3vw;
             transition: all 0.3s ease-in-out;
-            img
-            {
-                position: absolute;
-                top: 50%;
-                left: 53%;
-                transform: translate(-50%, -50%);
-                transition: all 0.3s ease-in-out;
-            }
-            img:last-of-type  {
-                opacity: 0;
-                transform: translate(-15px, -8px);
-              }
-              
-        }
-        &:hover
-        {
-            transform: translate(3px, -3px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-            img:first-of-type
-            {
-                opacity: 0;
-                transform: translate(1px, -8px);
-            }
-              
-            img:last-of-type 
-            {
-                opacity: 1;
-                transform: translate(-10px, -8px);
-            }
-              
+            
         }
     }
 }

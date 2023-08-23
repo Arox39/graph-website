@@ -7,10 +7,10 @@
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
-    bottom: -8px;
+    height: 0.13vw;
+    bottom: -0.52vw;
     left: 0;
-    border-radius: 10px;
+    border-radius: 0.65vw;
     background-color: #018EBB;
     transform-origin: bottom right;
     transition: transform 0.2s ease-out;
@@ -23,7 +23,7 @@
 
 .scroll 
 {
-    box-shadow: 0px 2px 15px rgba(0, 0, 24, 0.07);
+    box-shadow: 0 0.13vw 1vw rgba(0, 0, 24, 0.07);
     top: 1.3vw !important;
     width: 90% !important;
     padding-right: 0.8vw !important;
@@ -62,7 +62,7 @@
         .logo 
         {
             position: relative;
-            top: -1px;
+            top: -0.065vw;
             height: 66.66%;
         }
     }
@@ -120,10 +120,10 @@
     width: 97vw;
     height: 17.5vw;
     border-radius: 2.3vw;
-    box-shadow: 0px 2px 15px rgba(0, 0, 24, 0.07);
+    box-shadow: 0 0.13vw 1vw rgba(0, 0, 24, 0.07);
     align-items: center;
     justify-content: space-evenly;
-    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-columns: 22.77vw 22.77vw 22.77vw 22.77vw;
     gap: 0.6vw 0;
     margin: 1.6vw;
 
@@ -139,21 +139,27 @@
             @include effetHover;
         }
 
+
+        .sub-nav-title
+        {
+            display: inline;
+        }
         .content 
         {
             max-width:85%;
-            font-size: $f-s12;
-            margin-top: 10px;
+            font-size: 0.8vw;
+            margin-top: 0.65vw;
             color: #005570;
-            line-height: 18px;
+            line-height: 1.17vw;
         }
-        span 
+        .arrow-effect 
         {
-            margin-left: 20px;
+            margin-left: 1.3vw;
             position: relative;
             img
             {
                 position: absolute;
+                height: 0.9vw;
                 top: 50%;
                 left: 53%;
                 transform: translate(-50%, -50%);
@@ -161,22 +167,17 @@
             }
             
         }
-        .arrowBleu2 
-        {
-            opacity: 0;
-        }
         &:hover
         {
-            .arrowBleu
+            img:first-of-type
             {
                 opacity: 0;
-                transform: translate(1px, -8px);
+                transform: translate(0.06vw, -0.52vw);
             }
               
-            .arrowBleu2 
+            img:last-of-type 
             {
                 opacity: 1;
-                transform: translate(-10px, -8px);
             }
               
         }
@@ -208,10 +209,9 @@
         display: inline-block;
         vertical-align: bottom;
         transition: all 0.4s ease;
-        margin-left: 12px;
-        margin-right: 0px;
-        height: 15px;
-        margin-bottom: -5px;
+        margin-left: 0.8vw;
+        height: 1vw;
+        margin-bottom: -0.32vw;
     }
     &:hover .arrow 
     {
