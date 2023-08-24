@@ -70,3 +70,61 @@
     }
 
 }
+
+
+.why 
+{
+    background-color: #E9E8E3;
+    width: 92vw;
+    margin: 0 4vw;
+    margin-bottom: 10vw;
+    border-radius:4.55vw;
+    padding: 2.8vw 0 0.1vw 0;
+
+    height: fit-content;
+    .title
+    {
+        font-size: 2.6vw;
+        margin: 0 11vw;
+    }
+
+    .why-content
+    {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.3vw;
+        margin: 3vw 2.5vw;
+        text-align: justify;
+        line-height: 2.1vw;
+        strong
+        {
+            font-weight: 600;
+            color: #000018;
+        }
+        .left
+        {
+            max-width: 36.6%;
+            
+        }
+        .right
+        {
+            max-width: 38%;
+
+            ul 
+            {
+                margin: 0 2vw;
+
+                li 
+                {
+                    list-style-type: disc;
+                    color: #018EBB;
+                    margin-top:2vw ;
+                    span 
+                    {
+                        color: #000018;
+                    }
+                }
+            }
+        }
+    }
+}

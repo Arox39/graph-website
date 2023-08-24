@@ -1,0 +1,64 @@
+.solution-container 
+{
+    position: relative;
+    margin: 12.55vw 17.9vw 0 17.9vw;
+
+    .solution-title
+    {
+        font-weight: 500;
+        margin-bottom: 3.25vw;
+        font-size: 1.3vw;
+    }
+    .solution-list 
+    {
+        margin-left: 3.25vw;
+        
+        .solution-element
+        {
+            list-style-type: disc;
+            color: #018EBB;
+            font-size: 1.3vw;
+            margin-top:0.8vw;
+            span 
+            {
+                font-size: 1vw;
+            }
+            &:hover 
+            {
+                .btn 
+                {
+                    box-shadow: none;
+                }
+            }
+        }
+
+    }
+    .grey-grid
+    {
+        position: absolute;
+        right: 5vw;
+        top: 0;
+    }
+
+    .solution-btn 
+    {
+        padding-left:1.3vw ;
+        margin-top:4vw;
+        font-size: 1.3vw;
+        
+        background-color: #018EBB;
+        display: flex;
+        align-items: center;
+        border-radius: 6.25vw;
+        width: 21.8vw;
+        color: #Faf9f2;
+        height: 2.6vw;
+        cursor: pointer;
+
+        transition: transform 0.3s ease-in-out;
+        .arrow-effect
+        {
+            margin-left: 1.2vw;
+        }
+    }
+}
