@@ -1,0 +1,52 @@
+.sub-nav-header
+{
+    margin-left: 10.5vw;
+    position: relative;
+
+    .header-img
+    {
+        position: absolute;
+        top: 6vw;
+        right: 10.5vw;
+        height: 30.5vw;
+    }
+
+
+    .sub-content
+    {
+        margin-top: 60px;
+        .subtitle-container 
+        {
+            display: flex;
+            align-items: center;
+            .subtitle
+            {
+                font-size: 2.1vw;
+                font-weight:500;
+            }
+            .blue-arrow 
+            {
+                margin-left: 1vw;
+                transform: rotate(90deg);
+                height: 1.2vw;
+            }
+
+            
+        }
+        max-width: 44vw;
+        padding: 2.8vw 2.3vw;
+        height: fit-content;
+        text-align: justify;
+        background-color: #E9E8E3;
+        border-radius: 2.3vw;
+
+        .sub-description 
+        {
+            font-size: 1.3vw;
+            margin-top: 2.5vw;
+            line-height: 2vw;
+        }
+
+
+    }
+}

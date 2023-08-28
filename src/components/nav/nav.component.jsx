@@ -3,20 +3,21 @@ import './nav.style.scss'
 import { Outlet, Link } from 'react-router-dom'
 import logo from '../../assets/img/Logo - G.svg'
 import arrowBleu from '../../assets/img/ArrowBleu.svg'
-import arrowBleu2 from '../../assets/img/Arrow2Bleu.svg'
 
 import ArrowEffect from '../shared/arrowEffect/arrowEffect.component'
 
 
 
-const SubNavEl = ({title, content}) => {
+const SubNavEl = ({title, destination, content}) => {
     return (
         <li className='sub-nav-element'>
-            <h1 className='sub-nav-title'>
-            {title}
-            <ArrowEffect arrowColor='blue' />
-            </h1>
-            <p className='content'>{content}</p>
+            <Link to={destination}>
+                <h1 className='sub-nav-title'>
+                {title}
+                <ArrowEffect arrowColor='blue' />
+                </h1>
+                <p className='content'>{content}</p>
+            </Link>
         </li> 
     )
 }
@@ -50,28 +51,28 @@ const Nav = () => {
                 </Link>
                 <ul className='nav-link-list'>
                     <li className='nav-link declencheur'>
-                        <Link to={'/graphiLeaf'} className="sub-nav-container">
+                        <div className="sub-nav-container">
                             <p>Nos solutions</p> 
                             <span><img src={arrowBleu} alt='arrow' className='arrow'/></span>
                             <ul className='sub-nav'>
-                                <SubNavEl title="Graphisme" content="Différenciez vous de vos concurrents et renforcez la crédibilité de votre marque."/>
+                                <SubNavEl title="Graphisme" destination={'graphisme'} content="Différenciez vous de vos concurrents et renforcez la crédibilité de votre marque."/>
 
-                                <SubNavEl title="Vidéo" content="Créez des contenus vidéo créatifs et adaptés pour renforcer votre présence en ligne."/>
+                                <SubNavEl title="Vidéo" destination={'video'} content="Créez des contenus vidéo créatifs et adaptés pour renforcer votre présence en ligne."/>
 
-                                <SubNavEl title="Social Management" content="Gérez efficacement votre présence en ligne grâce à notre service de gestion de réseaux et de serveurs Discord."/>
+                                <SubNavEl title="Social Management" destination={'social'} content="Gérez efficacement votre présence en ligne grâce à notre service de gestion de réseaux et de serveurs Discord."/>
 
-                                <SubNavEl title="Formation" content="Boostez votre carrière avec nos formations."/>
+                                <SubNavEl title="Formation" destination={'formation'} content="Boostez votre carrière avec nos formations."/>
                                 
-                                <SubNavEl title="Veille" content="Gagnez du temps et de la précision dans votre prise de décision grâce à notre service de veille opérationnelle.."/>
+                                <SubNavEl title="Veille" destination={'veille'} content="Gagnez du temps et de la précision dans votre prise de décision grâce à notre service de veille opérationnelle.."/>
                                
-                                <SubNavEl title="SEO" content="Trouvez les clés de la réussite sur la création d'agence et de stratégies marketing."/>
+                                <SubNavEl title="SEO" destination={'seo'} content="Trouvez les clés de la réussite sur la création d'agence et de stratégies marketing."/>
                                 
-                                <SubNavEl title="Ads" content="Trouvez les clés de la réussite sur la création d'agence et de stratégies marketing."/>
+                                <SubNavEl title="Ads" destination={'ads'} content="Trouvez les clés de la réussite sur la création d'agence et de stratégies marketing."/>
                                 
-                                <SubNavEl title="eBooks" content="Trouvez les clés de la réussite sur la création d'agence et de stratégies marketing."/>
+                                <SubNavEl title="eBooks" destination={'ebooks'} content="Trouvez les clés de la réussite sur la création d'agence et de stratégies marketing."/>
                                 
                             </ul>
-                        </Link>
+                        </div>
                     </li>
                     <li className='nav-link'>
                         <Link to={'project'}>Nos projets</Link>
