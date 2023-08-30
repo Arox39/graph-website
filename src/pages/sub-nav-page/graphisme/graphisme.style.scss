@@ -1,0 +1,73 @@
+.graphisme
+{
+    .title-container
+    {
+        display: flex;
+        align-items: center;
+        h1
+        {
+            font-size: 2.1vw;
+            font-weight:500;
+        }
+        .blueArrow 
+        {
+            margin-left: 1vw;
+            transform: rotate(90deg);
+            height: 1.2vw;
+        }   
+    }
+
+    .sub-part 
+    {
+        margin: 7.5vw 10.5vw;
+        position: relative;
+        .content
+        {
+            font-size: 1.3vw;
+            max-width: 85%;
+            text-align: justify;
+            line-height: 1.95vw;
+            margin-top: 2.1vw;
+        }
+        .grey-grid
+        {
+            position: absolute;
+            transform: rotate(90deg) translateY(137%);
+            z-index: -1;
+            top: -0.35vw;
+            height: 5vw;
+        }
+    }
+
+    .description-container
+    {
+        position: relative;
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10vw;
+        padding: 3vw 4vw;
+        border-radius: 4vw;
+        background-color: #E9E8E3;
+        .left
+        {
+            margin-right: 6vw;
+        }
+
+        .description 
+        {
+            margin-top: 2vw;
+            font-size: 1.3vw;
+            line-height: 1.95vw;
+            text-align: justify;
+        }
+        .blueGrid
+        {
+            position: absolute;
+            z-index: -1;
+            transform: rotate(90deg);
+            bottom: 3.1vw;
+            right: -6vw;
+        }
+    }    
+}

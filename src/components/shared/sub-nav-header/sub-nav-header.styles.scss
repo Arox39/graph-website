@@ -14,25 +14,7 @@
 
     .sub-content
     {
-        margin-top: 60px;
-        .subtitle-container 
-        {
-            display: flex;
-            align-items: center;
-            .subtitle
-            {
-                font-size: 2.1vw;
-                font-weight:500;
-            }
-            .blue-arrow 
-            {
-                margin-left: 1vw;
-                transform: rotate(90deg);
-                height: 1.2vw;
-            }
-
-            
-        }
+        margin-top: 3.9vw;
         max-width: 44vw;
         padding: 2.8vw 2.3vw;
         height: fit-content;
@@ -46,7 +28,6 @@
             margin-top: 2.5vw;
             line-height: 2vw;
         }
-
 
     }
 }

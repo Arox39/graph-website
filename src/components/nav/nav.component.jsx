@@ -61,7 +61,7 @@ const Nav = () => {
 
                                 <SubNavEl title="Social Management" destination={'social'} content="Gérez efficacement votre présence en ligne grâce à notre service de gestion de réseaux et de serveurs Discord."/>
 
-                                <SubNavEl title="Formation" destination={'formation'} content="Boostez votre carrière avec nos formations."/>
+                                <SubNavEl title="Formation & eBooks" destination={'formation'} content="Boostez votre carrière avec nos formations."/>
                                 
                                 <SubNavEl title="Veille" destination={'veille'} content="Gagnez du temps et de la précision dans votre prise de décision grâce à notre service de veille opérationnelle.."/>
                                
@@ -69,7 +69,7 @@ const Nav = () => {
                                 
                                 <SubNavEl title="Ads" destination={'ads'} content="Trouvez les clés de la réussite sur la création d'agence et de stratégies marketing."/>
                                 
-                                <SubNavEl title="eBooks" destination={'ebooks'} content="Trouvez les clés de la réussite sur la création d'agence et de stratégies marketing."/>
+                                <SubNavEl title="Développement Web" destination={'devWeb'} content="Trouvez les clés de la réussite sur la création d'agence et de stratégies marketing."/>
                                 
                             </ul>
                         </div>

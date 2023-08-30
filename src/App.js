@@ -9,11 +9,11 @@ import Agence from './pages/agence/agence.component';
 import Graphisme from './pages/sub-nav-page/graphisme/graphisme.component'
 import Video from './pages/sub-nav-page/video/video.component'
 import Social from './pages/sub-nav-page/social/social.component'
-import Formation from './pages/sub-nav-page/formation/formation.component'
+import Formation from './pages/sub-nav-page/formation-ebooks/formation-ebooks.component'
 import Veille from './pages/sub-nav-page/veille/veille.component'
 import Seo from './pages/sub-nav-page/seo/seo.component'
 import Ads from './pages/sub-nav-page/ads/ads.component'
-import Ebooks from './pages/sub-nav-page/ebooks/ebooks.component'
+import DevWeb from './pages/sub-nav-page/dev-web/dev-web.component'
 const App = () => {
   return (
     <Routes>
@@ -29,7 +29,7 @@ const App = () => {
         <Route path='veille' element={<Veille/>}/>
         <Route path='seo' element={<Seo/>}/>
         <Route path='ads' element={<Ads/>}/>
-        <Route path='ebooks' element={<Ebooks/>}/>
+        <Route path='devWeb' element={<DevWeb/>}/>
       </Route>
     </Routes>
   );

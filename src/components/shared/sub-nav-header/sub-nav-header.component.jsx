@@ -11,9 +11,9 @@ const SubNavHeader = ({title, citation, subtitle, subcontent, img}) => {
             <img src={img} className='header-img' alt='illustration' />
 
             <div className='sub-content'>
-                <div className='subtitle-container'>
-                    <h4 className='subtitle'>{subtitle}</h4>
-                    <img src={blueArrow} className='blue-arrow' alt='blue arrow' />
+                <div className='title-container'>
+                    <h1>{subtitle}</h1>
+                    <img src={blueArrow} className='blueArrow' alt='blue arrow' />
                 </div>
                 <p className='sub-description'>
                 {ReactHtmlParser(subcontent)}
