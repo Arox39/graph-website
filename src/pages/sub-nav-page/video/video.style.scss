@@ -1,0 +1,90 @@
+.video 
+{
+    .sub-part 
+    {
+        position: relative;
+        display: flex;
+        justify-content:center;
+        align-items: baseline;
+        margin: 7.8vw 4vw;
+
+        padding: 0 1.3vw 1vw 1.3vw;
+        border-bottom: 8px solid #018EBB;
+        background-color: #000018;
+        border-radius: 2.3vw;
+        color: #FAF9F2;
+
+        .social-network
+        {
+            display: flex;
+            flex-direction:column ;
+            align-items: center;
+            flex: 1;
+            padding: 20px 25px;
+            .sub-title
+            {
+                font-size: 1.3vw;
+                font-weight: 500;
+                margin-top: 0.5vw;
+                span img
+                {
+                    transform: rotate(90deg);
+                    margin-left: 0.85vw;
+                    height: 1.1vw;
+                }
+            }
+            .content
+            {
+                margin-top: 1.63vw;
+                font-size: 0.85vw;
+                font-weight: 400;
+                text-align: justify;
+                line-height: 1.27vw;
+                strong 
+                {
+                    color: #018EBB;
+                }
+            }
+        }
+        .greyGrid 
+        {
+            position: absolute;
+            z-index: -1;
+            right: -5.4vw;
+            transform: rotate(90deg);
+        }
+    }
+
+    .description-container 
+    {
+        position: relative;
+        width: 74vw;
+        height: 10vw;
+        margin: 5vw auto 10vw;
+        padding: 2vw 0 1.3vw 0;
+        background-color: #FAF9F2;
+        box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.15);
+        border-radius: 2.3vw;
+
+        h2 
+        {
+            font-size: 1.6vw;
+            font-weight: 500;
+            margin: 0 0 2vw 2.5vw;
+        }
+        p 
+        {
+            font-size: 1.3vw;
+            margin: 0 2.5vw;
+            line-height: 2.14vw;
+        }
+        .blueGrid
+        {
+            z-index: -1;
+            position: absolute;
+            transform: rotate(90deg);
+            top: 0;
+            left: -6vw;
+        }
+    }
+}
