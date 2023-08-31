@@ -1,0 +1,59 @@
+.social 
+{
+    .social-grid 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 82vw;
+        margin: 10vw auto;
+
+
+        .grid-element 
+        {
+            width: 40%;
+            margin: 2vw;
+            position: relative;
+            height: fit-content;
+            background-color: #FAF9F2;
+            padding: 1.3vw;
+            border-radius: 2.3vw;
+            box-shadow: 0px 4px 8px rgba(0, 0, 24, 0.07);
+            .blueGrid 
+            {
+                position: absolute;
+                z-index: -1;
+                transform: rotate(90deg);
+                bottom: 1.5vw;
+                right: -6vw;
+            }
+            .greyGrid 
+            {
+                position: absolute;
+                z-index: -1;
+                transform: rotate(90deg);
+                top: -0.7vw;
+                left: -5.5vw;
+            }
+            .element-title
+            {
+                font-size: 1.8vw;
+                font-weight:500 ;
+                margin-bottom: 1.80vw;
+
+                span img 
+                {
+                    height: 1.2vw;
+                    transform: rotate(90deg);
+                    margin-left: 1vw;
+                }
+            }
+            .content
+            {
+                font-size: 1.17vw;
+                text-align: justify;
+                line-height: 1.9vw;
+            }
+        }
+    }
+}
