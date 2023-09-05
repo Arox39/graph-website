@@ -1,7 +1,8 @@
 import './veille.style.scss'
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import headerImg from '../../../assets/img/Desktop veille.png'
-
+import SubContent from './subcontent/subcontent.component'
+import Footer from '../../../components/footer/footer.component'
 const Veille = () => {
     return (
         <div>
@@ -13,6 +14,8 @@ const Veille = () => {
             subcontent="Notre service de veille vous permet de rester informé des dernières tendances et des développements importants dans votre secteur d'activité. Nous surveillons en permanence les actualités pertinentes, et nous vous fournissons des rapports réguliers pour vous aider à prendre des décisions éclairées."
             img={headerImg}
             />
+            <SubContent />
+            <Footer/>
     </div>
     )
 }

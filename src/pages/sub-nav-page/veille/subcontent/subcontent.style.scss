@@ -1,0 +1,163 @@
+.veille-content 
+{
+    h1
+    {
+        font-size: 1.8vw;
+        font-weight: 400;
+        margin-top: 0.5vw;
+        span img
+        {
+            transform: rotate(90deg);
+            margin-left: 0.85vw;
+            height: 1.1vw;
+        }
+    }
+
+
+    .veille-description 
+    {
+        margin: 6vw auto;
+        width: 75%;
+        position:relative;
+
+        .description-title
+        {
+            font-weight: 500;
+            font-size: 2.08vw;
+            margin-bottom: 2vw;
+
+            span img 
+            {
+                margin-left: 1vw;
+                height: 1.5vw;
+            }
+        }
+        .description-content
+        {
+            line-height: 1.95vw;
+            font-size: 1.3vw;
+            text-align: justify;
+            max-width: 89%;
+        }
+        .grey-grid 
+        {
+            position: absolute;
+            z-index: -1;
+            transform: rotate(90deg);
+            left: -5.8vw;
+            height: 5vw;
+        }
+    }
+
+
+
+    .media 
+    {
+        .media-title
+        {
+            width: 47vw;
+            padding: 1vw;
+            border-radius: 2.35vw;
+            margin: 0 auto 4vw;
+            font-size: 1.95vw;
+            font-weight: 500;
+            box-shadow: 0 0.26vw 0.52vw rgba(0, 0, 24, 0.07);
+            
+        }
+        .media-content
+        {
+            display: flex;
+            height: 16vw;
+            margin: auto;
+            margin-bottom: 7.5vw;
+            width: 80%;
+            color: #FAF9F2;
+            .media-element
+            {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #000018;
+                border-radius: 2.35vw;
+                &:first-child
+                {
+                    margin-right: 4.5vw;
+                }
+
+                .element-title
+                {
+                    font-weight: 400;
+                    margin:2.3vw 0 1.5vw 0;
+                }
+                .element-description 
+                {
+                    text-align: justify;
+                    margin:0 2vw;
+                    font-size: 1.1vw;
+                    line-height: 1.6vw;
+                }
+                .first-blue-grid, .second-blue-grid
+                {
+                    position: absolute;
+                    height: 5vw;
+                    z-index: -1;
+                    right: 1.7vw;
+                }
+                .first-blue-grid
+                {
+                    top: -2.5vw;
+                }
+                .second-blue-grid 
+                {
+                    bottom: -2.5vw;
+                }
+            }
+        }
+    }
+
+    .analyse 
+    {
+        position: relative;
+        background-color: #E9E8E3;
+        height: 13.5vw;
+        width: 82%;
+        margin: auto;
+        margin-bottom: 10vw;
+        padding-top: 1.5vw;
+        border-radius: 2.35vw;
+
+        .analyse-title
+        {
+            margin-left: 1.5vw;
+            font-weight: 500;
+            font-size: 2.1vw;
+        }
+        .analyse-content
+        {
+            margin:2vw 1.5vw;
+            font-size: 1.3vw;
+            line-height: 1.8vw;
+        }
+        .first-blue-grid, .second-blue-grid
+        {
+            position: absolute;
+            height: 5vw;
+            z-index: -1;
+            left: 8vw;
+        }
+        .first-blue-grid
+        {
+            top: -2.5vw;
+        }
+        .second-blue-grid 
+        {
+            bottom: -2.5vw;
+        }
+
+
+
+
+    }
+
+}
