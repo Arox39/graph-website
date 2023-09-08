@@ -1,6 +1,6 @@
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import './social.style.scss'
-import headerImg from '../../../assets/img/Desktop social.png'
+import headerImg from '../../../assets/img/Illustration Social.svg'
 import Footer from '../../../components/footer/footer.component'
 import blueArrow from '../../../assets/img/ArrowBleu.svg'
 
