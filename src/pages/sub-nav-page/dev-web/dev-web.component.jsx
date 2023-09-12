@@ -29,11 +29,11 @@ const DevWeb = () => {
                     <p className='element-content'>Un site web doit offrir une expérience utilisateur exceptionnelle. Nous nous efforçons de créer des designs web modernes et intuitifs qui garantissent une navigation fluide pour vos visiteurs. Notre objectif est de rendre votre site web engageant et accessible sur tous les appareils.</p>
                 </div>
                 <div className='content-element'>
-                    <h1 className='element-title'>Maintenance et Mises <br/> à Jour</h1>
+                    <h1 className='element-title'>Maintenance et Mises à Jour</h1>
                     <p className='element-content'>Nous ne nous contentons pas de créer votre site web, nous nous engageons également à le maintenir en parfait état. Nous effectuons régulièrement des mises à jour de sécurité, des améliorations de performance et des ajustements selon vos besoins. Vous pouvez compter sur nous pour que votre site fonctionne de manière optimale en permanence.</p>
                 </div>
             </section>
-
+        
 
             <Footer />
         </div>

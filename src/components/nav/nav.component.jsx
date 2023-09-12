@@ -61,15 +61,15 @@ const Nav = () => {
 
                                 <SubNavEl title="Social Management" destination={'social'} content="Gérez efficacement votre présence en ligne grâce à notre service de gestion de réseaux et de serveurs Discord."/>
 
-                                <SubNavEl title="Développement Web" destination={'devWeb'} content="Trouvez les clés de la réussite sur la création d'agence et de stratégies marketing."/>
+                                <SubNavEl title="Développement Web" destination={'devWeb'} content="Créez des sites web innovants et fonctionnels pour propulser votre présence en ligne."/>
                                 
                                 <SubNavEl title="Veille" destination={'veille'} content="Gagnez du temps et de la précision dans votre prise de décision grâce à notre service de veille opérationnelle.."/>
                                 
-                                <SubNavEl title="SEO" destination={'seo'} content="Trouvez les clés de la réussite sur la création d'agence et de stratégies marketing."/>
+                                <SubNavEl title="SEO" destination={'seo'} content="Améliorez votre visibilité en ligne et atteignez les sommets des résultats de recherche."/>
                                 
-                                <SubNavEl title="Ads" destination={'ads'} content="Trouvez les clés de la réussite sur la création d'agence et de stratégies marketing."/>
+                                <SubNavEl title="Ads" destination={'ads'} content="Boostez votre présence avec des campagnes publicitaires ciblées et performantes."/>
                                 
-                                <SubNavEl title="Formation & eBooks" destination={'formation'} content="Boostez votre carrière avec nos formations."/>
+                                <SubNavEl title="Formation & eBooks" destination={'formation'} content=" Acquérez de nouvelles compétences et ressources avec nos formations en ligne et eBooks."/>
                                 
                             </ul>
                         </div>

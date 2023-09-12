@@ -1,0 +1,106 @@
+.seo 
+{
+    .seo-title
+    {
+        font-size: 1.8vw;
+        font-weight:500 ;
+        text-align: center;
+        margin-bottom: 4vw;
+        span img 
+        {
+            height: 1.2vw;
+            transform: rotate(90deg);
+            margin-left: 1vw;
+        }
+    }
+    .suivie 
+    {
+        margin: 10vw 0;
+
+        .suivie-content
+        {
+            display: flex;
+            justify-content: center;
+            .suivie-element 
+            {
+                position: relative;
+                font-size: 1.1vw;
+                text-align: justify;
+                line-height: 1.8vw;
+                padding: 1.5vw 2.5vw 0;
+                width: 35%;
+                background-color: #faf9f2;
+                margin: 0 3vw;
+                height: 12.5vw;
+                border-radius: 1.75vw;
+                box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+
+    .keywords 
+    {
+        margin: 7.5vw 10.5vw;
+        position: relative;
+        .keywords-content
+        {
+            font-size: 1.3vw;
+            max-width: 85%;
+            text-align: justify;
+            line-height: 1.95vw;
+            margin-top: 2.1vw;
+        }
+        h1 
+        {
+            text-align: left;
+            font-size: 2.1vw;
+            margin-bottom: 0;
+        }
+        .greyGrid
+        {
+            position: absolute;
+            transform: rotate(90deg) translateY(137%);
+            z-index: -1;
+            top: -0.35vw;
+            height: 5vw;
+        }
+    }
+    .quality 
+    {
+        background-color: #000018;
+        color: #faf9f2;
+        position: relative;
+        width: 75%;
+        margin: auto;
+        border-radius: 2.35vw;
+        padding-top:2vw;
+        height: 13vw;
+    
+        .quality-title 
+        {
+            margin: 0 2vw;
+            text-align: left;
+        }
+        .quality-content 
+        {
+            margin: 2vw;
+            font-size: 1.2vw;
+            line-height: 1.7vw;
+        }
+        .blueGrid 
+        {
+            position: absolute;
+            z-index: -1;
+        }
+        .blueGrid-top
+        {
+            top: -3vw;
+            left: 5vw;
+        }
+        .blueGrid-bot 
+        {
+            bottom: -3vw;
+            left: 5vw; 
+        }
+    }
+}
