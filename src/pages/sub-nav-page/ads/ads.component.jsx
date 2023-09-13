@@ -29,12 +29,18 @@ const Ads = () => {
             </section>
             <section className='ads-double'>
             <div className='double-element'>
-                <h1 className='double-title'> Diversité des Plateformes Publicitaires</h1>
+                <h1 className='double-title'>
+                    Diversité des Plateformes Publicitaires
+                    <span><img className='blueArrow' src={blueArrow} alt='blueArrow'/></span>
+                </h1>
                 <p className='double-content'>Nous maîtrisons la publicité en ligne sur diverses plateformes, de Google Ads à Facebook Ads en passant par TikTok et Instagram. En utilisant les plateformes les plus appropriées pour votre entreprise, nous élargissons votre portée et maximisons votre visibilité sur le web.
                 </p>
             </div>
             <div className='double-element'>
-                <h1 className='double-title'>Suivi et Rapports</h1>
+                <h1 className='double-title'>
+                    Suivi et Rapports
+                    <span><img className='blueArrow' src={blueArrow} alt='blueArrow'/></span>
+                </h1>
                 <p className='double-content'>La transparence est essentielle. Nous fournissons des rapports détaillés sur les performances de vos annonces pour que vous puissiez suivre les résultats de près. Comprenez ce qui fonctionne le mieux et prenez des décisions éclairées pour optimiser vos campagnes publicitaires.
                 </p>
             </div>
