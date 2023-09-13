@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/graphiLeaf/static/css/main.91244ced.css",
-    "main.js": "/graphiLeaf/static/js/main.6fda3916.js",
+    "main.css": "/graphiLeaf/static/css/main.f01e4442.css",
+    "main.js": "/graphiLeaf/static/js/main.54ec476e.js",
     "static/media/Raphystole.png": "/graphiLeaf/static/media/Raphystole.0d903215915c58d77358.png",
     "static/media/13krea.png": "/graphiLeaf/static/media/13krea.b3ca7d5aacf2a5275d20.png",
-    "static/media/Graph.png": "/graphiLeaf/static/media/Graph.d7ae43877eb01944a336.png",
-    "static/media/Phone.png": "/graphiLeaf/static/media/Phone.c754649f0a92518a8505.png",
     "static/media/SleepAndWork.png": "/graphiLeaf/static/media/SleepAndWork.638b9b26618a411ac835.png",
+    "static/media/Illustration Projet.svg": "/graphiLeaf/static/media/Illustration Projet.cb17e96beb45c55b4d9673802a2d78d6.svg",
     "static/media/Illustration Social.svg": "/graphiLeaf/static/media/Illustration Social.f2e7669f186ac259cec898797dbbae0b.svg",
     "static/media/AFP.png": "/graphiLeaf/static/media/AFP.e80f1da99cfd046bf5d5.png",
     "static/media/Illustration Vidéo.svg": "/graphiLeaf/static/media/Illustration Vidéo.ce7f07f0b2130f5924d79e42a55290d3.svg",
     "static/media/Illustration Graphisme.svg": "/graphiLeaf/static/media/Illustration Graphisme.f649d22c9edeb3cbfb92b88f2db95a49.svg",
+    "static/media/Illustration Ads.svg": "/graphiLeaf/static/media/Illustration Ads.278fb9c4864557735dfb05332c362173.svg",
     "static/media/Illustration SEO.svg": "/graphiLeaf/static/media/Illustration SEO.16c398fee84c9639f62091e382936a9e.svg",
     "static/media/Illustration Veille.svg": "/graphiLeaf/static/media/Illustration Veille.1001db97f29eddba599e38333e397388.svg",
     "static/media/Illustration Dev.svg": "/graphiLeaf/static/media/Illustration Dev.6964b1afbae3dd1c274a676603e2d135.svg",
-    "static/media/Ordi graph.png": "/graphiLeaf/static/media/Ordi graph.1ea375225c7f54b5fefc.png",
     "static/media/Nuage.png": "/graphiLeaf/static/media/Nuage.d228cfb39b3a52ae5281.png",
     "static/media/Eliott.png": "/graphiLeaf/static/media/Eliott.d4031140dcb17f52aaee.png",
+    "static/media/Coming soon.svg": "/graphiLeaf/static/media/Coming soon.2547486fe214400d271efbee36738dd4.svg",
+    "static/media/Illustration phone.svg": "/graphiLeaf/static/media/Illustration phone.06280d6e70e22b6b6f845231a54b2cea.svg",
+    "static/media/Illustration Qui Somme Nous.svg": "/graphiLeaf/static/media/Illustration Qui Somme Nous.f84aaa906ac9f261110207fc988d6961.svg",
     "static/media/Logo - G - W.svg": "/graphiLeaf/static/media/Logo - G - W.b184bc6ed40027046fe5f1b4b3f7cdd2.svg",
     "static/media/Logo - G.svg": "/graphiLeaf/static/media/Logo - G.52d8fff5e930be7b7dd2b07d4920170b.svg",
     "static/media/instagram.svg": "/graphiLeaf/static/media/instagram.173dd84833a5c8656e113614c37dc33d.svg",
@@ -32,11 +34,11 @@
     "static/media/Arrow2B.svg": "/graphiLeaf/static/media/Arrow2B.abe372d96680430a7cd52b56f655606a.svg",
     "static/media/Arrow2.svg": "/graphiLeaf/static/media/Arrow2.3d2538c6edbe434bec49f8962e3cf333.svg",
     "static/media/Arrow2Bleu.svg": "/graphiLeaf/static/media/Arrow2Bleu.ad93300bfdb50d8c6f8e1720af1e591e.svg",
-    "main.91244ced.css.map": "/graphiLeaf/static/css/main.91244ced.css.map",
-    "main.6fda3916.js.map": "/graphiLeaf/static/js/main.6fda3916.js.map"
+    "main.f01e4442.css.map": "/graphiLeaf/static/css/main.f01e4442.css.map",
+    "main.54ec476e.js.map": "/graphiLeaf/static/js/main.54ec476e.js.map"
   },
   "entrypoints": [
-    "static/css/main.91244ced.css",
-    "static/js/main.6fda3916.js"
+    "static/css/main.f01e4442.css",
+    "static/js/main.54ec476e.js"
   ]
 }
