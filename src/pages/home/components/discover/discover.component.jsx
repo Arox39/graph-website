@@ -1,7 +1,6 @@
 import './discover.style.scss'
 
-import arrow from "../../../../assets/img/Arrow.svg"
-import arrow2 from "../../../../assets/img/Arrow2.svg"
+
 import { Link } from 'react-router-dom'
 import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
 

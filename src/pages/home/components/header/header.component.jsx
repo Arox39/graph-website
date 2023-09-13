@@ -1,6 +1,6 @@
 
 import './header.styles.scss'
-import headerImage from "../../../../assets/img/Phone.png"
+import headerImage from "../../../../assets/img/Illustration phone.svg"
 import { Link } from 'react-router-dom'
 import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
 const Header = () => {

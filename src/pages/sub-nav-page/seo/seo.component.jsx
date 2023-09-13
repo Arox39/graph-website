@@ -12,8 +12,8 @@ const Seo = () => {
     return (
         <div className='seo'>
             <SubNavHeader 
-            title=" <span className='underline'>Atteignez </span> le Top des Moteur
-            <br/><span className='blue'> de Recherche</span>"
+            title=" Atteignez le <span className='underline'>top </span> 
+            <br/> des <span className='blue'> Moteur de Recherche.</span>"
             citation="Le SEO est la clé pour atteindre les sommets  des résultats <br/> de recherche en ligne."
             subtitle="Optimisation de votre Site Web "
             subcontent="L'optimisation de votre site web est la première étape pour améliorer votre visibilité en ligne. Chez GraphiLeaf, nous analysons et optimisons chaque aspect de votre site web, de la structure des pages au contenu, en passant par les balises méta. Notre objectif est de rendre votre site web convivial pour les moteurs de recherche et de le positionner en haut des résultats."

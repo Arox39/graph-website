@@ -1,0 +1,32 @@
+.comingSoon 
+{
+    .comingImage 
+    {
+        width: 100%;
+        z-index: -1;
+    }
+    .comingBtn
+    {
+        position: absolute;
+        top: 31vw;
+        left: 51vw;
+        
+        display: flex;
+        align-items: center;
+        border-radius: 6.5vw;
+        padding: 0.3vw 0 0.3vw 1.3vw;
+        font-size: 1.3vw;
+        color: #FAF9F2;
+        transition: transform 0.3s ease-in-out;
+        background-color: #000018;
+
+        &:nth-child(3)
+        {
+            top: 35vw;
+        }
+    }
+    .footer-container
+    {
+        margin-top: -3.5vw;
+    }
+}

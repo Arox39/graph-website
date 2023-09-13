@@ -3,8 +3,7 @@ import './who.style.scss'
 
 import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
 
-import social from '../../../../assets/img/Graph.png' 
-
+import social from '../../../../assets/img/Illustration Qui Somme Nous.svg' 
 const Who = () => {
     return (
         <div className='who-container'>

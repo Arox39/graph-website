@@ -1,7 +1,8 @@
 import './project.style.scss'
 import Footer from '../../components/footer/footer.component'
-import desktop from '../../assets/img/Ordi graph.png'
+import desktop from '../../assets/img/Illustration Projet.svg'
 import CardContainer from './component/card-container/card-container.component'
+
 import image1 from '../../assets/img/projets/13krea.png'
 import image2 from "../../assets/img/projets/Raphystole.png"
 import image3 from '../../assets/img/projets/AFP.png'
