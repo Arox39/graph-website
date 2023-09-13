@@ -1,0 +1,89 @@
+.ads
+{
+
+    .blueArrow
+    {
+        height: 1.1vw;
+        transform: rotate(90deg);
+        margin-left: 1vw;
+    }
+    .campagne, .strategie
+    {
+        position: relative ;
+        background-color: #000018;
+        color: #Faf9f2;
+        width: 75%;
+        margin: 8vw auto;
+        border-radius: 2.35vw;
+        padding: 2vw 0;
+        .simple-title 
+        {
+            font-weight: 500;
+            font-size: 1.5vw;
+            margin: 0 0 1.5vw 1.5vw;
+        }
+        .simple-content
+        {
+            margin: 0 1.8vw;
+            font-size: 1.2vw;
+            line-height: 1.95vw;
+            text-align: justify;
+        }
+        .blueGrid 
+        {
+            transform: rotate(90deg);
+            left: -4.3vw;
+            top: -0.3vw;
+        }
+        .blueGrid, .greyGrid
+        {
+            position: absolute;
+            z-index: -1;
+        }
+    }
+    .strategie 
+    {
+        background-color: #faf9f2;
+        color: black;
+        box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.15);
+        margin-bottom: 10vw;
+        .greyGrid 
+        {
+            bottom: -2.5vw;
+            left: 50vw;
+            &:nth-last-child(1) 
+            {
+                top: -2.5vw;
+            }
+        }
+
+    }
+    .ads-double 
+    {
+        display: flex;
+        background-color: #E9E8E3;
+        box-shadow: -0.32vw 0.32vw 0px #018EBB;
+        width: 85%;
+        margin: auto;
+        border-radius: 2.35vw;
+        height: 28vw;
+        .double-element
+        {
+            margin: 0 3vw;
+            .double-title
+            {
+                margin-top: 5vw;
+                font-size: 1.7vw;
+                font-weight: 500;
+            }
+            .double-content
+            {
+                text-align: justify;
+                font-size: 1.3vw;
+                margin-top: 3vw;
+                line-height: 2vw;
+            }
+        }
+    }
+
+}   

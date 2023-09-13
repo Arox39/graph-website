@@ -4,7 +4,7 @@ import './solution.style.scss'
 import greygrid from '../../../../assets/img/BG-PG.svg'
 const Solution = () => {
     return(
-        <div className='solution-container'>
+        <div className='agence-solution-container'>
             <h2 className='solution-title'>Des solutions sur mesure pour chaque besoins :</h2>
 
             <ul className='solution-list'>
