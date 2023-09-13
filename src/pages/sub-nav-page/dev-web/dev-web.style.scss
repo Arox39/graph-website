@@ -61,11 +61,19 @@
             .element-title
             {
                 
-                color:#018EBB;
+                color:#faf9f2;
                 font-weight: 500;
                 font-size: 2vw;
                 text-align: center;
                 margin: 1.75vw;
+
+                .blueArrow 
+                {
+                    height: 1.4vw;
+                    margin-left: 1vw;
+                    transform: rotate(90deg);
+                }
+
             }
             .element-content
             {
