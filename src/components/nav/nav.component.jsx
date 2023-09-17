@@ -81,7 +81,7 @@ const Nav = () => {
                         <Link to={'agence'}>Notre agence</Link>
                     </li>   
                     <li className='btn-container'>
-                        <Link className='btn'>
+                        <Link to={'contact'} className='btn'>
                             Nous contacter
                             <ArrowEffect bgcolor='#005570'/>
                         </Link>

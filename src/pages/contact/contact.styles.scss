@@ -1,0 +1,120 @@
+.contact
+{
+    .contact-title 
+    {
+        margin: 9vw 0 0 10.3vw;
+        font-size: 3.1vw;
+        font-weight: 700;
+    }
+    .contact-subtitle
+    {
+        margin: 1vw 0 0 10.3vw;
+        font-size: 1.3vw;
+
+        .blueArrow 
+        {
+            position: relative;
+            top: 0.15vw;
+            transform: rotate(90deg);
+            margin-left: 0.65vw;
+            height: 1vw;
+        }
+    }
+
+    .bubble-container 
+    {
+        position: absolute;
+        right: 16.5vw;
+        top: 17vw;
+        img 
+        {
+            height: 15.3vw;
+        }
+        .bubble-content
+        {
+            font-size: 1.56vw;
+            position: relative;
+            top: -12.1vw;
+            left: 3.5vw;
+            line-height: 2.3vw;
+            font-weight: 700;
+            .bubble-underline 
+            {
+                border-bottom: 0.2vw solid #000018;
+            }
+            .white
+            {
+                color: #faf9f2;
+            }
+        }
+    }
+
+    .btn-section 
+    {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 11vw;
+        top: 44.5vw;
+
+        .btn 
+        {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            height: 2.75vw;
+            width: fit-content;
+            margin-bottom: 1.62vw;
+            padding-left: 1.3vw;
+
+            color: #faf9f2;
+            background-color: #000018;
+            font-family: 'poppins';
+            font-size: 1.3vw;
+
+            border: none;
+            border-radius: 2.35vw;
+            transition: all 0.3s ease-in-out;
+            .arrow-effect
+            {
+                background-color: white !important;
+                display: block;
+            }
+        }
+        .blueGrid 
+        {
+            position: absolute;
+            height: 5vw;
+            bottom: -2vw;
+            right: 0.6vw;
+            z-index: -1;
+        }
+    }
+
+
+
+
+
+
+
+
+    .grey-background
+    {
+        position: absolute;
+        height: 37vw;
+        left: 0;
+        border-radius: 4.55vw;
+        right: 0;
+        top: 42vw;
+        background-color: #E9E8E3;
+        z-index: -1;
+    }
+    .footer-container
+    {
+        .footer-btn, .grey-grid
+        {
+            display: none !important;
+        }
+    }
+}

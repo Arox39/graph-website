@@ -14,6 +14,7 @@ import Veille from './pages/sub-nav-page/veille/veille.component'
 import Seo from './pages/sub-nav-page/seo/seo.component'
 import Ads from './pages/sub-nav-page/ads/ads.component'
 import DevWeb from './pages/sub-nav-page/dev-web/dev-web.component'
+import Contact from './pages/contact/contact.component';
 const App = () => {
   return (
     <Routes>
@@ -21,7 +22,7 @@ const App = () => {
         <Route index element={<Home/>}/>
         <Route path='project' element={<Project/>}/>
         <Route path='agence' element={<Agence/>}/>
-
+        <Route path='contact' element={<Contact/>}/>
         <Route path='graphisme' element={<Graphisme />}/>
         <Route path='video' element={<Video/>}/>
         <Route path='social' element={<Social/>}/>

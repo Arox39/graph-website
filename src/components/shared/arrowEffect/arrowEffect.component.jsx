@@ -7,7 +7,6 @@ import arrowBleu from '../../../assets/img/ArrowBleu.svg'
 import arrowBleu2 from '../../../assets/img/Arrow2Bleu.svg'
 
 const ArrowEffect = ({bgcolor, arrowColor}) => {
-
     let arrow = arrowW
     let arrow2 = arrowW2
     if (arrowColor === 'black')
