@@ -1,63 +1,45 @@
-const express = require('express');
-const nodemailer = require('nodemailer');
-const cors = require('cors');
-const { OAuth2Client } = require('google-auth-library');
+const express = require('express')
+const nodemailer = require('nodemailer')
+const app = express()
+const port = 3001
 
-const app = express();
+const myemail = 'amaurym20005@gmail.com'
 
-const oAuth2Client = new OAuth2Client('903356424826-m7eqf7a3mt374ipnaka0dui45s7do0sg.apps.googleusercontent.com', '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', 'http://localhost:3001/oauth2callback');
+function sendEmail() 
+{
+    return new Promise ((resolve, reject) => {
 
-const getAccessToken = async (code) => {
-  const { tokens } = await oAuth2Client.getToken(code);
-  return tokens.access_token;
-};
+        let transporter = nodemailer.createTransport({
+            service:'gmail', 
+            auth:{
+                user:myemail,
+                pass:'uxsnydxwdqufdrdp',
+            }
+        })
 
-app.use(cors());
-app.use(express.json());
+        const mail_configs = {
+            from:myemail,
+            to:'amaury.morot39@gmail.com',
+            subject:'TEsting koding osiajkdl',
+            text:'checking if email will be sent '
+        }
+        transporter.sendMail(mail_configs, function(err, info){
+            if(err){
+                console.log(err)
+                return reject({message:`An error has occured`})
+            }
+            return resolve({message:"email sent successfully"})
+        })
+    })
+}
 
-app.post('/send-email', async (req, res) => {
-  // Récupérer le code d'autorisation de la requête
-  const authorizationCode = req.body.authorizationCode;
+app.get('/graphiLeaf/contact/', (req, res) => {
 
-  try {
-    // Obtenir le jeton d'accès en utilisant le code d'autorisation
-    const accessToken = await getAccessToken(authorizationCode);
+    sendEmail()
+    .then(response => res.send(response.message))
+    .catch(err => res.status(500).send(err.message))
+})
 
-    // Extraire les informations de l'e-mail à envoyer
-    const { email, subject, message } = req.body;
-
-    // Configurer le transporter nodemailer
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: 'amaurym20005@gmail.com',
-        pass: 'Amofire181'
-      }
-    });
-
-    // Configurer les options de l'e-mail
-    const mailOptions = {
-      from: email,
-      to: 'amaury.morot39@gmail.com',
-      subject: subject,
-      text: message
-    };
-
-    // Envoyer l'e-mail
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        res.status(500).send(error.toString());
-      } else {
-        res.status(200).send('E-mail envoyé avec succès: ' + info.response);
-      }
-    });
-  } catch (error) {
-    console.error('Erreur lors de l\'obtention du jeton d\'accès:', error);
-    res.status(500).send('Erreur lors de l\'obtention du jeton d\'accès.');
-  }
-});
-
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Le serveur écoute sur le port ${PORT}`);
-});
+app.listen(port, () => {
+    console.log(`nodemailerProject is listening at http://localhost:${port}`)
+})

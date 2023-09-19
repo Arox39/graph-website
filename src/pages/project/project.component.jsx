@@ -17,6 +17,7 @@ const cards = [
         img: image1,
         description: 'Identité visuelle',
         categorie: 'graphisme',
+        link:'project-page'
     },
     {
         id:2,
@@ -24,6 +25,7 @@ const cards = [
         img: image2,
         description: 'Description du projet de graphisme 2.',
         categorie: 'graphisme',
+        link:'project-page'
 
     },
     {
@@ -32,6 +34,7 @@ const cards = [
         img: image3,
         description: 'Identité Twitch',
         categorie: 'graphisme',
+        link:'project-page'
     },
     {
         id:4,
@@ -39,6 +42,7 @@ const cards = [
         img: image4,
         description: 'Description du projet vidéo 1.',
         categorie: 'video',
+        link:'project-page'
     },
     {
         id:5,
@@ -46,6 +50,7 @@ const cards = [
         img: image5,
         description: 'Description du projet de social media 1.',
         categorie: 'social',
+        link:'project-page'
     },
 
 ]

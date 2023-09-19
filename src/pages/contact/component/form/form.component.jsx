@@ -1,6 +1,5 @@
 import './form.styles.scss'
 import { useEffect, useState } from 'react'
-import axios from 'axios'
 import greyGrid from '../../../../assets/img/BG-PG.svg'
 import blueGrid from '../../../../assets/img/BG-PB.svg'
 import Input from '../../component/input/input.component'
@@ -17,23 +16,7 @@ const defaultFormFields = {
 
 
 const Form = () => {
-
-
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-        try {
-            const response = await axios.post('http://localhost:5000/send-email', {
-                email, 
-                subject: object, 
-                message:textarea
-            })
-
-            console.log('Reponse du serveur:', response.data)
-        } catch (e){
-            console.log('Erreur lors de l\'envoie de l\'email:', e)
-        }
-
-    }
+    
 
     const [formField, setFormField] = useState(defaultFormFields)
     const {prenom, nom, email, tel, object, textarea} = formField
@@ -44,7 +27,7 @@ const Form = () => {
     }
 
     return (
-        <form className='contact-form' onSubmit={handleSubmit}>
+        <form className='contact-form'>
             <div className='double-row'>
                 <Input 
                 label='Prénom' 
