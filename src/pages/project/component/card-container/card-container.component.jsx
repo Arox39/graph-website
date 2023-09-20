@@ -52,7 +52,6 @@ const CardContainer = ({cards}) => {
                                 title={card.title} 
                                 image={card.img} 
                                 description={card.description} 
-                                link={card.link}
                             />                            
                             )
                     })

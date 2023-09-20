@@ -1,0 +1,84 @@
+.overlay {
+    position: fixed;
+    top: 12%;
+    width: 90vw;
+    left: 50%;
+    border-radius: 3vw;
+    overflow-y: scroll;
+    transform: translateX(-50%); 
+    bottom: 11%;
+    height: 40vw;
+    z-index: 9999; 
+    background-color: rgba(0, 0, 0, 1); 
+    color: white;
+    font-size: 24px;
+
+
+    .first-bg
+    {
+        height: 87vh;
+        background-color: gold;
+
+    }
+
+    .second-bg 
+    {
+        height: 40vw;
+        width: 100%;
+        background-color: antiquewhite;
+        display: flex;
+        .text-part
+        {
+            background-color: aqua;
+            text-align: center;
+            padding-top: 3vw;
+            width: 50%;
+            overflow: hidden;
+            p
+            {
+                padding: 0 3vw;
+                line-height: 1.8;
+            }
+        }
+        .image-part 
+        {
+            width: 50%;
+            background-color: brown;
+        }
+    }
+
+
+    .third-bg 
+    {
+        display: flex;
+        height: 40vw;
+        background-color: green;
+
+        .left-img
+        {
+            height: 100%;
+            width: 50%;
+            background-color: blue;
+        }
+        .rectangle-container
+        {
+            background-color: red;
+            height: 100%;
+            width: 50%;
+            .first-rec
+            {
+                height: 50%;
+                width: 100%;
+                background-color: azure;
+            }
+            .second-rec
+            {
+                height: 50%;
+                width: 100%;
+                background-color: grey;
+            }
+        }
+    }
+
+}
+

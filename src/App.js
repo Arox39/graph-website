@@ -4,7 +4,6 @@ import Nav from './components/nav/nav.component.jsx'
 import Home from './pages/home/home.component.jsx'
 import Project from './pages/project/project.component.jsx'
 import Agence from './pages/agence/agence.component';
-import ProjectPage from './components/shared/project-page/project-page.component'
 // subnav import 
 import Graphisme from './pages/sub-nav-page/graphisme/graphisme.component'
 import Video from './pages/sub-nav-page/video/video.component'
@@ -20,8 +19,7 @@ const App = () => {
     <Routes>
       <Route path='/graphiLeaf' element={<Nav/>}>
         <Route index element={<Home/>}/>
-        <Route path='project' element={<Project/>}/>
-        <Route path='project/project-page' element={<ProjectPage/>}/>
+        <Route path='project' element={<Project/>}></Route>
         <Route path='agence' element={<Agence/>}/>
         <Route path='contact' element={<Contact/>}/>
         <Route path='graphisme' element={<Graphisme />}/>
