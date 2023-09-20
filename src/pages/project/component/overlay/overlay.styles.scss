@@ -4,12 +4,19 @@
     width: 90vw;
     left: 50%;
     border-radius: 3vw;
-    overflow-y: scroll;
-    overflow-x: hidden;
     transform: translateX(-50%); 
+    overflow-x: hidden;
     bottom: 11%;
     height: 42.5vw;
     z-index: 9999; 
+    .test
+    {
+        height: 100%;
+        background-color: red;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+    }
     .first-bg
     {
         height: 87vh;
@@ -18,18 +25,18 @@
     .second-bg 
     {
 
-        height: 45vw;
+        height: 40vw;
         width: 100%;
         margin-top: -0.2vw;
-        background-color: antiquewhite;
         display: flex;
+        align-items: center;
         .text-part
         {
-            text-align: justify;
+            text-align: center;
             color: #faf9f2;
 
-            padding-top: 7vw;
-            font-size: 1.1vw;
+            font-size: 1vw;
+            font-weight: 200;
             width: 50%;
             overflow: hidden;
             p
@@ -41,6 +48,7 @@
         .image-part 
         {
             width: 50%;
+            height: 100%;
             background-color: brown;
         }
     }

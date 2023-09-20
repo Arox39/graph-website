@@ -4,11 +4,12 @@ const Overlay = ({homeImage, presentationImage, thirdImage, fourthImage, color})
     console.log(homeImage);
     return (
             <div className='overlay'>
+                <div className='test'>
                 <div className='back'></div>
                 <img className='first-bg' src={homeImage} alt='home illustration'/>
-                <section className='second-bg'>
+                <section className='second-bg'  style={{backgroundColor:color,}}>
                     <img className='image-part' src={presentationImage} alt='presentation illustration'/> 
-                    <div className='text-part' style={{backgroundColor:color,}}>
+                    <div className='text-part'>
                     <p> 
                         Allard Créations à fait appel à GraphiLeaf pour donner vie à son identité visuelle. De la création du logotype à la conception de la carte de visite et du flyer, chaque détail a été méticuleusement pensé pour représenter l'excellence de cette entreprise dédiée à la menuiserie et à l'agencement contemporain.
                         <br/>
@@ -21,6 +22,7 @@ const Overlay = ({homeImage, presentationImage, thirdImage, fourthImage, color})
                     <img className='left-img' src={thirdImage} alt='third part'/>
                     <img className='right-img' src={fourthImage} alt='fourth part'/>
                 </section>
+                </div>
             </div>
     )
 }
