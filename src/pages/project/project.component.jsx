@@ -3,7 +3,7 @@ import Footer from '../../components/footer/footer.component'
 import desktop from '../../assets/img/Illustration Projet.svg'
 import CardContainer from './component/card-container/card-container.component'
 
-import cardeImage1 from '../../assets/img/projets/Allard/Allard_Accueil.png'
+import cardImage1 from '../../assets/img/projets/Allard/preview.png'
 import image2 from "../../assets/img/projets/Raphystole.png"
 import image3 from '../../assets/img/projets/AFP.png'
 import image4 from '../../assets/img/projets/Eliott.png'
@@ -21,19 +21,20 @@ const cards = [
     {
         id:1,
         title: 'Allard',
-        img: cardeImage1,
-        description: 'Identité visuelle',
+        img: cardImage1,
+        description: ' Identité visuelle - Print',
         categorie: 'graphisme',
 
         homeImage:homeImage,
         presentationImage:presentationImage,
         thirdImage:thirdImage,
         fourthImage:fourthImage,
+        color: '#37210c'
     },
     {
         id:2,
         title: "raphy'Stole",
-        img: image2,
+        img: cardImage1,
         description: 'Description du projet de graphisme 2.',
         categorie: 'graphisme',
 

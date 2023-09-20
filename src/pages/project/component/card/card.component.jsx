@@ -7,7 +7,7 @@ import Overlay from '../overlay/overlay.component'
 
 
 
-const Card = ({ title, image, description, homeImage, presentationImage, thirdImage, fourthImage}) => {
+const Card = ({ title, image, description, homeImage, presentationImage, thirdImage, fourthImage, color}) => {
     console.log(homeImage);
     const [clicked, setClicked] = useState(false);
 
@@ -17,7 +17,7 @@ const Card = ({ title, image, description, homeImage, presentationImage, thirdIm
 
     return (
         <Link className='card' onClick={handleClick}>
-            <img src={homeImage} alt='illustration' className='bgimg' />
+            <img src={image} alt='illustration' className='bgimg' />
             <div className='title-container'>
                 <h1 className='card-title'>{title}</h1>
                 <ArrowEffect className='arrow' arrowColor='black' /> 
@@ -29,6 +29,7 @@ const Card = ({ title, image, description, homeImage, presentationImage, thirdIm
                     presentationImage = {presentationImage}
                     thirdImage = {thirdImage}
                     fourthImage = {fourthImage}
+                    color={color}
                 />
             )}
         </Link>

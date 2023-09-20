@@ -5,37 +5,37 @@
     left: 50%;
     border-radius: 3vw;
     overflow-y: scroll;
+    overflow-x: hidden;
     transform: translateX(-50%); 
     bottom: 11%;
     height: 42.5vw;
     z-index: 9999; 
-    background-color: rgba(0, 0, 0, 1); 
-    color: white;
-    font-size: 24px;
-    overflow-x: hidden;
     .first-bg
     {
         height: 87vh;
-        background-color: gold;
     }
 
     .second-bg 
     {
+
         height: 45vw;
         width: 100%;
+        margin-top: -0.2vw;
         background-color: antiquewhite;
         display: flex;
         .text-part
         {
-            background-color: aqua;
-            text-align: center;
-            padding-top: 3vw;
+            text-align: justify;
+            color: #faf9f2;
+
+            padding-top: 7vw;
+            font-size: 1.1vw;
             width: 50%;
             overflow: hidden;
             p
             {
                 padding: 0 3vw;
-                line-height: 1.8;
+                line-height: 2vw;
             }
         }
         .image-part 
@@ -52,7 +52,7 @@
         height: 40vw;
         background-color: green;
 
-        .left-img
+        .left-img, .right-img
         {
             height: 100%;
             width: 50%;
@@ -67,13 +67,11 @@
             {
                 height: 50%;
                 width: 100%;
-                background-color: azure;
             }
             .second-rec
             {
                 height: 50%;
                 width: 100%;
-                background-color: grey;
             }
         }
     }
