@@ -9,7 +9,7 @@ import arrow from '../../../../assets/img/Arrow.svg'
 import arrow2 from '../../../../assets/img/Arrow2-reverse.svg'
 
 
-const Card = ({ title, image, description, homeImage, presentationImage, thirdImage, fourthImage, color}) => {
+const Card = ({ title, image, description, homeImage, presentationImage, thirdImage, fourthImage, color, overlayDescription}) => {
     const [clicked, setClicked] = useState(false);
     const [counter, setCounter] = useState(0)
     const handleClick = () => {
@@ -41,6 +41,7 @@ const Card = ({ title, image, description, homeImage, presentationImage, thirdIm
                     thirdImage = {thirdImage}
                     fourthImage = {fourthImage}
                     color={color}
+                    description={overlayDescription}
                     />
                     <div className='back' onClick={handleBack}>
                         <img src={arrow} alt="arrow"/>

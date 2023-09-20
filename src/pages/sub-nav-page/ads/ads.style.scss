@@ -9,6 +9,10 @@
     }
     .campagne, .strategie
     {
+        strong
+        {
+            color: #018EBB;
+        }
         position: relative ;
         background-color: #000018;
         color: #Faf9f2;
@@ -37,6 +41,7 @@
         }
         .blueGrid, .greyGrid
         {
+            height: 5vw;
             position: absolute;
             z-index: -1;
         }
@@ -45,7 +50,7 @@
     {
         background-color: #faf9f2;
         color: black;
-        box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.15);
+        box-shadow: -0.13vw 0.26vw 0.52vw rgba(0, 0, 0, 0.15);
         margin-bottom: 10vw;
         .greyGrid 
         {
@@ -63,16 +68,16 @@
         display: flex;
         background-color: #E9E8E3;
         box-shadow: -0.32vw 0.32vw 0px #018EBB;
-        width: 85%;
+        width: 83%;
         margin: auto;
         border-radius: 2.35vw;
-        height: 28vw;
+        height: 24vw;
         .double-element
         {
             margin: 0 3vw;
             .double-title
             {
-                margin-top: 5vw;
+                margin-top: 3vw;
                 font-size: 1.7vw;
                 font-weight: 500;
             }
@@ -80,6 +85,7 @@
             {
                 text-align: justify;
                 font-size: 1.3vw;
+                max-width: 93%;
                 margin-top: 3vw;
                 line-height: 2vw;
             }

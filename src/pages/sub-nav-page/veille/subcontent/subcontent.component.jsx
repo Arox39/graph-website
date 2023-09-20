@@ -10,8 +10,8 @@ const SubContent = () => {
                 <h1 className='description-title'>Veille stratégique 
                     <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
                 </h1>
-                <p className='description-content'>Nous effectuons une veille stratégique pour vous aider à comprendre les tendances émergentes et les 
-                opportunités de croissance dans votre secteur d'activité. Nous vous aidons également à élaborer des stratégies efficaces pour répondre 
+                <p className='description-content'>Nous effectuons une veille stratégique pour vous aider à <strong>comprendre les tendances</strong> émergentes et les 
+                <strong>opportunités de croissance</strong> dans votre secteur d'activité. Nous vous aidons également à élaborer des <strong>stratégies efficaces</strong> pour répondre 
                 à ces tendances et opportunités.</p>
             </section>
             <section className='media'>
@@ -23,15 +23,15 @@ const SubContent = () => {
                         <h1 className='element-title'>Media 
                             <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
                         </h1>
-                        <p className='element-description'>Nous surveillons les médias sociaux pour identifier les tendances 
-                        émergentes dans votre secteur d'activité. Nous pouvons également surveiller les mentions de votre 
+                        <p className='element-description'>Nous surveillons les médias sociaux pour <strong>identifier les tendances 
+                        émergentes</strong>  dans votre secteur d'activité. Nous pouvons également surveiller les mentions de votre 
                         entreprise et de vos concurrents pour vous aider à comprendre ce qui est dit à votre sujet.</p>
                     </div>
                     <div className='media-element'>
                         <h1 className='element-title'>Concurrence 
                             <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
                         </h1>
-                        <p className='element-description'>Nous surveillons la concurrence pour comprendre leurs stratégies et leurs activités. 
+                        <p className='element-description'>Nous <strong>surveillons la concurrence</strong> pour comprendre leurs stratégies et leurs activités. 
                         Nous effectuons une analyse comparative de votre entreprise par rapport à vos concurrents pour vous aider
                         à comprendre comment vous vous situez sur le marché.</p>
                         <img className='first-blue-grid' src={blueGrid} alt='blue-grid' />

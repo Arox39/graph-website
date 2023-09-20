@@ -7,7 +7,7 @@
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 0.13vw;
+    height: 0.11vw;
     bottom: -0.52vw;
     left: 0;
     border-radius: 0.65vw;
@@ -100,7 +100,7 @@
                 padding: 0.3vw 0 0.3vw 1.3vw;
                 font-size: 1.3vw;
                 color: #FAF9F2;
-                transition: transform 0.3s ease-in-out;
+                transition: transform 0.25s ease-in-out;
                 background-color: #018EBB;
             }
         }
@@ -117,14 +117,14 @@
     background-color: #FAF9F2;
     z-index: 10;
     transform: translateX(-49%);
-    width: 97vw;
+    width: 93vw;
     height: 17.5vw;
     border-radius: 2.3vw;
+    padding-left: 4vw;
     box-shadow: 0 0.13vw 1vw rgba(0, 0, 24, 0.07);
     align-items: center;
     justify-content: space-evenly;
     grid-template-columns: 22.77vw 22.77vw 22.77vw 22.77vw;
-    gap: 0.6vw 0;
     margin: 1.6vw;
 
     .sub-nav-element 

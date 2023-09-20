@@ -16,7 +16,7 @@ const Seo = () => {
             <br/> des <span className='blue'> Moteur de Recherche.</span>"
             citation="Le SEO est la clé pour atteindre les sommets  des résultats <br/> de recherche en ligne."
             subtitle="Optimisation de votre Site Web "
-            subcontent="L'optimisation de votre site web est la première étape pour améliorer votre visibilité en ligne. Chez GraphiLeaf, nous analysons et optimisons chaque aspect de votre site web, de la structure des pages au contenu, en passant par les balises méta. Notre objectif est de rendre votre site web convivial pour les moteurs de recherche et de le positionner en haut des résultats."
+            subcontent="L'optimisation de votre site web est la première étape pour améliorer<strong> votre visibilité en ligne.</strong>  Chez GraphiLeaf, nous <strong>analysons</strong> et <strong>optimisons</strong> chaque aspect de votre site web, de la structure des pages au contenu, en passant par les balises méta. Notre objectif est de rendre votre site web convivial pour les moteurs de recherche et de le positionner en <strong>haut des résultats.</strong>"
             img={headerImg}
             />
 
@@ -26,7 +26,7 @@ const Seo = () => {
                     <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
                 </h1>
                 <p className='keywords-content'>
-                    La recherche de mots-clés est essentielle pour comprendre ce que recherchent vos clients potentiels. Nous effectuons une recherche approfondie des mots-clés pertinents pour votre secteur d'activité et votre public cible. En utilisant ces mots-clés de manière stratégique dans votre contenu, nous augmentons vos chances d'apparaître en haut des résultats de recherche.
+                    La recherche de mots-clés est essentielle pour comprendre ce que recherchent <strong>vos clients potentiels.</strong> Nous effectuons une recherche approfondie des mots-clés pertinents pour votre secteur d'activité et <strong>votre public cible.</strong> En utilisant ces mots-clés de manière stratégique dans votre contenu, nous augmentons vos chances d'apparaître en <strong>haut des résultats</strong> de recherche.
                 </p>
                 <img className='greyGrid' src={greyGrid} alt='grey grid'/>
             </section>
@@ -36,7 +36,7 @@ const Seo = () => {
                     <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
                 </h1>
                 <p className='quality-content'>
-                    La qualité du contenu est essentielle pour le référencement. Notre équipe de rédaction crée du contenu informatif, engageant et pertinent pour votre public. Nous produisons des articles de blog, des pages web et d'autres types de contenu qui répondent aux besoins de vos visiteurs tout en étant optimisés pour les moteurs de recherche.
+                    <strong>La qualité</strong> du contenu est <strong>essentielle pour le référencement.</strong> Notre équipe de rédaction crée du contenu informatif, <strong>engageant et pertinent</strong> pour votre public. Nous produisons des articles de blog, des pages web et d'autres types de contenu qui répondent aux besoins de vos visiteurs tout en étant optimisés pour les moteurs de recherche.
                 </p>
                 <img className='blueGrid blueGrid-top' src={blueGrid} alt='blue grid'/>
                 <img className='blueGrid blueGrid-bot' src={blueGrid} alt='blue grid'/>

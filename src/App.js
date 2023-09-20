@@ -19,7 +19,7 @@ const App = () => {
     <Routes>
       <Route path='/graphiLeaf' element={<Nav/>}>
         <Route index element={<Home/>}/>
-        <Route path='project' element={<Project/>}></Route>
+        <Route path='project' element={<Project/>}/>
         <Route path='agence' element={<Agence/>}/>
         <Route path='contact' element={<Contact/>}/>
         <Route path='graphisme' element={<Graphisme />}/>

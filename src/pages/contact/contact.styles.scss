@@ -34,8 +34,8 @@
         {
             font-size: 1.56vw;
             position: relative;
-            top: -12.1vw;
-            left: 3.5vw;
+            top: -12.46vw;
+            left: 3.54vw;
             line-height: 2.3vw;
             font-weight: 700;
             .bubble-underline 
@@ -63,7 +63,7 @@
             align-items: center;
             position: relative;
 
-            height: 2.75vw;
+            padding: 0.30vw 0;
             width: fit-content;
             margin-bottom: 1.62vw;
             padding-left: 1.3vw;
@@ -80,6 +80,7 @@
             {
                 background-color: white !important;
                 display: block;
+                margin-right: 0.3vw;
             }
         }
         .blueGrid 

@@ -57,6 +57,7 @@ const CardContainer = ({cards}) => {
                                 thirdImage={card.thirdImage}
                                 fourthImage={card.fourthImage}
                                 color={card.color}
+                                overlayDescription={card.overlayDescription}
                             />                            
                             )
                     })

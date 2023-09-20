@@ -36,12 +36,14 @@ const SolutionBubble = ({title, content, gridVisible}) => {
                 <SolutionBubble title="Vidéo" content="Créez des contenus vidéo créatifs et adaptés pour renforcer votre présence en ligne." gridVisible="hide"/>
 
                 <SolutionBubble title="Social management" content="Gérez efficacement votre présence en ligne grâce à notre service de gestion de réseaux et de serveurs Discord." gridVisible=""/>
+                
+                <SolutionBubble title="Dev Web" content="Créez des sites web innovants et fonctionnels pour propulser votre présence en ligne." gridVisible="hide"/>
 
-                <SolutionBubble title="Formations" content="Boostez votre carrière avec nos formations." gridVisible="hide"/>
-
+                
                 <SolutionBubble title="Veille" content="Gagnez du temps et de la précision dans votre prise de décision grâce à notre service de veille opérationnelle." gridVisible="hide"/>
-
+                
                 <SolutionBubble title="SEO" content="Différenciez vous de vos concurrents et renforcez la crédibilité de votre marque." gridVisible="hide"/>
+                <SolutionBubble title="Formations" content="Boostez votre carrière avec nos formations." gridVisible="hide"/>
                 <SolutionBubble title="Ads" content="Différenciez vous de vos concurrents et renforcez la crédibilité de votre marque." gridVisible="hide"/>
                 <SolutionBubble title="eBooks" content="Trouvez l'inspiration et les clés de la réussite sur la création d'agence et les stratégies marketing." gridVisible="hide"/>
 

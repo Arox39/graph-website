@@ -10,7 +10,7 @@ import greyGrid from '../../assets/img/BG-PG.svg'
 import instagram from '../../assets/img/instagram.svg'
 import twitter from '../../assets/img/twitter-3.svg'
 import discord from '../../assets/img/discord-6.svg'
-import tiktok from '../../assets/img/tiktok.svg'
+import linkedin from '../../assets/img/tiktok.svg'
 
 
 const Footer =  () => {
@@ -27,23 +27,24 @@ const Footer =  () => {
                 <img className='grey-grid' src={greyGrid} alt='grey grid' />
             </div>
             <div className='footer'>
-                <div className='footer-contact'>
-                     <h1 className='footer-title'>Contact</h1>
-                     <p>contact@Graphileaf.com</p>
-                     <p>+33 6 68 40 58 46</p>
-                     <p>+33 7 87 76 75 76</p>
-                </div>
                 <div className='footer-social'>
                     <h1 className='footer-title'>Nous retrouver</h1>
                     <div className='social-container'>
                         <a href='https://www.instagram.com/graphiLeaf'><img src={instagram} alt='instagram-logo' /></a>
                         <a href='https://twitter.com/graphiLeaf'><img src={twitter} alt='twitter-logo' /></a>
                         <a href='https://discord.gg/mBRWnNTaU2'><img src={discord} alt='discord-logo' /></a>
-                        <a href='https://www.tiktok.com/@graphiLeaf'><img src={tiktok} alt='tiktok-logo' /></a>
+                        <a href='https://www.tiktok.com/@graphiLeaf'><img src={linkedin} alt='linkedin-logo' /></a>
                     </div>
                 </div>
+                <div className='footer-contact'>
+                    <Link to={'contact'} className='footer-btn btn'>
+                        Nous contacter
+                        <ArrowEffect bgcolor="#000018" />
+                    </Link>
+                </div>
                 <img className='footer-logo' src={logo} alt='GraphiLeaf Logo' />
-            </div>
+                <a href='#' className='mention'>Mention légales - Politique de confidentialité </a>
+                </div>
         </footer>
     )
 }

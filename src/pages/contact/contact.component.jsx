@@ -20,8 +20,6 @@ const Contact = () => {
 
             <Form />
            
-
-
             <div className='bubble-container'>
                 <img className='bubble' src={blueBubble} alt='blue bubble' />
                 <p className='bubble-content'>

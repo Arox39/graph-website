@@ -11,7 +11,7 @@ const Veille = () => {
             <br/> des <span className='blue'>tendances & opportunités.</span>"
             citation="Gardez une longueur d'avance avec notre service de <br/> veille opérationnelle."
             subtitle="Anticipez les tendances "
-            subcontent="Notre service de veille vous permet de rester informé des dernières tendances et des développements importants dans votre secteur d'activité. Nous surveillons en permanence les actualités pertinentes, et nous vous fournissons des rapports réguliers pour vous aider à prendre des décisions éclairées."
+            subcontent="Notre service de veille vous permet de rester informé des <strong>dernières tendances</strong> et des développements importants dans votre secteur d'activité. Nous surveillons en permanence les actualités pertinentes, et nous vous fournissons des <strong>rapports réguliers</strong> pour vous aider à prendre des décisions éclairées."
             img={headerImg}
             />
             <SubContent />

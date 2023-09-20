@@ -48,6 +48,7 @@
         }
         .arrow-effect
         {
+            margin-left: 0;
             position: relative;
             transition: all 0.3s ease-in-out;
             img
@@ -57,7 +58,7 @@
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%,-50%);
-                transition: all 0.3s ease-in-out;
+                transition: all 0.25s ease-in-out;
             }
         }   
         &:hover
@@ -65,7 +66,7 @@
                 img:first-of-type
                 {
                     opacity: 0;
-                    transform: translate(0.06vw, -0.5vw);
+                    transform: translate(0.07vw, -0.5vw);
                 }
                   
                 img:last-of-type 

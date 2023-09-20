@@ -74,6 +74,10 @@
             color: #FAF9F2;
             .media-element
             {
+                strong 
+                {
+                    color: #018EBB;
+                }
                 position: relative;
                 display: flex;
                 flex-direction: column;

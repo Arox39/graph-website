@@ -15,7 +15,7 @@ const Ads = () => {
                 <br/> des <span className='blue'> campagnes ciblées.</span>"
                 citation="La publicité en ligne est un moyen puissant d'atteindre votre public cible, <br/>  d'accroître votre visibilité et d'obtenir des résultats concrets."
                 subtitle="Publicité ciblées"
-                subcontent="Atteignez votre public idéal avec des publicités ciblées. Nos campagnes publicitaires en ligne sont conçues pour mettre en avant votre entreprise auprès des personnes les plus susceptibles de s'intéresser à vos produits ou services. Nous identifions votre public cible pour vous assurer de toucher les bonnes personnes au bon moment."
+                subcontent="<strong>Atteignez votre public idéal</strong> avec des publicités ciblées. Nos campagnes publicitaires en ligne sont conçues pour mettre en avant <strong>votre entreprise</strong> auprès des personnes les plus susceptibles de s'intéresser <strong>à vos produits </strong> ou <strong>services.</strong> Nous identifions votre public cible pour vous assurer de toucher les bonnes personnes au bon moment."
                 img={headerImg}
             />
             <section className='campagne'>
@@ -23,7 +23,7 @@ const Ads = () => {
                         Campagnes Performantes
                         <span><img className='blueArrow' src={blueArrow} alt='blueArrow'/></span>
                     </h1>
-                    <p className='simple-content'>Des campagnes publicitaires performantes sont essentielles pour obtenir des résultats tangibles. Nous optimisons constamment vos campagnes pour maximiser votre retour sur investissement. Grâce à des stratégies adaptées à votre entreprise, nous vous aidons à obtenir des résultats concrets, que ce soit en termes de ventes, de prospects ou de notoriété.
+                    <p className='simple-content'>Des <strong>campagnes publicitaires performantes</strong> sont essentielles pour obtenir des résultats tangibles. Nous optimisons constamment vos campagnes pour <strong>maximiser votre retour sur investissement.</strong> Grâce à des stratégies adaptées à votre entreprise, nous vous aidons à obtenir <strong> des résultats concrets,</strong> que ce soit en termes de ventes, de prospects ou de notoriété.
                     </p>
                     <img className="blueGrid" src={blueGrid} alt='blueGrid' />
             </section>
@@ -47,10 +47,10 @@ const Ads = () => {
             </section>
             <section className='strategie'>
                 <h1 className='simple-title'>
-                    Suivi et Rapports
+                    Personnalisation de Votre Stratégie
                     <span><img className='blueArrow' src={blueArrow} alt='blueArrow'/></span>
                 </h1>
-                <p className='simple-content'>La transparence est essentielle. Nous fournissons des rapports détaillés sur les performances de vos annonces pour que vous puissiez suivre les résultats de près. Comprenez ce qui fonctionne le mieux et prenez des décisions éclairées pour optimiser vos campagnes publicitaires.
+                <p className='simple-content'>Chaque entreprise est unique, c'est pourquoi nous personnalisons votre stratégie publicitaire en fonction de vos besoins spécifiques. Nous comprenons vos objectifs, votre secteur d'activité et votre public cible pour créer des campagnes publicitaires adaptées à votre entreprise.
                 </p>
                 <img className='greyGrid' src={greyGrid} alt='greyGrid'/>
                 <img className='greyGrid' src={greyGrid} alt='greyGrid'/>

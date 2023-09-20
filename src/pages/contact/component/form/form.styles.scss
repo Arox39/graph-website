@@ -34,7 +34,7 @@
   {
     font-family: 'Poppins';
     height: 4vw;
-    width: 10vw;
+    width: fit-content;
     position: relative;
     left: -2vw;
     font-size: 1.3vw;
@@ -52,12 +52,17 @@
     outline: none;
     border: none;
     cursor: pointer;
+
+    .arrow-effect 
+    {
+      margin-right: 0.3vw;
+    }
   }
 
   .btn:hover
   {
-    transform: translate(3px, -3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translate(0.2vw, -0.2vw);
+    box-shadow: 0 0.26vw 0.52vw rgba(0, 0, 0, 0.15);
   }
   .blueGrid 
   {
