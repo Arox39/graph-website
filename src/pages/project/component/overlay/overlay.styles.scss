@@ -1,3 +1,11 @@
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 .overlay {
     position: fixed;
     top: 12%;
@@ -9,14 +17,14 @@
     bottom: 11%;
     height: 42.5vw;
     z-index: 9999; 
-    .test
+    animation: visible 0.8s ease-in-out; 
+    .overlay-container
     {
         height: 100%;
-        background-color: red;
         overflow-y: scroll;
         overflow-x: hidden;
-
     }
+
     .first-bg
     {
         height: 87vh;
@@ -32,24 +40,32 @@
         align-items: center;
         .text-part
         {
-            text-align: center;
             color: #faf9f2;
-
             font-size: 1vw;
             font-weight: 200;
             width: 50%;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
             p
             {
-                padding: 0 3vw;
-                line-height: 2vw;
+                text-align: justify;
+                padding: 0 6vw;
+                line-height: 1.5vw;
+
+                span
+                {
+                    font-weight: 200 ;
+                    font-size: 0.8vw; 
+                }
             }
         }
         .image-part 
         {
             width: 50%;
             height: 100%;
-            background-color: brown;
         }
     }
 
@@ -64,11 +80,9 @@
         {
             height: 100%;
             width: 50%;
-            background-color: blue;
         }
         .rectangle-container
         {
-            background-color: red;
             height: 100%;
             width: 50%;
             .first-rec

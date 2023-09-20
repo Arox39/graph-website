@@ -2,6 +2,7 @@ import './project.style.scss'
 import Footer from '../../components/footer/footer.component'
 import desktop from '../../assets/img/Illustration Projet.svg'
 import CardContainer from './component/card-container/card-container.component'
+import { useEffect } from 'react'
 
 import cardImage1 from '../../assets/img/projets/Allard/preview.png'
 import image2 from "../../assets/img/projets/Raphystole.png"
@@ -67,6 +68,15 @@ const cards = [
 
 const Project = () => {
 
+    const preloadImage = (imageSource) => {
+        const img = new Image();
+        img.src = imageSource;
+    };
+
+    useEffect(() => {
+        // Préchargement de l'image homeImage
+        preloadImage(homeImage);
+    }, [homeImage]);
     return (
         <div className="project"> 
             <header className='projectHeader'>

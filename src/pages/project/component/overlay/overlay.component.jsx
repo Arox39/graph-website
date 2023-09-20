@@ -4,8 +4,7 @@ const Overlay = ({homeImage, presentationImage, thirdImage, fourthImage, color})
     console.log(homeImage);
     return (
             <div className='overlay'>
-                <div className='test'>
-                <div className='back'></div>
+                <div className='overlay-container'>
                 <img className='first-bg' src={homeImage} alt='home illustration'/>
                 <section className='second-bg'  style={{backgroundColor:color,}}>
                     <img className='image-part' src={presentationImage} alt='presentation illustration'/> 
@@ -15,6 +14,9 @@ const Overlay = ({homeImage, presentationImage, thirdImage, fourthImage, color})
                         <br/>
                         <br/>
                         Chez Allard Créations, chaque espace est précieux. L'esthétisme et la fonctionnalité s'entrelacent pour donner vie à des créations durables, façonnées principalement à partir de bois massif provenant des forêts du nord-est de la France. La proximité des partenaires locaux, situés à moins de 20 km de l’atelier, est la garantie d'une qualité exceptionnelle.
+                        <br/>
+                        <br/>
+                        <span> GraphiLeaf, Cultivons ensemble votre image </span>
                     </p>
                     </div>
                 </section>

@@ -5,15 +5,25 @@ import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.c
 import { Link } from 'react-router-dom'
 import Overlay from '../overlay/overlay.component'
 
+import arrow from '../../../../assets/img/Arrow.svg'
+import arrow2 from '../../../../assets/img/Arrow2-reverse.svg'
 
 
 const Card = ({ title, image, description, homeImage, presentationImage, thirdImage, fourthImage, color}) => {
-    console.log(homeImage);
     const [clicked, setClicked] = useState(false);
-
+    const [counter, setCounter] = useState(0)
     const handleClick = () => {
-        setClicked(true);
+        if(counter === 0){
+            setClicked(true);
+            setCounter(1)
+        }
     }
+    const handleBack = () => {
+        setClicked(false);
+        setCounter(0)
+    }
+    
+    
 
     return (
         <Link className='card' onClick={handleClick}>
@@ -24,13 +34,19 @@ const Card = ({ title, image, description, homeImage, presentationImage, thirdIm
             </div>
             <p className='description'>{description}</p>
             {clicked && (
-                <Overlay 
+                <div>
+                    <Overlay 
                     homeImage = {homeImage}
                     presentationImage = {presentationImage}
                     thirdImage = {thirdImage}
                     fourthImage = {fourthImage}
                     color={color}
-                />
+                    />
+                    <div className='back' onClick={handleBack}>
+                        <img src={arrow} alt="arrow"/>
+                        <img src={arrow2} alt="arrow"/>
+                    </div>
+                </div>
             )}
         </Link>
     );
