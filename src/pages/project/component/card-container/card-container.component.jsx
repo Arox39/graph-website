@@ -52,6 +52,10 @@ const CardContainer = ({cards}) => {
                                 title={card.title} 
                                 image={card.img} 
                                 description={card.description} 
+                                homeImage={card.homeImage}
+                                presentationImage={card.presentationImage}
+                                thirdImage={card.thirdImage}
+                                fourthImage={card.fourthImage}
                             />                            
                             )
                     })

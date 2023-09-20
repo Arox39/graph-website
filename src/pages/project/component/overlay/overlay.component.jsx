@@ -1,22 +1,18 @@
 import './overlay.styles.scss'
-
-
-
-const Overlay = () => {
+// import homeImage from '../../../../assets/img/projets/Allard/Allard_Accueil.png'
+const Overlay = ({homeImage, presentationImage, thirdImage, fourthImage}) => {
+    console.log(homeImage);
     return (
             <div className='overlay'>
-                <div className='first-bg'> </div>
+                <img className='first-bg' src={homeImage} alt='home illustration'/>
                 <section className='second-bg'>
-                    <div className='image-part'></div> 
+                    <img className='image-part' src={presentationImage} alt='presentation illustration'/> 
                     <div className='text-part'>
                     <p> kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da nvnsldzmna;n skan ;lkds cnddsn;j dakcs  kdsa lnfaflkvans ds;da n </p></div>
                 </section>
                 <section className='third-bg'>
-                    <div className='left-img'></div> 
-                    <div className='rectangle-container'>
-                        <div className='first-rec'></div>
-                        <div className='second-rec'></div>
-                    </div>
+                    <img className='left-img' src={thirdImage} alt='third part'/>
+                    <img className='right-img' src={fourthImage} alt='fourth part'/>
                 </section>
             </div>
     )

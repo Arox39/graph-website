@@ -7,23 +7,21 @@
     overflow-y: scroll;
     transform: translateX(-50%); 
     bottom: 11%;
-    height: 40vw;
+    height: 42.5vw;
     z-index: 9999; 
     background-color: rgba(0, 0, 0, 1); 
     color: white;
     font-size: 24px;
-
-
+    overflow-x: hidden;
     .first-bg
     {
         height: 87vh;
         background-color: gold;
-
     }
 
     .second-bg 
     {
-        height: 40vw;
+        height: 45vw;
         width: 100%;
         background-color: antiquewhite;
         display: flex;

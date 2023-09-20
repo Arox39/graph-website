@@ -3,20 +3,32 @@ import Footer from '../../components/footer/footer.component'
 import desktop from '../../assets/img/Illustration Projet.svg'
 import CardContainer from './component/card-container/card-container.component'
 
-import image1 from '../../assets/img/projets/Allard/Allard_Accueil.png'
+import cardeImage1 from '../../assets/img/projets/Allard/Allard_Accueil.png'
 import image2 from "../../assets/img/projets/Raphystole.png"
 import image3 from '../../assets/img/projets/AFP.png'
 import image4 from '../../assets/img/projets/Eliott.png'
 import image5 from '../../assets/img/projets/SleepAndWork.png'
+
+// overlay 
+import homeImage from '../../assets/img/projets/Allard/Allard_Accueil.png'
+import thirdImage from '../../assets/img/projets/Allard/Allard_Carré-bas-droite.png'
+import presentationImage from '../../assets/img/projets/Allard/Allard_Carte.png'
+import fourthImage from '../../assets/img/projets/Allard/Allard_Flyer.png'
+
 
 
 const cards = [
     {
         id:1,
         title: 'Allard',
-        img: image1,
+        img: cardeImage1,
         description: 'Identité visuelle',
         categorie: 'graphisme',
+
+        homeImage:homeImage,
+        presentationImage:presentationImage,
+        thirdImage:thirdImage,
+        fourthImage:fourthImage,
     },
     {
         id:2,
