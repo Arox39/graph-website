@@ -9,25 +9,25 @@ const Solution = () => {
 
             <ul className='solution-list'>
                 <li className='solution-element'>
-                    <Link to={''} className='btn'>
+                    <Link to={'../graphisme'} className='btn'>
                         Graphisme <span>(identité visuelle, support publicitaire, social media design...)</span>
                         <ArrowEffect arrowColor='blue'/>
                     </Link>
                 </li>
                 <li className='solution-element'> 
-                    <Link to={''} className='btn'>
+                    <Link to={'../video'} className='btn'>
                         Vidéo <span> (TikTok, YouTube, Reels...)</span>
                         <ArrowEffect arrowColor='blue'/>
                     </Link>
                 </li>
                 <li className='solution-element'> 
-                    <Link to={''} className='btn'>
+                    <Link to={'../social'} className='btn'>
                         Social management  <span>(gestion des réseaux sociaux, création de contenus, analyse des concurrents...)</span>
                         <ArrowEffect arrowColor='blue'/>
                     </Link>
                 </li>
                 <li className='solution-element'>
-                    <Link to={''}  className='btn'>
+                    <Link to={'../veille'}  className='btn'>
                         Veille opérationnelle  <span>(surveillance et analyse de l'image de marque, ajustement des stratégies)</span>
                         <ArrowEffect arrowColor='blue'/>
                     </Link>
@@ -35,7 +35,7 @@ const Solution = () => {
                 
             </ul>
             <img className='grey-grid' src={greygrid} alt='grey grid'/>
-            <Link to={''} className='solution-btn btn'>
+            <Link to={'../contact'} className='solution-btn btn'>
                 Échangeons sur votre projet 
                 <ArrowEffect bgcolor='#005570' />
             </Link>

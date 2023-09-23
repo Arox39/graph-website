@@ -1,5 +1,6 @@
 import './App.scss';
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation} from 'react-router-dom'
+import { useEffect } from 'react';
 import Nav from './components/nav/nav.component.jsx'
 import Home from './pages/home/home.component.jsx'
 import Project from './pages/project/project.component.jsx'
@@ -15,6 +16,21 @@ import Ads from './pages/sub-nav-page/ads/ads.component'
 import DevWeb from './pages/sub-nav-page/dev-web/dev-web.component'
 import Contact from './pages/contact/contact.component';
 const App = () => {
+  const location = useLocation()
+  useEffect(() => {
+    console.log(location.pathname, location.hash);
+    if (location.hash !== '#solution'){
+      window.scrollTo(0, 0);
+    }
+    else
+    {
+      const solutionElement = document.getElementById('solution');
+      solutionElement.scrollIntoView({ behavior: 'smooth' });
+
+    }
+    
+    // Faire quelque chose en réponse au changement d'URL
+  }, [location.pathname]);
   return (
     <Routes>
       <Route path='/graphiLeaf' element={<Nav/>}>

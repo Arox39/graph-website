@@ -31,15 +31,15 @@ const Contact = () => {
             <div className='grey-background'></div>
 
             <section className='btn-section'>
-                <Link className='btn'>
+                <Link  to="../project" className='btn'>
                     Découvrez nos projets 
                     <ArrowEffect bgcolor="#FaF9F2" arrowColor={'black'} />
                 </Link>
-                <Link className='btn'>
+                <Link to="../../graphiLeaf#solution" className='btn'>
                     Découvrez nos solutions
                     <ArrowEffect bgcolor="#FaF9F2" arrowColor={'black'}/>
                 </Link>
-                <Link className='btn'>
+                <Link to="../agence" className='btn'>
                     Découvrez l'agence 
                     <ArrowEffect bgcolor="#FaF9F2" arrowColor={'black'}/>
                     </Link>

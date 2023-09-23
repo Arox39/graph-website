@@ -1,6 +1,6 @@
 import './agence.style.scss'
 
-import illustration from '../../assets/img/Nuage.png'
+import illustration from '../../assets/img/Illustration Nuage.svg'
 import bluegrid from '../../assets/img/BG-PB.svg'
 import Solution from './components/solution/solution.component'
 import Footer from '../../components/footer/footer.component'

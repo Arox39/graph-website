@@ -3,22 +3,21 @@ import './footer.style.scss'
 import { Link } from 'react-router-dom'
 import ArrowEffect from '../../components/shared/arrowEffect/arrowEffect.component'
 
-import logo from  '../../assets/img/Logo - G - W.svg'
 import greyGrid from '../../assets/img/BG-PG.svg'
 
 
-import instagram from '../../assets/img/instagram.svg'
-import twitter from '../../assets/img/twitter-3.svg'
-import discord from '../../assets/img/discord-6.svg'
-import linkedin from '../../assets/img/tiktok.svg'
+import instagram from '../../assets/img/Reseaux-Insta.svg'
+import twitter from '../../assets/img/Reseaux-Twitter.svg'
+import discord from '../../assets/img/Reseaux-Discord.svg'
+import linkedin from '../../assets/img/Reseaux-Linkedin.svg'
 
 
 const Footer =  () => {
-
+    
     return (
         <footer className='footer-container'>
-            <div to={'/graphiLeaf'} className='footer-btn-container'>
-                <Link to={'/graphiLeaf'} className='footer-btn'>
+            <div className='footer-btn-container'>
+                <Link to={'../../graphiLeaf/contact'} className='footer-btn'>
                     <h1 className='footer-title'>Vous avez des projets ?</h1>
                     <p className='footer-content'>Boostez votre présence en ligne dès maintenant !</p>
                     <ArrowEffect />
@@ -27,23 +26,20 @@ const Footer =  () => {
                 <img className='grey-grid' src={greyGrid} alt='grey grid' />
             </div>
             <div className='footer'>
+                <Link to={'../../graphiLeaf/contact'} className='btn'>
+                    Contact
+                    <ArrowEffect bgcolor="#000018" />
+                </Link>
                 <div className='footer-social'>
-                    <h1 className='footer-title'>Nous retrouver</h1>
-                    <div className='social-container'>
-                        <a href='https://www.instagram.com/graphiLeaf'><img src={instagram} alt='instagram-logo' /></a>
-                        <a href='https://twitter.com/graphiLeaf'><img src={twitter} alt='twitter-logo' /></a>
-                        <a href='https://discord.gg/mBRWnNTaU2'><img src={discord} alt='discord-logo' /></a>
-                        <a href='https://www.tiktok.com/@graphiLeaf'><img src={linkedin} alt='linkedin-logo' /></a>
-                    </div>
+                    <a href='https://www.instagram.com/graphiLeaf'><img src={instagram} alt='instagram-logo' /></a>
+                    <a href='https://www.linkedin.com/company/graphileaf/'><img src={linkedin} alt='linkedin-logo' /></a>
+                    <a href='https://twitter.com/graphiLeaf'><img src={twitter} alt='twitter-logo' /></a>
+                    <a href='https://discord.gg/mBRWnNTaU2'><img src={discord} alt='discord-logo' /></a>
                 </div>
-                <div className='footer-contact'>
-                    <Link to={'contact'} className='footer-btn btn'>
-                        Nous contacter
-                        <ArrowEffect bgcolor="#000018" />
-                    </Link>
-                </div>
-                <img className='footer-logo' src={logo} alt='GraphiLeaf Logo' />
-                <a href='#' className='mention'>Mention légales - Politique de confidentialité </a>
+
+                <p className='mention'>
+                    <a href="#">GraphiLeaf©2023</a> | <a href='#'> Mention légales </a>| <a href='#'>Politique de confidentialité</a>
+                </p>
                 </div>
         </footer>
     )

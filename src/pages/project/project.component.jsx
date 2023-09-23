@@ -4,64 +4,78 @@ import desktop from '../../assets/img/Illustration Projet.svg'
 import CardContainer from './component/card-container/card-container.component'
 import { useEffect } from 'react'
 
-import cardImage1 from '../../assets/img/projets/Allard/preview.png'
-import image2 from "../../assets/img/projets/Raphystole.png"
-import image3 from '../../assets/img/projets/AFP.png'
-import image4 from '../../assets/img/projets/Eliott.png'
+import Allard from '../../assets/img/projets/Allard/preview.png'
+import Casarella from '../../assets/img/projets/Casarella/Casarella_Projet.png'
+import Eliott from '../../assets/img/projets/Eliott/Eliott_Projet.png'
 import image5 from '../../assets/img/projets/SleepAndWork.png'
 
 // overlay 
-import homeImage from '../../assets/img/projets/Allard/Allard_Accueil.png'
-import thirdImage from '../../assets/img/projets/Allard/Allard_Carré-bas-droite.png'
-import presentationImage from '../../assets/img/projets/Allard/Allard_Carte.png'
-import fourthImage from '../../assets/img/projets/Allard/Allard_Flyer.png'
+// allard
+import Allard_homeImage from '../../assets/img/projets/Allard/Allard_Accueil.png'
+import Allard_thirdImage from '../../assets/img/projets/Allard/Allard_Carré-bas-droite.png'
+import Allard_presentationImage from '../../assets/img/projets/Allard/Allard_Carte.png'
+import Allard_fourthImage from '../../assets/img/projets/Allard/Allard_Flyer.png'
 
+// casarella
+import Casarella_homeImage from '../../assets/img/projets/Casarella/Casarella_Accueil.png'
+import Casarella_second from '../../assets/img/projets/Casarella/Iphone.png'
+import Casarella_third from '../../assets/img/projets/Casarella/Photo.png'
+import Casarella_fourth from '../../assets/img/projets/Casarella/Plein-de-carte (2).png'
 
+// eliott
+import Eliott_homeImage from '../../assets/img/projets/Eliott/Eliott_Accueil.png'
+import Eliott_second from '../../assets/img/projets/Eliott/Branding.png'
+import Eliott_third from '../../assets/img/projets/Eliott/Logo.png'
+import Eliott_fourth from '../../assets/img/projets/Eliott/Carré bas.png'
 
 const cards = [
     {
         id:1,
         title: 'Allard',
-        img: cardImage1,
+        img: Allard,
         description: ' Identité visuelle - Print',
         categorie: 'graphisme',
 
-        homeImage:homeImage,
-        presentationImage:presentationImage,
-        thirdImage:thirdImage,
-        fourthImage:fourthImage,
+        homeImage:Allard_homeImage,
+        presentationImage:Allard_presentationImage,
+        thirdImage:Allard_thirdImage,
+        fourthImage:Allard_fourthImage,
         color: '#37210c',
+        text_color: '#faf9f2',
         overlayDescription: "Allard Créations à fait appel à GraphiLeaf pour donner vie à son identité visuelle. De la création du logotype à la conception de la carte de visite et du flyer, chaque détail a été méticuleusement pensé pour représenter l'excellence de cette entreprise dédiée à la menuiserie et à l'agencement contemporain.<br/><br/> Chez Allard Créations, chaque espace est précieux. L'esthétisme et la fonctionnalité s'entrelacent pour donner vie à des créations durables, façonnées principalement à partir de bois massif provenant des forêts du nord-est de la France. La proximité des partenaires locaux, situés à moins de 20 km de l’atelier, est la garantie d'une qualité exceptionnelle."
     },
     {
         id:2,
-        title: "raphy'Stole",
-        img: cardImage1,
-        description: 'Description du projet de graphisme 2.',
+        title: "Casarella",
+        img: Casarella,
+        description: ' Identité visuelle - Print',
         categorie: 'graphisme',
 
-    },
-    {
-        id:3,
-        title: 'AFP',
-        img: image3,
-        description: 'Identité Twitch',
-        categorie: 'graphisme',
+        homeImage:Casarella_homeImage,
+        presentationImage:Casarella_second,
+        thirdImage:Casarella_third,
+        fourthImage:Casarella_fourth,
+        color: 'white',
+        text_color:'#091727',
+        overlayDescription: "Casarella Maria, ce sont deux logements atypiques nichés en Corse, soigneusement rénovés et gérés par Marie et sa famille. Vous serez agréablement surpris par leur accueil chaleureux.<br/><br/> Imaginez-vous, en train de contempler une vue panoramique à couper le souffle, où la mer et les montagnes se rejoignent. Ces havres de paix sont stratégiquement situés entre Saint-Florent et Bastia, vous offrant une escapade parfaite pour vous ressourcer.<br/><br/>Et n'oublions pas ces couchers de soleil qui colorent le ciel de teintes tout à fait exceptionnelles, une expérience visuelle qui restera gravée dans votre mémoire !"
+
     },
     {
         id:4,
         title: 'Eliott Brenner',
-        img: image4,
-        description: 'Description du projet vidéo 1.',
-        categorie: 'video',
+        img: Eliott,
+        description: 'Identité visuelle',
+        categorie: 'Graphisme',
+
+        homeImage:Eliott_homeImage,
+        presentationImage:Eliott_second,
+        thirdImage:Eliott_third,
+        fourthImage:Eliott_fourth,
+        color: 'white',
+        text_color:'#091727',
+        overlayDescription: "Eliott Brenner, un réalisateur et monteur vidéo passionné dédié à l'art de la communication à travers l'objectif. Avec une expertise éprouvée dans le domaine, Eliott excelle dans la création de contenus vidéo qui captivent, persuadent et inspirent. <br/><br/>Son portfolio diversifié englobe des films d'entreprise qui racontent l'histoire unique de chaque organisation, des vidéos institutionnelles qui transmettent des messages cruciaux avec impact, et des publicités qui laissent une empreinte mémorable."
     },
-    {
-        id:5,
-        title: 'Sleep And Work',
-        img: image5,
-        description: 'Description du projet de social media 1.',
-        categorie: 'social',
-    },
+
 
 ]
 
@@ -76,8 +90,8 @@ const Project = () => {
 
     useEffect(() => {
         // Préchargement de l'image homeImage
-        preloadImage(homeImage);
-    }, [homeImage]);
+        preloadImage(Allard_homeImage);
+    }, [Allard_homeImage]);
     return (
         <div className="project"> 
             <header className='projectHeader'>
