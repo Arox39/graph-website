@@ -3,15 +3,14 @@ import './overlay.styles.scss'
 import ReactHtmlParser from 'react-html-parser'
 
 const Overlay = ({description, homeImage, presentationImage, thirdImage, fourthImage, color, text_color}) => {
-    console.log(homeImage);
     return (
             <div className='overlay'>
                 <div className='overlay-container'>
                 <img className='first-bg' src={homeImage} alt='home illustration'/>
-                <section className='second-bg'  style={{backgroundColor:color,}}>
+                <section className='second-bg'  style={{backgroundColor:color, color:text_color,}}>
                     <img className='image-part' src={presentationImage} alt='presentation illustration'/> 
-                    <div className='text-part'>
-                    <p style={{color:text_color}}> 
+                    <div className='text-part' >
+                    <p > 
                         {ReactHtmlParser(description)}
                         <br/>
                         <br/>
