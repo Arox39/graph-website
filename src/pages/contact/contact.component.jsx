@@ -35,7 +35,7 @@ const Contact = () => {
                     Découvrez nos projets 
                     <ArrowEffect bgcolor="#FaF9F2" arrowColor={'black'} />
                 </Link>
-                <Link to="../../graphiLeaf#solution" className='btn'>
+                <Link to="../../#solution" className='btn'>
                     Découvrez nos solutions
                     <ArrowEffect bgcolor="#FaF9F2" arrowColor={'black'}/>
                 </Link>

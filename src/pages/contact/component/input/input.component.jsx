@@ -11,7 +11,7 @@ const Input = ({label, ...otherProps}) => {
         )}
             
             <label className={`${
-            otherProps.value.length ? 'shrink' : ''
+            otherProps.value ? 'shrink' : ''
             } form-label`}>
                 {label}
             </label>

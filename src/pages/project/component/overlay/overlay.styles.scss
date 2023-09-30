@@ -33,7 +33,7 @@
     .second-bg 
     {
 
-        height: 40vw;
+        height: 45vw;
         width: 100%;
         margin-top: -0.2vw;
         display: flex;
@@ -42,12 +42,12 @@
         {
             font-size: 1vw;
             font-weight: 200;
-            width: 50%;
+            flex: 1;
+            height: 100%;
             overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100%;
             p
             {
                 text-align: justify;
@@ -63,7 +63,7 @@
         }
         .image-part 
         {
-            width: 50%;
+            flex: 1;
             height: 100%;
         }
     }
@@ -72,13 +72,13 @@
     .third-bg 
     {
         display: flex;
-        height: 40vw;
+        height: 45vw;
         background-color: green;
 
         .left-img, .right-img
         {
             height: 100%;
-            width: 50%;
+            width: 45vw;
         }
         .rectangle-container
         {

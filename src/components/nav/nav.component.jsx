@@ -46,7 +46,7 @@ const Nav = () => {
     return (
         <Fragment>
            <nav className={`${navClassName} navbar`}>
-                <Link to={'/graphiLeaf'} className='logo-container'>
+                <Link to={'./'} className='logo-container'>
                     <img src={logo} alt='logo graphileaf' className='logo'/>
                 </Link>
                 <ul className='nav-link-list'>

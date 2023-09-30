@@ -17,7 +17,7 @@ const Footer =  () => {
     return (
         <footer className='footer-container'>
             <div className='footer-btn-container'>
-                <Link to={'../../graphiLeaf/contact'} className='footer-btn'>
+                <Link to={'../../contact'} className='footer-btn'>
                     <h1 className='footer-title'>Vous avez des projets ?</h1>
                     <p className='footer-content'>Boostez votre présence en ligne dès maintenant !</p>
                     <ArrowEffect />
@@ -26,19 +26,19 @@ const Footer =  () => {
                 <img className='grey-grid' src={greyGrid} alt='grey grid' />
             </div>
             <div className='footer'>
-                <Link to={'../../graphiLeaf/contact'} className='btn'>
+                <Link to={'../../contact'} className='btn'>
                     Contact
                     <ArrowEffect bgcolor="#000018" />
                 </Link>
                 <div className='footer-social'>
-                    <a href='https://www.instagram.com/graphiLeaf'><img src={instagram} alt='instagram-logo' /></a>
-                    <a href='https://www.linkedin.com/company/graphileaf/'><img src={linkedin} alt='linkedin-logo' /></a>
-                    <a href='https://twitter.com/graphiLeaf'><img src={twitter} alt='twitter-logo' /></a>
-                    <a href='https://discord.gg/mBRWnNTaU2'><img src={discord} alt='discord-logo' /></a>
+                    <a href='https://www.instagram.com/graphiLeaf' target='_blank'  rel="noreferrer"><img src={instagram} alt='instagram-logo' /></a>
+                    <a href='https://www.linkedin.com/company/graphileaf/' target='_blank'  rel="noreferrer"><img src={linkedin} alt='linkedin-logo' /></a>
+                    <a href='https://twitter.com/graphiLeaf' target='_blank'  rel="noreferrer"><img src={twitter} alt='twitter-logo' /></a>
+                    <a href='https://discord.gg/mBRWnNTaU2' target='_blank'  rel="noreferrer"><img src={discord} alt='discord-logo' /></a>
                 </div>
 
                 <p className='mention'>
-                    <a href="#">GraphiLeaf©2023</a> | <a href='#'> Mention légales </a>| <a href='#'>Politique de confidentialité</a>
+                    <a href="#" target='_blank'>GraphiLeaf©2023</a> | <a href='#' target='_blank'> Mention légales </a>| <a href='#' target='_blank'>Politique de confidentialité</a>
                 </p>
                 </div>
         </footer>

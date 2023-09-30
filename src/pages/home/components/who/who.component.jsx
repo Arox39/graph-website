@@ -10,7 +10,7 @@ const Who = () => {
             <h1 className='who-title'>Qui somme nous ?</h1>
             <h2 className='who-subtitle'>L'agence rapidement</h2>
             <p className='who-description'>GraphiLeaf est une agence de communication et de marketing digital qui propose une gamme complète de services pour aider les petites entreprises, les structures et les indépendants à maximiser leur présence en ligne.</p>
-            <Link to={'/graphiLeaf/agence'} className='who-link'>
+            <Link to={'../agence'} className='who-link'>
                 <p>En découvrir plus sur <strong>GraphiLeaf</strong> </p>
                 <ArrowEffect arrowColor='blue'/>
                 

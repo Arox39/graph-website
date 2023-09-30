@@ -11,7 +11,7 @@ import image5 from '../../assets/img/projets/SleepAndWork.png'
 
 // overlay 
 // allard
-import Allard_homeImage from '../../assets/img/projets/Allard/Allard_Accueil.png'
+// import Allard_homeImage from ''
 import Allard_thirdImage from '../../assets/img/projets/Allard/Allard_Carré-bas-droite.png'
 import Allard_presentationImage from '../../assets/img/projets/Allard/Allard_Carte.png'
 import Allard_fourthImage from '../../assets/img/projets/Allard/Allard_Flyer.png'
@@ -36,7 +36,7 @@ const cards = [
         description: ' Identité visuelle - Print',
         categorie: 'graphisme',
 
-        homeImage:Allard_homeImage,
+        homeImage:'https://imgur.com/C8LtbDC',
         presentationImage:Allard_presentationImage,
         thirdImage:Allard_thirdImage,
         fourthImage:Allard_fourthImage,
@@ -88,10 +88,6 @@ const Project = () => {
         img.src = imageSource;
     };
 
-    useEffect(() => {
-        // Préchargement de l'image homeImage
-        preloadImage(Allard_homeImage);
-    }, [Allard_homeImage]);
     return (
         <div className="project"> 
             <header className='projectHeader'>
