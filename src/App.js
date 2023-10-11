@@ -30,7 +30,7 @@ const App = () => {
   return (
 
     <Routes>
-      <Route path='/' element={<Nav/>}>
+      <Route path='/graphiLeaf' element={<Nav/>}>
         <Route index element={<Home/>}/>
         <Route path='project' element={<Project/>}/>
         <Route path='agence' element={<Agence/>}/>
