@@ -2,7 +2,7 @@
   "name": "graph-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://graphileaf.com/",
+  "homepage": "https://arox39.github.io/graphiLeaf/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.14.1",
