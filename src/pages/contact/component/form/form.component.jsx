@@ -9,8 +9,8 @@ const defaultFormFields = {
     user_name:'',
     nom:'',
     user_email:'',
-    tel:'',
-    object:'',
+    user_num:'',
+    user_sujet:'',
     message: '', 
     
 }
@@ -21,14 +21,14 @@ const Form = () => {
     const form = useRef();
 
     const [formField, setFormField] = useState(defaultFormFields)
-    const {user_name, nom, user_email, tel, object, message} = formField
+    const {user_name, nom, user_email, user_num, user_sujet, message} = formField
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
-        emailjs.sendForm('service_6u2b58j', 'template_qkj5ygh', form.current, 'JoVCP1pCeR6c9ukoy')
-          .then((result) => {
-              console.log(result.text);
+        setFormField(defaultFormFields)
+        emailjs.sendForm('service_y9fx60h', 'template_zdupzgq', form.current, 'UDzuvFftNWNavTNQ2')
+          .then(() => {
+              alert('Message envoyé avec succes !')
           }, (error) => {
               console.log(error.text);
           });
@@ -77,8 +77,8 @@ const Form = () => {
                 type='tel' 
                 required
                 onChange={handleChange}
-                name='tel'
-                value={tel}
+                name='user_num'
+                value={user_num}
                 />
 
             </div>
@@ -89,8 +89,8 @@ const Form = () => {
                 type='text' 
                 required
                 onChange={handleChange}
-                name='object'
-                value={object}
+                name='user_sujet'
+                value={user_sujet}
                 />
             </div>
             <div className='simple-row'>

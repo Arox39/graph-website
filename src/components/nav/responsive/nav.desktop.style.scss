@@ -1,0 +1,218 @@
+@import '../../../App.scss';
+
+
+
+@mixin effet {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.11vw;
+    bottom: -0.52vw;
+    left: 0;
+    border-radius: 0.65vw;
+    background-color: #018EBB;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+    
+}
+@mixin effetHover {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.scroll 
+{
+    box-shadow: 0 0.13vw 1vw rgba(0, 0, 24, 0.07);
+    top: 1.3vw !important;
+    width: 90% !important;
+    padding-right: 0.8vw !important;
+
+    .sub-nav
+    {
+        transform: translateX(-50.5%);
+    }
+}
+
+
+.navbar 
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6.5vw;
+    background-color: #FAF9F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.9vw; 
+    width: calc(90% - 2.4vw);
+    padding: 0 1.6vw;
+    z-index: 1000;
+    background-color: none;
+    position: fixed;
+    top: 2vw;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    .logo-container 
+    {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .logo 
+        {
+            position: relative;
+            top: -0.065vw;
+            height: 66.66%;
+        }
+    }
+    .nav-link-list 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nav-link 
+        {
+            padding: 0.65vw 1.3vw;
+            font-size: 1.04vw;
+            a 
+            {
+                position: relative;
+            }
+            a::after, div::after, .sub-nav-container p::after
+            {
+                @include effet;
+            }
+            a:hover::after, .sub-nav-container p:hover::after
+            {
+                @include effetHover;
+            }
+        }
+        .btn-container 
+        {
+            margin-left: 3.2vw;
+            .btn 
+            {
+
+                display: flex;
+                align-items: center;
+                border-radius: 6.5vw;
+                padding: 0.3vw 0 0.3vw 1.3vw;
+                font-size: 1.3vw;
+                color: #FAF9F2;
+                transition: transform 0.25s ease-in-out;
+                background-color: #018EBB;
+            }
+        }
+
+       
+    }
+}
+
+.sub-nav 
+{
+    position: fixed;
+    display: none;
+    top: 0.5vw;
+    background-color: #FAF9F2;
+    z-index: 10;
+    transform: translateX(-49%);
+    width: 93vw;
+    height: 17.5vw;
+    border-radius: 2.3vw;
+    padding-left: 4vw;
+    box-shadow: 0 0.13vw 1vw rgba(0, 0, 24, 0.07);
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: 22.77vw 22.77vw 22.77vw 22.77vw;
+    margin: 1.6vw;
+
+    .sub-nav-element 
+    {
+        position: relative;
+        &::after 
+        {
+            @include effet;
+        }
+        &:hover::after 
+        {
+            @include effetHover;
+        }
+        .content 
+        {
+            max-width:85%;
+            font-size: 0.8vw;
+            margin-top: 0.65vw;
+            color: #005570;
+            line-height: 1.17vw;
+        }
+        .arrow-effect 
+        {
+            margin-left: 1.3vw;
+            position: relative;
+            img
+            {
+                position: absolute;
+                height: 0.9vw;
+                top: 50%;
+                left: 53%;
+                transform: translate(-58%, -50%);
+                transition: all 0.3s ease-in-out;
+            }
+            
+        }
+        &:hover
+        {
+            img:first-of-type
+            {
+                opacity: 0;
+                transform: translate(0.06vw, -0.52vw);
+            }
+              
+            img:last-of-type 
+            {
+                opacity: 1;
+            }
+              
+        }
+
+    }
+}
+.declencheur 
+{
+    height: 3.2vw;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.declencheur:hover .sub-nav
+{
+    display: grid;
+    position: absolute;
+    z-index: 20;
+}
+
+
+.sub-nav-container 
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    .arrow
+    {
+        transform: rotate(45deg);
+        display: inline-block;
+        vertical-align: bottom;
+        transition: all 0.4s ease;
+        margin-left: 0.8vw;
+        height: 1vw;
+        margin-bottom: -0.32vw;
+    }
+    &:hover .arrow 
+    {
+        transform: rotate(90deg);
+        margin-bottom: 0;
+    }
+
+
+
+}

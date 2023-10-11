@@ -10,7 +10,7 @@ const Solution = () => {
             <ul className='solution-list'>
                 <li className='solution-element'>
                     <Link to={'../graphisme'} className='btn'>
-                        Graphisme <span>(identité visuelle, support publicitaire, social media design...)</span>
+                        Graphisme <span>(Identité visuelle, support publicitaire, social media design...)</span>
                         <ArrowEffect arrowColor='blue'/>
                     </Link>
                 </li>
@@ -22,13 +22,31 @@ const Solution = () => {
                 </li>
                 <li className='solution-element'> 
                     <Link to={'../social'} className='btn'>
-                        Social management  <span>(gestion des réseaux sociaux, création de contenus, analyse des concurrents...)</span>
+                        Social management  <span>(Gestion des réseaux sociaux, création de contenus, analyse des concurrents...)</span>
+                        <ArrowEffect arrowColor='blue'/>
+                    </Link>
+                </li>
+                <li className='solution-element'> 
+                    <Link to={'../devWeb'} className='btn'>
+                        Développement Web  <span>(Création de site web et application sur mesure)</span>
                         <ArrowEffect arrowColor='blue'/>
                     </Link>
                 </li>
                 <li className='solution-element'>
                     <Link to={'../veille'}  className='btn'>
-                        Veille opérationnelle  <span>(surveillance et analyse de l'image de marque, ajustement des stratégies)</span>
+                        Veille opérationnelle  <span>(Surveillance et analyse de l'image de marque, ajustement des stratégies)</span>
+                        <ArrowEffect arrowColor='blue'/>
+                    </Link>
+                </li>
+                <li className='solution-element'>
+                    <Link to={'../ads'}  className='btn'>
+                        Ads  <span>(Des campagnes publicitaires ciblées et performantes)</span>
+                        <ArrowEffect arrowColor='blue'/>
+                    </Link>
+                </li>
+                <li className='solution-element'>
+                    <Link to={'../seo'}  className='btn'>
+                        SEO <span>(Un référencement naturel pour atteindre de le top des résultats de recherche)</span>
                         <ArrowEffect arrowColor='blue'/>
                     </Link>
                 </li>

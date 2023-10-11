@@ -11,6 +11,9 @@ import twitter from '../../assets/img/Reseaux-Twitter.svg'
 import discord from '../../assets/img/Reseaux-Discord.svg'
 import linkedin from '../../assets/img/Reseaux-Linkedin.svg'
 
+import CGU from '../../assets/pdf/CGU.pdf'
+import mentionLegals from '../../assets/pdf/Mentions_legales.pdf'
+import politiqueDeConfidentialite from '../../assets/pdf/Politique_de_confidentialite.pdf'
 
 const Footer =  () => {
     
@@ -38,7 +41,7 @@ const Footer =  () => {
                 </div>
 
                 <p className='mention'>
-                    <a href="#" target='_blank'>GraphiLeaf©2023</a> | <a href='#' target='_blank'> Mention légales </a>| <a href='#' target='_blank'>Politique de confidentialité</a>
+                    <span>GraphiLeaf©2023</span> | <a href={mentionLegals} target='_blank'  rel="noreferrer"> Mention légales </a>| <a href={politiqueDeConfidentialite} target='_blank'  rel="noreferrer">Politique de confidentialité</a> | <a href={CGU} target='_blank'  rel="noreferrer"> CGU</a> 
                 </p>
                 </div>
         </footer>

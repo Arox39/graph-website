@@ -4,49 +4,48 @@ import desktop from '../../assets/img/Illustration Projet.svg'
 import CardContainer from './component/card-container/card-container.component'
 import { useEffect } from 'react'
 
-import Allard from '../../assets/img/projets/Allard/preview.png'
-import Casarella from '../../assets/img/projets/Casarella/Casarella_Projet.png'
-import Eliott from '../../assets/img/projets/Eliott/Eliott_Projet.png'
-import image5 from '../../assets/img/projets/SleepAndWork.png'
+import Allard from '../../assets/img/projets/Allard/Allard_Page-Projet.png'
+import Casarella from '../../assets/img/projets/Casarella/Casarella_Page-Projet.png'
+import Eliott from '../../assets/img/projets/Eliott/Eliott_Page-Projet.png'
 
 // overlay 
 // allard
-// import Allard_homeImage from ''
-import Allard_thirdImage from '../../assets/img/projets/Allard/Allard_Carré-bas-droite.png'
-import Allard_presentationImage from '../../assets/img/projets/Allard/Allard_Carte.png'
-import Allard_fourthImage from '../../assets/img/projets/Allard/Allard_Flyer.png'
+import Allard_homeImage from '../../assets/img/projets/Allard/Allard_Accueil.png'
+import Allard_second from '../../assets/img/projets/Allard/Allard_1.png'
+import Allard_third from '../../assets/img/projets/Allard/Allard_2.png'
+import Allard_fourth from '../../assets/img/projets/Allard/Allard_3.png'
 
 // casarella
 import Casarella_homeImage from '../../assets/img/projets/Casarella/Casarella_Accueil.png'
-import Casarella_second from '../../assets/img/projets/Casarella/Iphone.png'
-import Casarella_third from '../../assets/img/projets/Casarella/Photo.png'
-import Casarella_fourth from '../../assets/img/projets/Casarella/Plein-de-carte (2).png'
+import Casarella_second from '../../assets/img/projets/Casarella/Casarella_1.png'
+import Casarella_third from '../../assets/img/projets/Casarella/Casarella_2.png'
+import Casarella_fourth from '../../assets/img/projets/Casarella/Casarella_3.png'
 
 // eliott
 import Eliott_homeImage from '../../assets/img/projets/Eliott/Eliott_Accueil.png'
-import Eliott_second from '../../assets/img/projets/Eliott/Branding.png'
-import Eliott_third from '../../assets/img/projets/Eliott/Logo.png'
-import Eliott_fourth from '../../assets/img/projets/Eliott/Carré bas.png'
+import Eliott_second from '../../assets/img/projets/Eliott/Eliott_1.png'
+import Eliott_third from '../../assets/img/projets/Eliott/Eliott_2.png'
+import Eliott_fourth from '../../assets/img/projets/Eliott/Eliott_3.png'
 
 const cards = [
     {
         id:1,
-        title: 'Allard',
+        title: 'Allard Créations',
         img: Allard,
         description: ' Identité visuelle - Print',
         categorie: 'graphisme',
 
-        homeImage:'https://imgur.com/C8LtbDC',
-        presentationImage:Allard_presentationImage,
-        thirdImage:Allard_thirdImage,
-        fourthImage:Allard_fourthImage,
+        homeImage:Allard_homeImage,
+        presentationImage:Allard_second,
+        thirdImage:Allard_third,
+        fourthImage:Allard_fourth,
         color: '#37210c',
         text_color: '#faf9f2',
         overlayDescription: "Allard Créations à fait appel à GraphiLeaf pour donner vie à son identité visuelle. De la création du logotype à la conception de la carte de visite et du flyer, chaque détail a été méticuleusement pensé pour représenter l'excellence de cette entreprise dédiée à la menuiserie et à l'agencement contemporain.<br/><br/> Chez Allard Créations, chaque espace est précieux. L'esthétisme et la fonctionnalité s'entrelacent pour donner vie à des créations durables, façonnées principalement à partir de bois massif provenant des forêts du nord-est de la France. La proximité des partenaires locaux, situés à moins de 20 km de l’atelier, est la garantie d'une qualité exceptionnelle."
     },
     {
         id:2,
-        title: "Casarella",
+        title: "Casarella Maria",
         img: Casarella,
         description: ' Identité visuelle - Print',
         categorie: 'graphisme',
@@ -65,7 +64,7 @@ const cards = [
         title: 'Eliott Brenner',
         img: Eliott,
         description: 'Identité visuelle',
-        categorie: 'Graphisme',
+        categorie: 'graphisme',
 
         homeImage:Eliott_homeImage,
         presentationImage:Eliott_second,
