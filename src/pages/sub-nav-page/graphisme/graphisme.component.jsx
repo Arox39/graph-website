@@ -1,4 +1,5 @@
 import './graphisme.style.scss'
+import './graphisme.responsive.scss'
 import blueArrow from '../../../assets/img/ArrowBleu.svg'
 import greyGrid from '../../../assets/img/BG-PG.svg'
 import blueGrid from '../../../assets/img/BG-PB.svg'

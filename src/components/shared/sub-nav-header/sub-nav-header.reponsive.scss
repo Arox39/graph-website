@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px) {
+    .sub-nav-header 
+    {
+        margin-left: 0;
+        .title
+        {
+            margin-left: 10vw;
+            font-size: 5vw;
+            text-align: left;
+            line-height: 9vw;
+            margin-top: 7vh;
+            span:first-of-type
+            {
+                border-width: 0.75vw !important;
+            }
+        }
+        .citation 
+        {
+            margin: 3.5vh auto !important;
+            font-size: 3vw !important;
+            text-align: left;
+            line-height: 5vw;
+            margin-left: 10vw!important;
+            max-width: 85% !important;
+            br 
+            {
+                display: none !important;
+            }
+        }
+        .header-img 
+        {
+            display: none !important;
+        }
+        
+    .sub-content
+    {
+        max-width: 80vw;
+        margin: auto;
+        padding: 5vw;
+        height:fit-content;
+        border-radius: 5vw;
+
+        .sub-description 
+        {
+            font-size: 3vw !important;
+            margin-top: 4vw;
+            line-height: 5vw;
+        }
+
+    }
+    }
+    .title-container
+    {
+        h1
+        {
+            font-size: 4vw !important;
+        }
+        .blueArrow 
+        {
+            margin-left: 3vw;
+            transform: rotate(90deg);
+            height: 4vw;
+        }   
+    }   
+}
+

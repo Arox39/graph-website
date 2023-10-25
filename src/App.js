@@ -22,15 +22,18 @@ const App = () => {
     if (location.hash !== '#solution') {
       window.scrollTo(0, 0);
     } else {
+      console.log('ui');
       const solutionElement = document.getElementById('solution');
       solutionElement.scrollIntoView({ behavior: 'smooth' });
     }
   }, [location.pathname]);
 
+
+  
   return (
 
     <Routes>
-      <Route path='/graphiLeaf' element={<Nav/>}>
+      <Route path='/' element={<Nav/>}>
         <Route index element={<Home/>}/>
         <Route path='project' element={<Project/>}/>
         <Route path='agence' element={<Agence/>}/>
@@ -46,7 +49,7 @@ const App = () => {
 
       </Route>
   </Routes>
-        );
+  );
 };
 
 export default App;

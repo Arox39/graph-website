@@ -1,4 +1,5 @@
 import './dev-web.style.scss'
+import './dev-web.responsive.scss'
 import Footer from '../../../components/footer/footer.component'
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import headerImg from '../../../assets/img/Illustration Dev.svg'

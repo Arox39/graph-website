@@ -1,12 +1,12 @@
 import './agence.style.scss'
-
+import './agence.responsive.scss'
 import illustration from '../../assets/img/Illustration Nuage.svg'
 import bluegrid from '../../assets/img/BG-PB.svg'
 import Solution from './components/solution/solution.component'
 import Footer from '../../components/footer/footer.component'
 const Agence = () => {
     return (
-        <div>
+        <div className='agence'>
             <header className='header'>
             
                 <h1 className='title'>Votre agence de <span className='underline'>communication</span> <br/>

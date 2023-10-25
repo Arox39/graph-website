@@ -1,9 +1,9 @@
 import './project.style.scss'
+import './project.responsive.scss'
+import { useEffect, useState } from 'react'
 import Footer from '../../components/footer/footer.component'
 import desktop from '../../assets/img/Illustration Projet.svg'
 import CardContainer from './component/card-container/card-container.component'
-import { useEffect } from 'react'
-
 import Allard from '../../assets/img/projets/Allard/Allard_Page-Projet.png'
 import Casarella from '../../assets/img/projets/Casarella/Casarella_Page-Projet.png'
 import Eliott from '../../assets/img/projets/Eliott/Eliott_Page-Projet.png'
@@ -36,6 +36,7 @@ const cards = [
         categorie: 'graphisme',
 
         homeImage:Allard_homeImage,
+        responsiveHomeImage:Allard_homeImage,
         presentationImage:Allard_second,
         thirdImage:Allard_third,
         fourthImage:Allard_fourth,
@@ -51,6 +52,7 @@ const cards = [
         categorie: 'graphisme',
 
         homeImage:Casarella_homeImage,
+        responsiveHomeImage:Casarella_homeImage,
         presentationImage:Casarella_second,
         thirdImage:Casarella_third,
         fourthImage:Casarella_fourth,
@@ -67,6 +69,7 @@ const cards = [
         categorie: 'graphisme',
 
         homeImage:Eliott_homeImage,
+        responsiveHomeImage:Eliott_homeImage,
         presentationImage:Eliott_second,
         thirdImage:Eliott_third,
         fourthImage:Eliott_fourth,
@@ -81,11 +84,7 @@ const cards = [
 
 
 const Project = () => {
-
-    const preloadImage = (imageSource) => {
-        const img = new Image();
-        img.src = imageSource;
-    };
+   
 
     return (
         <div className="project"> 
@@ -97,7 +96,7 @@ const Project = () => {
                 <p className='citation'>“Explorez notre selection de projets et découvrez comment nous <br/>
                 avons aidé nos clients à atteindre leurs objectifs.”</p>
                 <p className='more'>Cliquez sur les projets pour en savoir plus !</p>
-                <img src={desktop} alt='illustration'/>
+                <img className='illustration' src={desktop} alt='illustration'/>
             </header>
             <CardContainer cards={cards}/>
             <Footer/>

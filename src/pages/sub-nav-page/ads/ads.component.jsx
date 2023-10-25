@@ -1,4 +1,5 @@
 import './ads.style.scss'
+import './ads.responsive.scss'
 
 import headerImg from '../../../assets/img/Illustration Ads.svg'
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'

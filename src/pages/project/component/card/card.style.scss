@@ -18,6 +18,10 @@
         transition: all 0.3s ease-in-out;
         z-index: -2;
     }
+    .responsive-description 
+    {
+        display: none !important;
+    }
     .description 
     {
         position: absolute;

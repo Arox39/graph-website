@@ -1,5 +1,5 @@
 import './contact.styles.scss'
-
+import './contact.responsive.scss'
 import { Link } from 'react-router-dom'
 import blueArrow from '../../assets/img/ArrowBleu.svg'
 import blueGrid from '../../assets/img/BG-PB.svg'
@@ -7,8 +7,10 @@ import blueBubble from '../../assets/img/bubble.svg'
 import ArrowEffect from '../../components/shared/arrowEffect/arrowEffect.component'
 import Footer from '../../components/footer/footer.component'
 import Form from './component/form/form.component'
-const Contact = () => {
 
+const Contact = () => {
+  
+   
     return (
 
         <div className='contact'>
@@ -24,7 +26,7 @@ const Contact = () => {
                 <img className='bubble' src={blueBubble} alt='blue bubble' />
                 <p className='bubble-content'>
                     Profitez de <br/> <span className='bubble-underline'>votre première</span><br/>
-                    <span className='white'>Consultation <br/> gratuite !</span>
+                    <span className='white'> Consultation <br/> gratuite !</span>
                 </p>
             </div>
 
@@ -35,7 +37,7 @@ const Contact = () => {
                     Découvrez nos projets 
                     <ArrowEffect bgcolor="#FaF9F2" arrowColor={'black'} />
                 </Link>
-                <Link to="../../#solution" className='btn'>
+                <Link to="../../#solution" className='btn' >
                     Découvrez nos solutions
                     <ArrowEffect bgcolor="#FaF9F2" arrowColor={'black'}/>
                 </Link>

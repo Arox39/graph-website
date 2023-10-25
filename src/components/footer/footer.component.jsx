@@ -1,6 +1,7 @@
+import './footer.responsive.scss'
 import './footer.style.scss'
-
 import { Link } from 'react-router-dom'
+import { useEffect, useState, Fragment} from 'react'
 import ArrowEffect from '../../components/shared/arrowEffect/arrowEffect.component'
 
 import greyGrid from '../../assets/img/BG-PG.svg'
@@ -15,10 +16,30 @@ import CGU from '../../assets/pdf/CGU.pdf'
 import mentionLegals from '../../assets/pdf/Mentions_legales.pdf'
 import politiqueDeConfidentialite from '../../assets/pdf/Politique_de_confidentialite.pdf'
 
-const Footer =  () => {
-    
+const FooterBtn = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 1000);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
-        <footer className='footer-container'>
+        <Fragment>
+        {isMobile ? (
+            <Link to={'../../contact'} className='btn'>
+                    Boostez votre présence en  ligne dès maintenant !
+                    <ArrowEffect bgcolor="#000018" />
+                </Link>
+        ): (
             <div className='footer-btn-container'>
                 <Link to={'../../contact'} className='footer-btn'>
                     <h1 className='footer-title'>Vous avez des projets ?</h1>
@@ -28,6 +49,19 @@ const Footer =  () => {
                 <div className='greybg'></div>
                 <img className='grey-grid' src={greyGrid} alt='grey grid' />
             </div>
+            )}
+        </Fragment>
+    )
+
+}
+
+
+
+const Footer =  () => {
+    
+    return (
+        <footer className='footer-container'>
+            <FooterBtn/>
             <div className='footer'>
                 <Link to={'../../contact'} className='btn'>
                     Contact

@@ -1,4 +1,6 @@
 import './subcontent.style.scss'
+import './subcontent.responsive.scss'
+
 import greyGrid from '../../../../assets/img/BG-PG.svg'
 import blueGrid from '../../../../assets/img/BG-PB.svg'
 import blueArrow from '../../../../assets/img/ArrowBleu.svg'
@@ -11,7 +13,7 @@ const SubContent = () => {
                     <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
                 </h1>
                 <p className='description-content'>Nous effectuons une veille stratégique pour vous aider à <strong>comprendre les tendances</strong> émergentes et les 
-                <strong>opportunités de croissance</strong> dans votre secteur d'activité. Nous vous aidons également à élaborer des <strong>stratégies efficaces</strong> pour répondre 
+                <strong> opportunités de croissance</strong> dans votre secteur d'activité. Nous vous aidons également à élaborer des <strong>stratégies efficaces</strong> pour répondre 
                 à ces tendances et opportunités.</p>
             </section>
             <section className='media'>

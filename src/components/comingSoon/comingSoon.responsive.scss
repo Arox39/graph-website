@@ -1,0 +1,46 @@
+@media screen and (max-width: 768px) {
+    .comingSoon
+    {
+        .responsiveComingSoon 
+        {
+            position: relative;
+            top: -15vw;
+            display: block;
+        }    
+        .comingImage 
+        {
+            display: none;
+        }
+        .comingBtn
+        {
+            top: 150vw;
+            left:50%;
+            transform: translateX(-50%);
+            height: 10vw;
+            width: 84vw;
+            margin:auto;
+            padding: 0 1vw 0 3vw;
+            border: 1px solid #000018;
+            font-size: 3.5vw;
+            span 
+            {
+                height: 8vw;    
+                width: 8vw;
+                margin-left: auto;
+                img 
+                {
+                    height: 3vw;
+                }
+            }
+            &:nth-child(3)
+            {
+                display: none;
+            }
+        }
+        .footer-container 
+        {
+            margin-top: -35vw;
+        }
+    }
+
+}

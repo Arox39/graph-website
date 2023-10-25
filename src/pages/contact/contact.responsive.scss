@@ -1,0 +1,169 @@
+@media screen and (max-width: 768px) {
+    .contact
+    {
+        margin-right: 0 !important;
+        width: 100vw !important;
+        .contact-title 
+        {
+            margin: 9vw 0 0 10.3vw;
+            font-size: 4vw;
+            font-weight: 700;
+        }
+        .contact-subtitle
+        {
+            margin: 3vw 0 0 10.3vw;
+            font-size: 2.5vw;
+
+            .blueArrow 
+            {
+                height: 2vw;
+                margin-left: 1vw;
+            }
+        }
+
+        .bubble-container 
+        {
+            position: absolute;
+            right:0;
+            left:7.5vw;
+            top: 167.5vw;
+            img 
+            {
+                display:none;
+            }
+            .bubble-content
+            {
+                br
+                {
+                    display:none;
+                }
+                font-size: 3vw;
+                position: relative;
+                top: -12.46vw;
+                left: 3.54vw;
+                line-height: 2.3vw;
+                font-weight: 400;
+                color:white;
+                .white
+                {
+                    text-transform:lowercase;
+                }
+                .bubble-underline 
+                {
+                    border-bottom: 0.2vw solid #faf9f2;
+                }
+            }
+        }
+
+        .btn-section 
+        {
+            display: none; 
+        }
+
+        .grey-background
+        {
+            position: absolute;
+            height: 37vw;
+            left: 0;
+            border-radius: 4.55vw;
+            right: 0;
+            top: 42vw;
+            background-color: #E9E8E3;
+            z-index: -1;
+        }
+        .contact-form 
+        {
+            border-radius: 5vw !important;
+            height: 110vw !important;
+            width: 80vw !important;
+            padding: 5vw !important;
+            margin: 5vw!important;
+            margin-bottom: 20vw !important;
+            display: flex;
+            flex-direction: column;
+
+            .double-row,
+            .simple-row
+            {
+                display: flex;
+                width: 100%;
+                height: fit-content;
+                margin-bottom: 1vw;
+            }
+            .double-row:nth-child(2)
+            {
+                flex-direction: column;
+            
+                .form-input:nth-child(2)
+                {
+                    margin-left:0vw !important;
+                }
+                
+            }
+            .form-input
+            {
+                .form-label
+                {
+                    margin: 6.5vw 3vw !important;
+                    font-size: 3vw;
+                    width:100% !important;
+                    font-weight:500 ;
+                }
+                &:hover .form-label 
+                {
+                    display:none;
+                }
+                .shrink
+                {
+                    display: none !important;
+                }
+                input,
+                textarea
+                {
+                    height: 5vw;
+                    margin-top: 3vw;
+                    padding: 3vw !important;
+                    font-size:3vw !important;
+                    
+                }
+                textarea
+                {
+                    height: 30vw;
+                }
+
+            
+            }
+            .btn 
+            {
+                height: 5vw !important;
+                top: 20vw;
+                font-size: 3vw !important;
+                padding: 3.2vw 0.4vw 3.2vw 2vw !important;
+                
+
+
+                .arrow-effect 
+                {
+                    margin-left: 1vw !important;
+                    height:5vw !important;
+                    width:5vw !important;
+                    img 
+                    {
+                        height: 3vw;
+                    }
+                    
+                }
+            }
+
+            .blueGrid 
+            {
+                display: none;
+            }
+            .greyGrid 
+            {
+                display: none;
+            }
+        }
+    }
+    
+}

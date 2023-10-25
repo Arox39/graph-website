@@ -19,6 +19,7 @@
             z-index: -1;
             top: -0.35vw;
             height: 5vw;
+
         }
     }
 
@@ -28,7 +29,7 @@
         display: flex;
         width: 80%;
         margin: auto;
-        margin-bottom: 10vw;
+        margin-bottom: 10vw !important;
         padding: 3vw 4vw;
         border-radius: 4vw;
         background-color: #E9E8E3;

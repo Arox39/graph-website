@@ -29,7 +29,11 @@ const Card = ({ title, image, description, homeImage, presentationImage, thirdIm
         <Link className='card' onClick={handleClick}>
             <img src={image} alt='illustration' className='bgimg' />
             <div className='title-container'>
-                <h1 className='card-title'>{title}</h1>
+                <h1 className='card-title'>
+                    {title}
+                    <span className='responsive-description'> -  {description}</span>
+                </h1>
+                
                 <ArrowEffect className='arrow' arrowColor='black' /> 
             </div>
             <p className='description'>{description}</p>

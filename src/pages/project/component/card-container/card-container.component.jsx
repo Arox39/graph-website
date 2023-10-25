@@ -4,18 +4,30 @@ import './card-container.style.scss'
 
 
 const CardContainer = ({cards}) => { 
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 1000);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const [sortCategorie, setSortCategorie] = useState('all')
-    console.log();
     
     useEffect(() => {
         const handleEvent = (event) => {
             setSortCategorie(event.target.id)
             console.log(sortCategorie);
-            document.querySelector('#all').classList.remove('active')
-            document.querySelector('#graphisme').classList.remove('active')
-            document.querySelector('#video').classList.remove('active')
-            document.querySelector('#social').classList.remove('active')
+            document.querySelectorAll('.sort-element').forEach(element => {
+                element.classList.remove('active')
+            })
             event.target.classList.add('active')
 
         }
@@ -33,18 +45,18 @@ const CardContainer = ({cards}) => {
 
     }, [])
 
+    
 
     return (
         <div className='example-container'>
             <div className='sort-bar'>
                 <div className='sort-element active' id='all'>Tout</div>
                 <div className='sort-element' id='graphisme'>Graphisme</div>
-                <div className='sort-element' id='video'>Vidéo</div>
-                <div className='sort-element' id='social'>Social Media</div>
             </div>
             <div className='card-container'>
                 {
                     cards.map((card) => {
+                        let homeImage = isMobile ? card.responsiveHomeImage : card.homeImage
                         return (
                             card.categorie === sortCategorie || sortCategorie === 'all' ) && (
                                 <Card 
@@ -52,7 +64,7 @@ const CardContainer = ({cards}) => {
                                 title={card.title} 
                                 image={card.img} 
                                 description={card.description} 
-                                homeImage={card.homeImage}
+                                homeImage={homeImage}
                                 presentationImage={card.presentationImage}
                                 thirdImage={card.thirdImage}
                                 fourthImage={card.fourthImage}

@@ -1,4 +1,3 @@
-import './veille.style.scss'
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import headerImg from '../../../assets/img/Illustration Veille.svg'
 import SubContent from './subcontent/subcontent.component'

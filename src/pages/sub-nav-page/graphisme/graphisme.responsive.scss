@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px) {
+    .graphisme 
+    {
+        .sub-part 
+        {
+            margin-top: 15vw;
+            margin-bottom: 10vw;
+            width: 95%;
+            .content 
+            {
+                font-size: 3vw;
+                line-height: 4.5vw;
+            }
+        }
+        .grey-grid 
+        {
+            height: 10vw !important;
+            left: 2vw;
+            top: -1.5vw !important;
+        }
+    }
+    .description-container
+    {
+        width: 80%;
+        flex-direction: column;
+        padding: 6vw !important;
+        margin-bottom: 0 !important;
+        border-radius: 10vw !important; 
+        .left
+        {
+            margin-right: 0 !important;
+            margin-bottom: 6vw !important;
+            
+        }
+        .description 
+        {
+            margin-top: 3vw !important;
+            font-size: 3vw !important;
+            line-height: 4vw !important;
+        }
+        .blueGrid
+        {
+            display: none;
+        }
+    }    
+    
+}

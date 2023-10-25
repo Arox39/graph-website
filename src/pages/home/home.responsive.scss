@@ -1,0 +1,200 @@
+@media screen and (max-width: 768px) {
+    .homeHeader
+    {
+        margin-left: 0 !important;
+        height: fit-content !important;
+        .headerImage 
+        {
+            display: none !important;
+        }
+        .title 
+        {
+            font-size: 5vw;
+            text-align: left;
+            line-height: 9vw;
+            margin-left: 10vw;
+            margin-top: 7vh;
+            .underline 
+            {
+                border-width:1vw ;
+            }
+        }
+        .homeCitation 
+        {
+            margin: 3.5vh auto !important;
+            font-size: 3.5vw !important;
+            margin-left: 10vw !important;
+            text-align: left;
+            line-height: 5vw;
+        }
+        .description 
+        {
+            font-size: 3vw !important;
+            margin-left: 10vw ;
+            max-width: 80% !important;
+            line-height: 6vw !important;
+            text-align: left;
+        }
+        .btn 
+        {
+            display: none !important;
+        }
+    } 
+
+    .mobile-discover-container
+    {
+        flex-direction: column;
+        margin-top: 15vw;
+        margin-left: 10vw;
+        z-index: 1000;
+        .btn 
+        {
+            margin-bottom: 3vw;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            border-radius: 6.5vw;
+            padding: 1vw 0 1vw 3vw;
+            font-size: 4vw;
+            color: #FAF9F2;
+            transition: transform 0.25s ease-in-out;
+            background-color: #018EBB;
+            
+            .arrow-effect 
+            {
+                margin-left:2vw ;
+                height: 7vw ;
+                width:7vw ;
+                margin-right: 0.75vw;
+                img 
+                {
+                    height: 3.25vw;
+                }
+            }
+        }
+    }
+    .solution-container 
+    {
+        top: 10vw !important;
+        .top-container 
+        {
+            border-radius: 10vw 10vw 0 0 !important; 
+            padding-bottom: 40vw;
+            .solution-title 
+            {
+                font-size: 7vw !important;
+                margin-left: 7vw;
+            }
+            .solution-subtitle 
+            {
+                font-size: 5vw !important;
+                margin: 3.5vw 7vw !important;
+            }
+            .solution-citation 
+            {
+                font-size: 4vw ;
+                max-width: 80% !important;
+                line-height: 5.5vw !important;
+                margin-left: 7vw;
+
+            }
+        }
+        .bubble-container 
+        {
+            flex-direction: column;
+            .blue-grid, .grey-grid
+            {
+                display: none;
+            }
+            .bubble
+            {   
+                border-radius: 10vw !important;
+                margin: 4vw auto !important;
+                width: 90% !important;
+                height: 45vw !important;
+                box-shadow: 0px 4px 8px rgba(0, 0, 24, 0.2) !important;
+                .bubble-link
+                {
+                    border-radius: 10vw !important;
+                    width: 100% !important;
+                    height: 22.5vh !important;
+                }
+                .bubble-title
+                {
+                    font-size: 6vw !important;
+                    margin: 10vw 0 7.5vw 10vw !important;
+    
+                    &::after 
+                    {
+                        bottom: -1.8vw !important;
+                        height: 0.9vw !important;
+                    }
+                }
+                .bubble-content 
+                {
+                    font-size: 3.5vw !important;
+                    line-height: 4vw !important;
+                    margin: 0 10vw !important;
+                }
+                .arrow-effect
+                {
+    
+                    height: 12.5vw !important;
+                    width: 12.5vw !important;
+                    right: 5vw !important;
+                    top: 5vw !important;
+                    img
+                    {
+                        height: 4vw;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .who-container 
+    {
+        position: relative;
+        top: 10vw !important;
+        height: 70vw !important;
+        border-radius: 5vw !important;
+        margin: 0 auto !important;
+        margin-bottom: 15vw !important;
+        width: 90% !important;
+        .who-title 
+        {
+            font-size: 6vw !important;
+            margin: 5vw 5vw 0vw 5vw !important;
+        }
+        .who-subtitle 
+        {
+            font-size: 3.5vw !important;
+            margin: 3vw 5vw !important;
+        }
+        .who-description  
+        {
+            font-size: 3vw !important;
+            line-height: 4.5vw !important;
+            margin: 5vw;
+        }
+        .who-illustration 
+        {
+            display: none;
+        }
+        .who-link 
+        {
+            margin: 5vw !important;
+            font-size: 3vw !important;
+
+            img 
+            {
+                height: 3vw !important;
+                margin-left: 1.5vw !important;
+            }
+        }
+    }
+
+
+}
+

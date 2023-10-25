@@ -1,0 +1,71 @@
+@media screen and (max-width: 768px) {
+    .video 
+    {
+        .sub-part
+        {
+            margin-top: 10vw;
+            flex-direction: column;
+            height: 150vw;
+            padding:3.5vw;
+            border-radius: 6vw;
+            border-bottom: 1.5vw solid #018EBB;
+            border-left: 1vw solid #018EBB;
+            .social-network 
+            {
+                .sub-title
+                {
+                    
+                    font-size: 4vw;
+                    margin-bottom: 2vw;
+                    span img 
+                    {
+                        height: 3vw;
+                        margin-left: 3vw;
+                    }
+                }
+                .content 
+                {
+                    font-size: 3vw;
+                    line-height: 4vw;
+                }
+            }
+        }
+        .grey-grid 
+        {
+            display: none;
+        }
+        .description-container 
+        {
+            height: 40vw;
+            width: 90vw;
+            margin: 10vw auto;
+            margin-bottom: 10vw !important;
+            padding: 5vw 2.5vw !important;
+            background-color: #FAF9F2;
+            box-shadow: -0.5vw 0.5vw 2vw rgba(0, 0, 0, 0.15);
+            border-radius: 10vw;
+
+            h2 
+            {
+                font-size: 3.5vw;
+                line-height: 5vw;
+                .responsive-arrow 
+                {
+                    position: relative; 
+                    top: 1vw;
+                    display: inline-block;
+                    height: 4vw;
+                    margin-left: 3vw;
+                    transform: rotate(90deg);
+                }
+            }
+            p 
+            {
+                margin-top: 6vw;
+                font-size: 3vw;
+                line-height: 4vw;
+            }
+        }
+    }
+
+}

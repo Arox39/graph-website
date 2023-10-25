@@ -1,4 +1,5 @@
 import './video.style.scss'
+import './video.responsive.scss'
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import headerImg from '../../../assets/img/Illustration Vidéo.svg'
 import blueArrow from '../../../assets/img/ArrowBleu.svg'
@@ -51,7 +52,8 @@ const Video = () => {
 
 
             <section className='description-container'>
-                <h2>La vidéo marketing, c’est utiliser la vidéo pour atteindre vos objectifs commerciaux.</h2>
+                <h2>La vidéo marketing, c’est utiliser la vidéo pour atteindre vos objectifs commerciaux.
+                <span><img className='blueArrow responsive-arrow' src={blueArrow} alt='blue arrow'/></span></h2>
                 <p>Qu'il s'agisse d'augmenter les ventes, de générer des leads ou d'accroître la notoriété de votre marque, notre équipe de professionnels est là pour vous aider à élaborer une stratégie de vidéo marketing efficace et adaptée à vos besoins spécifiques.</p>
                 <img className='blueGrid' src={blueGrid} alt='blue grid'/>
             </section>

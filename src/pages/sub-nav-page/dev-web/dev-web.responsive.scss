@@ -1,0 +1,80 @@
+@media screen and (max-width: 768px) {
+    .dev-web 
+    {
+
+        .title 
+        {
+            br 
+            {
+                display: none;
+            }
+        }
+        .e-com 
+        {
+            width: 84vw;
+            margin: 10vw auto;
+            border-radius:5vw;
+            padding:5vw 3vw;
+            height: fit-content;
+
+            .ecom-content
+            {
+                margin:0 2vw;
+                line-height: 4vw;
+                font-size: 2.5vw;
+                text-align: justify;
+            }
+            .ecom-title
+            {
+                font-size: 4vw;
+                font-weight:500 ;
+                margin-bottom: 4vw;
+
+                span img 
+                {
+                    height: 3vw;
+                    margin-left: 2vw;
+                }
+            }
+            .blueGrid 
+            {
+                display: none;
+            }
+        }
+
+        .web-content 
+        {
+            height: fit-content;
+            margin-bottom: 12vw;
+            display: flex;
+            flex-direction: column;
+            .content-element 
+            {
+                width: 80vw;
+                padding: 5vw;
+                border-radius: 5vw;
+                margin-bottom: 10vw;
+                .element-title
+                {
+                    
+                    font-size: 4vw;
+                    margin-bottom: 5vw;
+
+                    .blueArrow 
+                    {
+                        height: 3.5vw;
+                        margin-left: 3vw;
+                    }
+
+                }
+                .element-content
+                {
+                    font-size: 3vw;
+                    margin: 0;
+                    line-height: 5vw;
+                }
+            }
+        }
+
+    }
+}

@@ -1,4 +1,5 @@
 import './seo.style.scss'
+import './seo.responsive.scss'
 
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import Footer from '../../../components/footer/footer.component'

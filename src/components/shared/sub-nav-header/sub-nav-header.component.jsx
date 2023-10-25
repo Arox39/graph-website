@@ -1,4 +1,5 @@
 import './sub-nav-header.styles.scss'
+import './sub-nav-header.reponsive.scss'
 import ReactHtmlParser from 'react-html-parser';
 import blueArrow from '../../../assets/img/ArrowBleu.svg'
 

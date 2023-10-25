@@ -15,6 +15,11 @@
         {
             background-color: #018EBB;
             color: #FAF9F2;
+
+            &:hover
+            {
+                color: #FAF9F2 !important;
+            }
         }
         .sort-element
         {
