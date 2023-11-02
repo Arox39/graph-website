@@ -2,10 +2,12 @@
     .contact
     {
         margin-right: 0 !important;
+        padding-top: 2vw;
+        overflow: hidden;
         width: 100vw !important;
         .contact-title 
         {
-            margin: 9vw 0 0 10.3vw;
+            margin: 0 0 0 10.3vw;
             font-size: 4vw;
             font-weight: 700;
         }
@@ -26,10 +28,14 @@
             position: absolute;
             right:0;
             left:7.5vw;
-            top: 167.5vw;
+            top: 63.5vw;
             img 
             {
                 display:none;
+            }
+            .white 
+            {
+                border-bottom: 0.2vw solid #faf9f2;
             }
             .bubble-content
             {
@@ -50,7 +56,7 @@
                 }
                 .bubble-underline 
                 {
-                    border-bottom: 0.2vw solid #faf9f2;
+                    border-bottom: none;
                 }
             }
         }
@@ -74,9 +80,9 @@
         .contact-form 
         {
             border-radius: 5vw !important;
-            height: 110vw !important;
+            height: 105vw !important;
             width: 80vw !important;
-            padding: 5vw !important;
+            padding: 12.5vw 5vw 0!important;
             margin: 5vw!important;
             margin-bottom: 20vw !important;
             display: flex;
@@ -89,6 +95,13 @@
                 width: 100%;
                 height: fit-content;
                 margin-bottom: 1vw;
+            }
+            .double-row
+            {
+                .form-input:nth-child(2)
+                {
+                    margin-left:3vw !important;
+                }
             }
             .double-row:nth-child(2)
             {
@@ -136,7 +149,7 @@
             .btn 
             {
                 height: 5vw !important;
-                top: 20vw;
+                top: 7.5vw;
                 font-size: 3vw !important;
                 padding: 3.2vw 0.4vw 3.2vw 2vw !important;
                 

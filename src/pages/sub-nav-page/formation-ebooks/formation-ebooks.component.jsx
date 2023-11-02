@@ -3,7 +3,7 @@ import Footer from '../../../components/footer/footer.component'
 import ComingSoon from '../../../components/comingSoon/comingSoon.component'
 const FormationEbooks = () => {
     return (
-        <div>
+        <div className='formation'>
             <ComingSoon/>
         </div>
     )

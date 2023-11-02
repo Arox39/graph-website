@@ -1,4 +1,5 @@
 import './arrowEffect.style.scss'
+import './arrowEffect.repsonsive.scss'
 import arrowW from '../../../assets/img/Arrow.svg'
 import arrowW2 from '../../../assets/img/Arrow2.svg'
 import arrowB from '../../../assets/img/ArrowB.svg'
