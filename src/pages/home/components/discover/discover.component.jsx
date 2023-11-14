@@ -3,7 +3,7 @@ import './discover.style.scss'
 import { Fragment, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
-
+import Reveal from '../../../../components/animation/Reveal'
 
 
 
@@ -20,7 +20,6 @@ const Discover = () => {
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 1000);
-            console.log(isMobile);
         };
 
         window.addEventListener('resize', handleResize);
@@ -44,34 +43,39 @@ const Discover = () => {
             </Link>
             </div>
         ):(
-        <div className='discover-container'>
-            <Link to='contact' className='btn big'>
+            <Reveal overflow={"visible"}>
+                <div className='discover-container'>
+                
+                <Link to='contact' className='btn big'>
                 <h2 className='content'>
-                    Profitez de votre première consultation <br/>
-                    <span>Gratuite !</span>
+                Profitez de votre première consultation <br/>
+                <span>Gratuite !</span>
                 </h2>
                 <ArrowEffect bgcolor='#000018'/>
-            </Link>
-            <Link to='project' className='btn small'>
+                </Link>
+                
+                
+                <Link to='project' className='btn small'>
                 <h2 className='content'>
                 Découvrez nos <br/>
                 <span>Projets !</span>
-                </h2>
-                <ArrowEffect bgcolor='#000018'/>
-            </Link>
-            <Link to={"../../#solution"} className='btn small' onClick={handleClick}>
-                <h2 className='content'>
-                    Découvrez nos <br/>
-                    <span>Solutions !</span>
-                </h2>
-                <ArrowEffect bgcolor='#000018'/>
-            </Link>
-        </div>
-        )}
-        </Fragment>
-    )
-}
+                        </h2>
+                        <ArrowEffect bgcolor='#000018'/>
+                        </Link>
+                        <Link to={"../../#solution"} className='btn small' onClick={handleClick}>
+                        <h2 className='content'>
+                        Découvrez nos <br/>
+                        <span>Solutions !</span>
+                        </h2>
+                        <ArrowEffect bgcolor='#000018'/>
+                        </Link>
+                        
+                </div>
+            </Reveal>
+            )}
+            </Fragment>
+            )
+        }
+        
 
-
-console.log(Discover);
 export default Discover

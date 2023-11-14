@@ -40,10 +40,10 @@ const NavMobile = () => {
         <nav className='mobile-nav'>
             <Link to={'../../'}><img className='logo' src={logo} alt='graphileaf'/></Link>
             
-            <div class="menu">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
+            <div className="menu">
+                <span className="line line1"></span>
+                <span className="line line2"></span>
+                <span className="line line3"></span>
             </div>
             <ul className='nav-list hide'>  
                 <li className='nav-link declencheur'>

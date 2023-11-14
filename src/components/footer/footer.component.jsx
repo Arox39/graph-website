@@ -15,6 +15,7 @@ import linkedin from '../../assets/img/Reseaux-Linkedin.svg'
 import CGU from '../../assets/pdf/CGU.pdf'
 import mentionLegals from '../../assets/pdf/Mentions_legales.pdf'
 import politiqueDeConfidentialite from '../../assets/pdf/Politique_de_confidentialite.pdf'
+import Reveal from '../animation/Reveal'
 
 const FooterBtn = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -41,13 +42,15 @@ const FooterBtn = () => {
                 </Link>
         ): (
             <div className='footer-btn-container'>
-                <Link to={'../../contact'} className='footer-btn'>
-                    <h1 className='footer-title'>Vous avez des projets ?</h1>
-                    <p className='footer-content'>Boostez votre présence en ligne dès maintenant !</p>
-                    <ArrowEffect />
-                </Link>
-                <div className='greybg'></div>
-                <img className='grey-grid' src={greyGrid} alt='grey grid' />
+               
+                    <Link to={'../../contact'} className='footer-btn'>
+                        <h1 className='footer-title'>Vous avez des projets ?</h1>
+                        <p className='footer-content'>Boostez votre présence en ligne dès maintenant !</p>
+                        <ArrowEffect />
+                    </Link>
+                    <div className='greybg'></div>
+                    <img className='grey-grid' src={greyGrid} alt='grey grid' />
+                
             </div>
             )}
         </Fragment>
@@ -61,23 +64,34 @@ const Footer =  () => {
     
     return (
         <footer className='footer-container'>
-            <FooterBtn/>
+            <Reveal overflow={"visible"}>
+                <FooterBtn/>
+            </Reveal>
             <div className='footer'>
-                <Link to={'../../contact'} className='btn'>
+                <Reveal overflow={"visible"}  hauteur={15}>
+                    <Link to={'../../contact'} className='btn'>
                     Contact
                     <ArrowEffect bgcolor="#000018" />
-                </Link>
+                    </Link>
+                </Reveal>
                 <div className='footer-social'>
-                    <a href='https://www.instagram.com/graphiLeaf' target='_blank'  rel="noreferrer"><img src={instagram} alt='instagram-logo' /></a>
-                    <a href='https://www.linkedin.com/company/graphileaf/' target='_blank'  rel="noreferrer"><img src={linkedin} alt='linkedin-logo' /></a>
-                    <a href='https://twitter.com/graphiLeaf' target='_blank'  rel="noreferrer"><img src={twitter} alt='twitter-logo' /></a>
-                    <a href='https://discord.gg/mBRWnNTaU2' target='_blank'  rel="noreferrer"><img src={discord} alt='discord-logo' /></a>
+                    <Reveal overflow={"visible"} hauteur={15}>
+                        <a href='https://www.instagram.com/graphiLeaf' target='_blank'  rel="noreferrer"><img src={instagram} alt='instagram-logo' /></a>
+                    </Reveal>
+                    <Reveal overflow={"visible"} hauteur={15} delay={0.2}>
+                        <a href='https://www.linkedin.com/company/graphileaf/' target='_blank'  rel="noreferrer"><img src={linkedin} alt='linkedin-logo' /></a>
+                    </Reveal>
+                    <Reveal overflow={"visible"} hauteur={15} delay={0.3}>
+                        <a href='https://twitter.com/graphiLeaf' target='_blank'  rel="noreferrer"><img src={twitter} alt='twitter-logo' /></a>
+                    </Reveal>
+                    <Reveal overflow={"visible"} hauteur={15} delay={0.375}>
+                        <a href='https://discord.gg/mBRWnNTaU2' target='_blank'  rel="noreferrer"><img src={discord} alt='discord-logo' /></a>
+                    </Reveal>
                 </div>
-
                 <p className='mention'>
-                    <span>GraphiLeaf©2023</span> | <a href={mentionLegals} target='_blank'  rel="noreferrer"> Mention légales </a>| <a href={politiqueDeConfidentialite} target='_blank'  rel="noreferrer">Politique de confidentialité</a> | <a href={CGU} target='_blank'  rel="noreferrer"> CGU</a> 
+                <span>GraphiLeaf©2023</span> | <a href={mentionLegals} target='_blank'  rel="noreferrer"> Mention légales </a>| <a href={politiqueDeConfidentialite} target='_blank'  rel="noreferrer">Politique de confidentialité</a> | <a href={CGU} target='_blank'  rel="noreferrer"> CGU</a> 
                 </p>
-                </div>
+            </div>
         </footer>
     )
 }

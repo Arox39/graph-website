@@ -10,18 +10,22 @@ import Eliott from '../../assets/img/projets/Eliott/Eliott_Page-Projet.png'
 
 // overlay 
 // allard
+import Allard_homeImage_responsive from '../../assets/img/projets/Allard/Allard_Accueil_Tel.png'
 import Allard_homeImage from '../../assets/img/projets/Allard/Allard_Accueil.png'
 import Allard_second from '../../assets/img/projets/Allard/Allard_1.png'
 import Allard_third from '../../assets/img/projets/Allard/Allard_2.png'
 import Allard_fourth from '../../assets/img/projets/Allard/Allard_3.png'
 
 // casarella
+import Casarella_homeImage_responsive from '../../assets/img/projets/Casarella/Casarella_Accueil_Tel.png'
+
 import Casarella_homeImage from '../../assets/img/projets/Casarella/Casarella_Accueil.png'
 import Casarella_second from '../../assets/img/projets/Casarella/Casarella_1.png'
 import Casarella_third from '../../assets/img/projets/Casarella/Casarella_2.png'
 import Casarella_fourth from '../../assets/img/projets/Casarella/Casarella_3.png'
 
 // eliott
+import Eliott_homeImage_responsive from '../../assets/img/projets/Eliott/Eliott_Accueil-Tel.png'
 import Eliott_homeImage from '../../assets/img/projets/Eliott/Eliott_Accueil.png'
 import Eliott_second from '../../assets/img/projets/Eliott/Eliott_1.png'
 import Eliott_third from '../../assets/img/projets/Eliott/Eliott_2.png'
@@ -36,7 +40,7 @@ const cards = [
         categorie: 'graphisme',
 
         homeImage:Allard_homeImage,
-        responsiveHomeImage:Allard_homeImage,
+        responsiveHomeImage:Allard_homeImage_responsive,
         presentationImage:Allard_second,
         thirdImage:Allard_third,
         fourthImage:Allard_fourth,
@@ -52,7 +56,7 @@ const cards = [
         categorie: 'graphisme',
 
         homeImage:Casarella_homeImage,
-        responsiveHomeImage:Casarella_homeImage,
+        responsiveHomeImage:Casarella_homeImage_responsive,
         presentationImage:Casarella_second,
         thirdImage:Casarella_third,
         fourthImage:Casarella_fourth,
@@ -62,14 +66,14 @@ const cards = [
 
     },
     {
-        id:4,
+        id:3,
         title: 'Eliott Brenner',
         img: Eliott,
         description: 'Identité visuelle',
         categorie: 'graphisme',
 
         homeImage:Eliott_homeImage,
-        responsiveHomeImage:Eliott_homeImage,
+        responsiveHomeImage:Eliott_homeImage_responsive,
         presentationImage:Eliott_second,
         thirdImage:Eliott_third,
         fourthImage:Eliott_fourth,

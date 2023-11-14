@@ -4,12 +4,14 @@ import Discover from './components/discover/discover.component'
 import Solution from './components/solutions/solution.component'
 import Who from './components/who/who.component'
 import Footer from '../../components/footer/footer.component'
+import SolutionBubble from "./components/solutions/solution-bubble.component"
 const Home = () => {
     return (
         <div className='home'>
             <Header />
             <Discover/>
             <Solution/>
+            <SolutionBubble/>
             <Who/>
             <Footer />
         </div>
