@@ -2,16 +2,19 @@ import { Link } from 'react-router-dom'
 import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
 import './solution.style.scss'
 import greygrid from '../../../../assets/img/BG-PG.svg'
+import Reveal from '../../../../components/animation/Reveal'
 const Solution = () => {
     return(
         <div className='agence-solution-container'>
-            <h2 className='solution-title'>Des solutions sur mesure pour chaque besoins :</h2>
-
+            <Reveal>
+                <h2 className='solution-title'>Des solutions sur mesure pour chaque besoins :</h2>
+            </Reveal>
+            <Reveal overflow={"visible"}>
             <ul className='solution-list'>
                 <li className='solution-element'>
                     <Link to={'../graphisme'} className='btn'>
-                        Graphisme <span className='specification'>(Identité visuelle, support publicitaire, social media design...)</span>
-                        <ArrowEffect arrowColor='blue'/>
+                    Graphisme <span className='specification'>(Identité visuelle, support publicitaire, social media design...)</span>
+                    <ArrowEffect arrowColor='blue'/>
                     </Link>
                 </li>
                 <li className='solution-element'> 
@@ -52,11 +55,14 @@ const Solution = () => {
                 </li>
                 
             </ul>
+            </Reveal>
             <img className='grey-grid' src={greygrid} alt='grey grid'/>
-            <Link to={'../contact'} className='solution-btn btn'>
-                Échangeons sur votre projet 
-                <ArrowEffect bgcolor='#005570' />
-            </Link>
+            <Reveal overflow={"visible"}>
+                <Link to={'../contact'} className='solution-btn btn'>
+                    Échangeons sur votre projet 
+                    <ArrowEffect bgcolor='#005570' />
+                </Link>
+            </Reveal>
 
         </div>
     )

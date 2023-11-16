@@ -71,6 +71,7 @@
 
         .agence-solution-container 
         {
+           
             position: relative;
             margin: 10vw;
 
@@ -83,6 +84,7 @@
             }
             .solution-list 
             {
+
                 margin-left: -10vw;
                 width: 90vw;
                 padding-left:10vw;
@@ -94,6 +96,7 @@
                     &:nth-child(2), &:nth-child(4), &:nth-child(6)
                     {
                         position:relative;
+                        
                         top: 10vw;
                     }
                     position: relative;
@@ -139,19 +142,18 @@
                     }
                 }
                 .responsive-element 
+                {
+                    position: relative;
+                    br 
                     {
-                        position: relative;
-                        br 
-                        {
-                            display: block;
-
-                        }
-                        span 
-                        {
-                            position: absolute; 
-                            top: 50%;
-                        }
+                        display: block;
                     }
+                    span 
+                    {
+                        position: absolute; 
+                        top: 50%;
+                    }
+                }
 
             }
             .grey-grid
@@ -194,6 +196,7 @@
                 line-height: 4.3vw;
                 .left
                 {
+                    margin-left: 0 !important;
                     max-width: 100%;
                     
                 }

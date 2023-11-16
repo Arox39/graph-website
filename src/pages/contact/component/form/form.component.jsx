@@ -5,6 +5,7 @@ import greyGrid from '../../../../assets/img/BG-PG.svg'
 import blueGrid from '../../../../assets/img/BG-PB.svg'
 import Input from '../../component/input/input.component'
 import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
+import Reveal from '../../../../components/animation/Reveal';
 const defaultFormFields = {
     user_name:'',
     nom:'',
@@ -41,7 +42,10 @@ const Form = () => {
     }
 
     return (
+        <Reveal overflow={"visible"}>
+        
         <form ref={form} onSubmit={sendEmail} className='contact-form'>
+        
             <div className='double-row'>
                 <Input 
                 label='Prénom' 
@@ -62,6 +66,7 @@ const Form = () => {
                 />
 
             </div>
+
             <div className='double-row'>
                 <Input 
                 label='Votre adresse Email' 
@@ -111,6 +116,7 @@ const Form = () => {
             <img className='greyGrid' src={greyGrid} alt='grey grid' />
             <img className='blueGrid' src={blueGrid} alt='blue grid' />
         </form>
+        </Reveal>
     )
 }
 

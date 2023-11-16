@@ -2,24 +2,34 @@ import './sub-nav-header.styles.scss'
 import './sub-nav-header.reponsive.scss'
 import ReactHtmlParser from 'react-html-parser';
 import blueArrow from '../../../assets/img/ArrowBleu.svg'
+import Reveal from '../../animation/Reveal';
 
 const SubNavHeader = ({title, citation, subtitle, subcontent, img}) => {
     return (
         <header className='sub-nav-header'>
-            <h1 className='title'>{ReactHtmlParser(title)}</h1>
-            <p className='citation'>“{ReactHtmlParser(citation)}”</p>
+            <Reveal>
+                <h1 className='title'>{ReactHtmlParser(title)}</h1>
+            </Reveal>
+            <Reveal>
+                <p className='citation'>“{ReactHtmlParser(citation)}”</p>
+            </Reveal>
             
             <img src={img} className='header-img' alt='illustration' />
 
+    
             <div className='sub-content'>
-                <div className='title-container'>
+                <Reveal>
+                    <div className='title-container'>
                     <h1>{subtitle}</h1>
                     <img src={blueArrow} className='blueArrow' alt='blue arrow' />
+                    </div>
+                </Reveal>
+                <Reveal overflow={"visible"}>
+                    <p className='sub-description'>
+                    {ReactHtmlParser(subcontent)}
+                    </p>
+                </Reveal>
                 </div>
-                <p className='sub-description'>
-                {ReactHtmlParser(subcontent)}
-                </p>
-            </div>
         </header>
     )
 }

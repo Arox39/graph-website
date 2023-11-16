@@ -7,16 +7,21 @@ import blueArrow from '../../../assets/img/ArrowBleu.svg'
 
 import blueGrid from '../../../assets/img/BG-PB.svg'
 import greyGrid from '../../../assets/img/BG-PG.svg'
+import Reveal from '../../../components/animation/Reveal'
 
 const GridElement = ({title, blueGridVisible, greyGridVisible, content}) => {
 
     return (
         <div className='grid-element'>
-            <h1 className='element-title'>
-                {title}
-                <span><img className='blueArrow' src={blueArrow} alt='blueArrow'/></span>
-            </h1>
+            <Reveal>
+                <h1 className='element-title'>
+                    {title}
+                    <span><img className='blueArrow' src={blueArrow} alt='blueArrow'/></span>
+                </h1>
+            </Reveal>
+            <Reveal>
             <p className='content'>{content}</p>
+            </Reveal>
             {blueGridVisible && (
                 <img className='blueGrid' src={blueGrid} alt='blue grid' />
             )}
@@ -41,7 +46,6 @@ const Social = () => {
 
 
             <section className="social-grid">
-
                 <GridElement title="Audit de réseaux sociaux" greyGridVisible={true} content="Nous effectuons un audit complet de vos réseaux sociaux existants pour comprendre ce qui fonctionne et ce qui peut être amélioré. Cela nous permet de créer une stratégie de gestion des réseaux sociaux sur mesure pour répondre à vos besoins spécifiques." />
 
                 <GridElement title="Suivi et analyse" content="Nous surveillons et analysons les performances de vos réseaux sociaux pour comprendre ce qui fonctionne et ce qui ne fonctionne pas. Nous ajustons constamment notre stratégie pour maximiser l'engagement et la croissance de vos réseaux sociaux.." />

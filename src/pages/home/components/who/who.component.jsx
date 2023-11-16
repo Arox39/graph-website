@@ -3,7 +3,7 @@ import './who.style.scss'
 
 import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
 
-import social from '../../../../assets/img/Illustration Qui Somme Nous.svg' 
+import social from '../../../../assets/animate_element/Presentation.webm' 
 import Reveal from '../../../../components/animation/Reveal'
 
 const Who = () => {
@@ -25,7 +25,10 @@ const Who = () => {
                 <ArrowEffect arrowColor='blue'/>
                 </Link>
             </Reveal>
-            <img src={social} alt='Graph illustration' className='who-illustration'/>
+            <video className='who-illustration' autoPlay loop muted>
+                <source src={social} type='video/webm'/>
+                votre navigateur ne supporte pas la balise video.
+            </video>
             </div>
 
     )

@@ -1,3 +1,7 @@
+.reveal div:has(.card)
+{
+    display: flex;
+}
 .card 
 {
     position: relative;

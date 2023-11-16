@@ -30,6 +30,7 @@ import Eliott_homeImage from '../../assets/img/projets/Eliott/Eliott_Accueil.png
 import Eliott_second from '../../assets/img/projets/Eliott/Eliott_1.png'
 import Eliott_third from '../../assets/img/projets/Eliott/Eliott_2.png'
 import Eliott_fourth from '../../assets/img/projets/Eliott/Eliott_3.png'
+import Reveal from '../../components/animation/Reveal'
 
 const cards = [
     {
@@ -93,13 +94,19 @@ const Project = () => {
     return (
         <div className="project"> 
             <header className='projectHeader'>
-                <h1 className='title'>
+                <Reveal>
+                    <h1 className='title'>
                     L'expertise de <span className='underline'>l'agence</span> <br/>
                     en <span className='blue'>images.</span>
-                </h1>
-                <p className='citation'>“Explorez notre selection de projets et découvrez comment nous <br/>
-                avons aidé nos clients à atteindre leurs objectifs.”</p>
-                <p className='more'>Cliquez sur les projets pour en savoir plus !</p>
+                    </h1>
+                </Reveal>
+                <Reveal>
+                    <p className='citation'>“Explorez notre selection de projets et découvrez comment nous <br/>
+                    avons aidé nos clients à atteindre leurs objectifs.”</p>
+                </Reveal>
+                <Reveal>
+                    <p className='more'>Cliquez sur les projets pour en savoir plus !</p>
+                </Reveal>
                 <img className='illustration' src={desktop} alt='illustration'/>
             </header>
             <CardContainer cards={cards}/>

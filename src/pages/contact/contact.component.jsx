@@ -7,6 +7,7 @@ import blueBubble from '../../assets/img/bubble.svg'
 import ArrowEffect from '../../components/shared/arrowEffect/arrowEffect.component'
 import Footer from '../../components/footer/footer.component'
 import Form from './component/form/form.component'
+import Reveal from '../../components/animation/Reveal'
 
 const Contact = () => {
   
@@ -14,39 +15,50 @@ const Contact = () => {
     return (
 
         <div className='contact'>
-            <h1 className='contact-title'>Vous souhaitez nous contacter ? </h1>
-            <h2 className='contact-subtitle'>
+            <Reveal>
+                <h1 className='contact-title'>Vous souhaitez nous contacter ? </h1>
+            </Reveal>
+            <Reveal>
+                <h2 className='contact-subtitle'>
                 Veuillez remplir le formulaire ci-dessous 
                 <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
-            </h2>
+                </h2>
+            </Reveal>
 
             <Form />
            
-            <div className='bubble-container'>
+            <div className='bubble-illu-container'>
                 <img className='bubble' src={blueBubble} alt='blue bubble' />
-                <p className='bubble-content'>
+                <Reveal overflow={"visible"} hauteur={20}>
+                    <p className='bubble-content'>
                     Profitez de <br/> <span className='bubble-underline'>votre première</span><br/>
                     <span className='white'> Consultation <br/> gratuite !</span>
-                </p>
+                    </p>
+                </Reveal>
             </div>
 
             <div className='grey-background'></div>
 
             <section className='btn-section'>
-                <Link  to="../project" className='btn'>
-                    Découvrez nos projets 
-                    <ArrowEffect bgcolor="#FaF9F2" arrowColor={'black'} />
-                </Link>
-                <Link to="../../#solution" className='btn' >
-                    Découvrez nos solutions
-                    <ArrowEffect bgcolor="#FaF9F2" arrowColor={'black'}/>
-                </Link>
-                <Link to="../agence" className='btn'>
-                    Découvrez l'agence 
-                    <ArrowEffect bgcolor="#FaF9F2" arrowColor={'black'}/>
+                <Reveal overflow={"visible"}>
+                    <Link  to="../project" className='btn'>
+                        Découvrez nos projets 
+                        <ArrowEffect bgcolor="#FaF9F2" arrowColor={'black'} />
                     </Link>
+                </Reveal>
+                <Reveal overflow={"visible"}>
+                    <Link to="../../#solution" className='btn' >
+                        Découvrez nos solutions
+                        <ArrowEffect bgcolor="#FaF9F2" arrowColor={'black'}/>
+                    </Link>
+                </Reveal>
+                <Reveal overflow={"visible"}>
+                    <Link to="../agence" className='btn'>
+                        Découvrez l'agence 
+                        <ArrowEffect bgcolor="#FaF9F2" arrowColor={'black'}/>
+                    </Link>
+                </Reveal>
                 <img className='blueGrid' src={blueGrid} alt='blue grid' />
-
             </section>
 
 

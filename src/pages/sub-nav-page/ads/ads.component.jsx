@@ -7,6 +7,7 @@ import Footer from '../../../components/footer/footer.component'
 import blueArrow from '../../../assets/img/ArrowBleu.svg'
 import blueGrid from '../../../assets/img/BG-PB.svg'
 import greyGrid from '../../../assets/img/BG-PG.svg'
+import Reveal from '../../../components/animation/Reveal'
 
 const Ads = () => {
     return (
@@ -20,39 +21,55 @@ const Ads = () => {
                 img={headerImg}
             />
             <section className='campagne'>
+                <Reveal>
                     <h1 className='simple-title'>
                         Campagnes Performantes
                         <span><img className='blueArrow' src={blueArrow} alt='blueArrow'/></span>
                     </h1>
+                </Reveal>
+                <Reveal>
                     <p className='simple-content'>Des <strong>campagnes publicitaires performantes</strong> sont essentielles pour obtenir des résultats tangibles. Nous optimisons constamment vos campagnes pour <strong>maximiser votre retour sur investissement.</strong> Grâce à des stratégies adaptées à votre entreprise, nous vous aidons à obtenir <strong> des résultats concrets,</strong> que ce soit en termes de ventes, de prospects ou de notoriété.
                     </p>
-                    <img className="blueGrid" src={blueGrid} alt='blueGrid' />
+                </Reveal>
+                <img className="blueGrid" src={blueGrid} alt='blueGrid' />
             </section>
             <section className='ads-double'>
-            <div className='double-element'>
-                <h1 className='double-title'>
-                    Diversité des Plateformes Publicitaires
-                    <span><img className='blueArrow' src={blueArrow} alt='blueArrow'/></span>
-                </h1>
-                <p className='double-content'>Nous maîtrisons la publicité en ligne sur diverses plateformes, de Google Ads à Facebook Ads en passant par TikTok et Instagram. En utilisant les plateformes les plus appropriées pour votre entreprise, nous élargissons votre portée et maximisons votre visibilité sur le web.
-                </p>
-            </div>
-            <div className='double-element'>
-                <h1 className='double-title'>
-                    Suivi et Rapports
-                    <span><img className='blueArrow' src={blueArrow} alt='blueArrow'/></span>
-                </h1>
-                <p className='double-content'>La transparence est essentielle. Nous fournissons des rapports détaillés sur les performances de vos annonces pour que vous puissiez suivre les résultats de près. Comprenez ce qui fonctionne le mieux et prenez des décisions éclairées pour optimiser vos campagnes publicitaires.
-                </p>
-            </div>
+                <div className='double-element'>
+                    <Reveal>
+                        <h1 className='double-title'>
+                            Diversité des Plateformes Publicitaires
+                            <span><img className='blueArrow' src={blueArrow} alt='blueArrow'/></span>
+                        </h1>
+                    </Reveal>
+                    <Reveal overflow={"visible"}>
+                        <p className='double-content'>Nous maîtrisons la publicité en ligne sur diverses plateformes, de Google Ads à Facebook Ads en passant par TikTok et Instagram. En utilisant les plateformes les plus appropriées pour votre entreprise, nous élargissons votre portée et maximisons votre visibilité sur le web.
+                        </p>
+                    </Reveal>
+                </div>
+                <div className='double-element'>
+                    <Reveal>
+                        <h1 className='double-title'>
+                            Suivi et Rapports
+                            <span><img className='blueArrow' src={blueArrow} alt='blueArrow'/></span>
+                        </h1>
+                    </Reveal>
+                    <Reveal overflow={"visible"}>
+                        <p className='double-content'>La transparence est essentielle. Nous fournissons des rapports détaillés sur les performances de vos annonces pour que vous puissiez suivre les résultats de près. Comprenez ce qui fonctionne le mieux et prenez des décisions éclairées pour optimiser vos campagnes publicitaires.
+                        </p>
+                    </Reveal>
+                </div>
             </section>
             <section className='strategie'>
-                <h1 className='simple-title'>
-                    Personnalisation de Votre Stratégie
-                    <span><img className='blueArrow' src={blueArrow} alt='blueArrow'/></span>
-                </h1>
-                <p className='simple-content'>Chaque entreprise est unique, c'est pourquoi nous personnalisons votre stratégie publicitaire en fonction de vos besoins spécifiques. Nous comprenons vos objectifs, votre secteur d'activité et votre public cible pour créer des campagnes publicitaires adaptées à votre entreprise.
-                </p>
+                <Reveal>
+                    <h1 className='simple-title'>
+                        Personnalisation de Votre Stratégie
+                        <span><img className='blueArrow' src={blueArrow} alt='blueArrow'/></span>
+                    </h1>
+                </Reveal>
+                <Reveal overflow={"visible"}>
+                    <p className='simple-content'>Chaque entreprise est unique, c'est pourquoi nous personnalisons votre stratégie publicitaire en fonction de vos besoins spécifiques. Nous comprenons vos objectifs, votre secteur d'activité et votre public cible pour créer des campagnes publicitaires adaptées à votre entreprise.
+                    </p>
+                </Reveal>
                 <img className='greyGrid' src={greyGrid} alt='greyGrid'/>
                 <img className='greyGrid' src={greyGrid} alt='greyGrid'/>
             </section>

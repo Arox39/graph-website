@@ -1,7 +1,6 @@
 .header 
 {
     margin-left: 10.5vw;
-    margin-top: 12vw;
     .presentation 
     {
         position: relative;
@@ -90,8 +89,12 @@
 
     .why-content
     {
+        .reveal 
+        {
+            display: inline;
+            width: fit-content;
+        }
         display: flex;
-        justify-content: space-around;
         font-size: 1.3vw;
         margin: 3vw 2.5vw;
         text-align: justify;
@@ -103,22 +106,23 @@
         }
         .left
         {
-            max-width: 36.6%;
+            margin-left:5vw;
+            max-width:73%;
             
         }
         .right
         {
-            max-width: 38%;
-
+            margin-left: 2vw;
             ul 
             {
-                margin: 0 2vw;
+                margin: 0vw 3vw;
 
                 li 
                 {
                     list-style-type: disc;
                     color: #018EBB;
                     margin-top:2vw ;
+                    max-width: 80%;
                     span 
                     {
                         color: #000018;

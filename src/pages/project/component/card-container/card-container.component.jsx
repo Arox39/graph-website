@@ -2,6 +2,7 @@ import { Fragment, useEffect, useState } from 'react'
 import Card from '../card/card.component'
 import './card-container.style.scss'
 import Overlay from '../overlay/overlay.component';
+import Reveal from '../../../../components/animation/Reveal';
 
 
 const CardContainer = ({cards}) => { 
@@ -48,8 +49,12 @@ const CardContainer = ({cards}) => {
     return (
         <div className='example-container'>
             <div className='sort-bar'>
-                <div className='sort-element active' id='all'>Tout</div>
-                <div className='sort-element' id='graphisme'>Graphisme</div>
+                <Reveal overflow={"visible"} hauteur={20} delay={0.1}>
+                    <div className='sort-element active' id='all'>Tout</div>
+                </Reveal>
+                <Reveal overflow={"visible"} hauteur={20} delay={0.2}>
+                    <div className='sort-element' id='graphisme'>Graphisme</div>
+                </Reveal>
             </div>
             <div className='card-container'>
                 {
@@ -64,7 +69,7 @@ const CardContainer = ({cards}) => {
                                     title={card.title} 
                                     image={card.img} 
                                     description={card.description} 
-        
+                                    
                                     />
                                     <Overlay 
                                     key={`overlay-${card.id}`}

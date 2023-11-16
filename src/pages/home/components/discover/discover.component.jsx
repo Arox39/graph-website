@@ -12,14 +12,13 @@ const Discover = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     const handleClick = () => {
-        console.log('yes');
         const solutionElement = document.getElementById('solution');
         solutionElement.scrollIntoView({ behavior: 'smooth' });
     }
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 1000);
+            setIsMobile(window.innerWidth <= 768);
         };
 
         window.addEventListener('resize', handleResize);
@@ -33,14 +32,18 @@ const Discover = () => {
         <Fragment>
         {isMobile ? (
             <div className='mobile-discover-container'>
-            <Link  to="../project" className='btn'>
+            <Reveal overflow={"visible"} hauteur={30}>
+                <Link  to="../project" className='btn'>
                 Découvrez nos projets 
                 <ArrowEffect bgcolor="#005070" arrowColor={'white'} />
-            </Link>
-            <Link to="../agence" className='btn'>
+                </Link>
+            </Reveal>
+            <Reveal overflow={"visible"} hauteur={30}>
+                <Link to="../agence" className='btn'>
                 Nous contactez
                 <ArrowEffect bgcolor="#005070" arrowColor={'white'}/>
-            </Link>
+                </Link>
+            </Reveal>
             </div>
         ):(
             <Reveal overflow={"visible"}>

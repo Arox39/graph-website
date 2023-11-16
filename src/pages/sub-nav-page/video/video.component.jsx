@@ -6,6 +6,7 @@ import blueArrow from '../../../assets/img/ArrowBleu.svg'
 import blueGrid from '../../../assets/img/BG-PB.svg'
 import greyGrid from '../../../assets/img/BG-PG.svg'
 import Footer from '../../../components/footer/footer.component'
+import Reveal from '../../../components/animation/Reveal'
 
 const Video = () => {
     return (
@@ -20,31 +21,45 @@ const Video = () => {
             />
             <section className='sub-part'>
                 <div className='social-network'>
-                    <h1 className='sub-title'>
-                        TikTok
-                        <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
-                    </h1>
-                    <p className='content'>
-                        TikTok est devenu l'un des réseaux sociaux les plus <strong> populaires au monde,</strong> avec plusieurs milliards d'utilisateurs actifs mensuels. Grâce à <strong>notre expertise</strong> en création de contenu vidéo, nous pouvons vous aider à exploiter cette plateforme pour atteindre un public jeune et engagé. Que vous cherchiez à lancer une campagne publicitaire ou simplement à créer du contenu de marque,<strong> nous vous aiderons à réussir sur TikTok.</strong>
-                    </p>
+                    <Reveal>
+                        <h1 className='sub-title'>
+                            TikTok
+                            <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
+                        </h1>
+                    </Reveal>
+                    <Reveal>
+                        <p className='content'>
+                            TikTok est devenu l'un des réseaux sociaux les plus <strong> populaires au monde,</strong> avec plusieurs milliards d'utilisateurs actifs mensuels. Grâce à <strong>notre expertise</strong> en création de contenu vidéo, nous pouvons vous aider à exploiter cette plateforme pour atteindre un public jeune et engagé. Que vous cherchiez à lancer une campagne publicitaire ou simplement à créer du contenu de marque,<strong> nous vous aiderons à réussir sur TikTok.</strong>
+                        </p>
+                    </Reveal>
                 </div>
                 <div className='social-network'>
-                    <h1 className='sub-title'>
-                        Instagram
-                        <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
-                    </h1>
-                    <p className='content'>
-                        Instagram Reels est une fonctionnalité qui permet aux utilisateurs de créer et de partager des vidéos <strong>courtes et engageantes</strong> sur Instagram. Nous pouvons vous aidons à atteindre votre public cible et créer du <strong>contenu de marque qui attire l'attention.</strong> Que vous cherchiez à lancer une campagne publicitaire ou simplement à créer du contenu pour votre page Instagram,<strong>nous vous aiderons à réussir avec Instagram Reels.</strong>
-                    </p>
+                    <Reveal delay={0.2}>
+                        <h1 className='sub-title'>
+                            Instagram
+                            <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
+                        </h1>
+                    </Reveal>
+                    <Reveal delay={0.2}>
+                        <p className='content'>
+                            Instagram Reels est une fonctionnalité qui permet aux utilisateurs de créer et de partager des vidéos <strong>courtes et engageantes</strong> sur Instagram. Nous pouvons vous aidons à atteindre votre public cible et créer du <strong>contenu de marque qui attire l'attention.</strong> Que vous cherchiez à lancer une campagne publicitaire ou simplement à créer du contenu pour votre page Instagram,<strong>nous vous aiderons à réussir avec Instagram Reels.</strong>
+                        </p>
+                    </Reveal>
+
                 </div>
                 <div className='social-network'>
-                    <h1 className='sub-title'>
-                        Youtube
-                        <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
-                    </h1>
-                    <p className='content'>
-                        YouTube est l’un des plus <strong>grand moteur de recherche</strong> au monde, avec plusieurs milliards d'utilisateurs actifs mensuels. Nous vous aidons à tirer parti de cette plateforme pour atteindre un public plus large et augmenter <strong> votre visibilité en ligne.</strong> Que vous cherchiez à lancer une chaîne YouTube ou à créer des vidéos de marque, <strong>nous vous aiderons ons à réussir sur YouTube.</strong>
-                    </p>
+                    <Reveal delay={0.3}>
+                        <h1 className='sub-title'>
+                            Youtube
+                            <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
+                        </h1>
+                    </Reveal>
+                    <Reveal delay={0.3}>
+                        <p className='content'>
+                            YouTube est l’un des plus <strong>grand moteur de recherche</strong> au monde, avec plusieurs milliards d'utilisateurs actifs mensuels. Nous vous aidons à tirer parti de cette plateforme pour atteindre un public plus large et augmenter <strong> votre visibilité en ligne.</strong> Que vous cherchiez à lancer une chaîne YouTube ou à créer des vidéos de marque, <strong>nous vous aiderons ons à réussir sur YouTube.</strong>
+                        </p>
+                    </Reveal>
+
                 </div>
 
                 <img src={greyGrid} className='greyGrid' alt='grey grid' />
@@ -52,9 +67,15 @@ const Video = () => {
 
 
             <section className='description-container'>
-                <h2>La vidéo marketing, c’est utiliser la vidéo pour atteindre vos objectifs commerciaux.
-                <span><img className='blueArrow responsive-arrow' src={blueArrow} alt='blue arrow'/></span></h2>
-                <p>Qu'il s'agisse d'augmenter les ventes, de générer des leads ou d'accroître la notoriété de votre marque, notre équipe de professionnels est là pour vous aider à élaborer une stratégie de vidéo marketing efficace et adaptée à vos besoins spécifiques.</p>
+                <Reveal>
+                    <h2>
+                        La vidéo marketing, c’est utiliser la vidéo pour atteindre vos objectifs commerciaux.
+                        <span><img className='blueArrow responsive-arrow' src={blueArrow} alt='blue arrow'/></span>
+                    </h2>
+                </Reveal>
+                <Reveal>
+                    <p>Qu'il s'agisse d'augmenter les ventes, de générer des leads ou d'accroître la notoriété de votre marque, notre équipe de professionnels est là pour vous aider à élaborer une stratégie de vidéo marketing efficace et adaptée à vos besoins spécifiques.</p>
+                </Reveal>
                 <img className='blueGrid' src={blueGrid} alt='blue grid'/>
             </section>
 

@@ -7,6 +7,7 @@ import blueGrid from '../../../assets/img/BG-PB.svg'
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import headerImg from '../../../assets/img/Illustration Graphisme.svg'
 import Footer from '../../../components/footer/footer.component'
+import Reveal from '../../../components/animation/Reveal'
 
 
 const Graphisme = () => {
@@ -23,35 +24,48 @@ const Graphisme = () => {
 
 
             <section className='sub-part'>
-                <div className='title-container'>
-                    <h1>Supports de communication</h1>
-                    <img src={blueArrow} className='blueArrow' alt='blueArrow'/>
-                </div>
-                <p className='content'>
-                    Nous réalisons tous les supports de communication nécessaires pour votre entreprise, tels que les cartes de visite, les flyers, les brochures et les affiches. Nous concevons des supports de qualité professionnelle qui <strong>renforcent l'image de votre entreprise</strong> et vous permettent de <strong>communiquer efficacement</strong> avec votre public.
-                </p>
+                <Reveal>
+                    <div className='title-container'>
+                        <h1>Supports de communication</h1>
+                        <img src={blueArrow} className='blueArrow' alt='blueArrow'/>
+                    </div>
+                </Reveal>
+                <Reveal>
+                    <p className='content'>
+                        Nous réalisons tous les supports de communication nécessaires pour votre entreprise, tels que les cartes de visite, les flyers, les brochures et les affiches. Nous concevons des supports de qualité professionnelle qui <strong>renforcent l'image de votre entreprise</strong> et vous permettent de <strong>communiquer efficacement</strong> avec votre public.
+                    </p>
+                </Reveal>
                 <img className='grey-grid' src={greyGrid} alt='grey grid'/>
             </section>
             
             <section className='description-container'>
                 <div className='left'>
-                    <div className='title-container'>
-                        <h1>Design Web</h1>
-                        <img src={blueArrow} className='blueArrow' alt='blueArrow'/>
-                    </div>
-                    <p className='description'>
-                    Nous proposons des services de design web afin d'améliorer l'apparence de votre site web. Nous créons des designs modernes, épurés et <strong>adaptés à votre identité</strong> visuelle pour une expérience utilisateur optimale. Nous pouvons également concevoir des pages de destination (landing pages), des maquettes de site web ainsi que des bannières publicitaires.
-                    </p>
-
+                        <Reveal overflow={"visible"}>
+                            <div className='title-container'>
+                                <h1>Design Web</h1>
+                                <img src={blueArrow} className='blueArrow' alt='blueArrow'/>
+                            </div>
+                        </Reveal>
+                        <Reveal>
+                            <p className='description'>
+                                Nous proposons des services de design web afin d'améliorer l'apparence de votre site web. Nous créons des designs modernes, épurés et <strong>adaptés à votre identité</strong> visuelle pour une expérience utilisateur optimale. Nous pouvons également concevoir des pages de destination (landing pages), des maquettes de site web ainsi que des bannières publicitaires.
+                            </p>
+                        </Reveal>
+                        
                 </div>
+
                 <div className='right'>
+                    <Reveal overflow={"visible"} delay={0.2}>
                     <div className='title-container'>
                         <h1>Retouche d'images</h1>
                         <img src={blueArrow} className='blueArrow' alt='blueArrow'/>
                     </div>
-                    <p className='description'>
-                        Nous proposons également des services de retouche d'images pour améliorer la qualité de vos visuels existants ou pour les adapter à <strong>vos besoins.</strong> Que ce soit pour des photos de produits, des portraits professionnels ou des images de votre entreprise, nous pouvons améliorer leur qualité pour une présentation professionnelle.
-                    </p>
+                    </Reveal>
+                    <Reveal delay={0.2}>
+                        <p className='description'>
+                            Nous proposons également des services de retouche d'images pour améliorer la qualité de vos visuels existants ou pour les adapter à <strong>vos besoins.</strong> Que ce soit pour des photos de produits, des portraits professionnels ou des images de votre entreprise, nous pouvons améliorer leur qualité pour une présentation professionnelle.
+                        </p>
+                    </Reveal>
                 </div>
                 <img className='blueGrid' src={blueGrid} alt='blue grid'/>
             </section>

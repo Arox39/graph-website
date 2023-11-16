@@ -6,6 +6,7 @@ import arrow from '../../../../assets/img/Arrow.svg'
 import {useEffect, useRef} from 'react'
 import arrow2Reverse from '../../../../assets/img/Arrow2-reverse.svg'
 import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
+import Reveal from '../../../../components/animation/Reveal'
 
 const Overlay = ({id, description, homeImage, presentationImage, thirdImage, fourthImage, color, text_color}) => {
 
@@ -46,10 +47,14 @@ const Overlay = ({id, description, homeImage, presentationImage, thirdImage, fou
                         <img className='image-part' src={presentationImage} alt='presentation illustration'/> 
                         <div className='text-part' >
                         <p > 
-                            {ReactHtmlParser(description)}
+                            <Reveal>
+                                {ReactHtmlParser(description)}
+                            </Reveal>
                             <br/>
                             <br/>
-                            <span> GraphiLeaf, Cultivons ensemble votre image </span>
+                            <Reveal>
+                                <span> GraphiLeaf, Cultivons ensemble votre image </span>
+                            </Reveal>
                         </p>
                         </div>
                     </section>
