@@ -6,6 +6,7 @@ import logo from '../../../assets/img/Logo_G_only.svg'
 import arrowBleu from '../../../assets/img/ArrowBleu.svg'
 import { Link } from 'react-router-dom'
 import Reveal from '../../animation/Reveal'
+import ArrowEffect from '../../shared/arrowEffect/arrowEffect.component'
 const NavMobile = () => {
     const location = useLocation()
     useEffect(() => {
@@ -94,9 +95,10 @@ const NavMobile = () => {
                     <li className='nav-link'>
                         <Link to={'agence'}>Notre agence</Link>
                     </li>
-                    <li className='nav-link'>
-                        <Link to={'contact'}>Nous contacter</Link>
-                    </li>
+                    <Link to={'../../contact'} className='nav-link btn'>
+                    Nous contacter
+                    <ArrowEffect bgcolor="#000018" />
+                    </Link>
                     
                     
                     

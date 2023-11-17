@@ -113,7 +113,31 @@
       margin-top: 14vw;
       cursor: pointer;
       font-size: 7vw;
-
+    
+    }
+    .btn 
+    {
+      padding: 1.5vw 0 1.5vw 5vw;
+      border-radius:15vw;
+      background-color: white;
+      font-weight:500;
+      color: #000018;
+      display: flex ;
+      align-items: center;
+      font-size: 7vw;
+      .arrow-effect 
+      {
+          background-color: #000018;
+          height:9vw;
+          width: 9vw;
+          display:inline-block;
+          margin-left: 3vw;
+          margin-right: 1.25vw;
+          img 
+          {
+              height: 4vw;
+          }
+      }  
     }
     .declencheur
     {
