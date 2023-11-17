@@ -3,7 +3,7 @@ import './seo.responsive.scss'
 
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import Footer from '../../../components/footer/footer.component'
-import headerImg from '../../../assets/img/Illustration SEO.svg'
+import headerImg from '../../../assets/animate_element/seo.webm'
 import blueArrow from '../../../assets/img/ArrowBleu.svg'
 import greyGrid from '../../../assets/img/BG-PG.svg'
 import blueGrid from '../../../assets/img/BG-PB.svg'

@@ -14,14 +14,15 @@
         line-height: 2vw;
         box-shadow: -0.13vw 0.26vw 0.5vw rgba(0, 0, 24, 0.15);
     }
-    .agence-illustration 
-    {
-        position: absolute;
-        height: 44vw;
-        top: 13vw;
-        z-index: 1;
-        right: 2.5vw;
-    }
+}
+.agence-illustration 
+{
+    position: absolute;
+    height:40vw;
+    top: 15vw;
+
+    z-index: 1;
+    right:5vw;
 }
 
 .team 

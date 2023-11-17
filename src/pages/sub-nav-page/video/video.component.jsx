@@ -1,7 +1,7 @@
 import './video.style.scss'
 import './video.responsive.scss'
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
-import headerImg from '../../../assets/img/Illustration Vidéo.svg'
+import headerImg from '../../../assets/animate_element/vidéo.webm'
 import blueArrow from '../../../assets/img/ArrowBleu.svg'
 import blueGrid from '../../../assets/img/BG-PB.svg'
 import greyGrid from '../../../assets/img/BG-PG.svg'

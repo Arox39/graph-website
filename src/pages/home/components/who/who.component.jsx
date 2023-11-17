@@ -3,7 +3,7 @@ import './who.style.scss'
 
 import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
 
-import social from '../../../../assets/animate_element/Presentation.webm' 
+import social from '../../../../assets/animate_element/presentation.webm' 
 import Reveal from '../../../../components/animation/Reveal'
 
 const Who = () => {

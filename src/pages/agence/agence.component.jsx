@@ -1,6 +1,6 @@
 import './agence.style.scss'
 import './agence.responsive.scss'
-import illustration from '../../assets/img/Illustration Nuage.svg'
+import nuage from '../../assets/animate_element/nuage.webm'
 import bluegrid from '../../assets/img/BG-PB.svg'
 import Solution from './components/solution/solution.component'
 import Footer from '../../components/footer/footer.component'
@@ -17,8 +17,11 @@ const Agence = () => {
                     <div className='presentation'>GraphiLeaf est une agence de communication et de marketing digital qui propose une gamme complète de services pour aider les petites entreprises, les structures et les indépendants à maximiser leur présence en ligne.</div>
                 </Reveal>
 
-                <img className='agence-illustration' src={illustration} alt='illustration'/>
-            </header>
+                </header>
+            <video className='agence-illustration' autoPlay muted>
+                <source src={nuage} type='video/webm'/>
+                votre navigateur ne supporte pas la balise video.
+            </video>
             <div className='team'>
                 <Reveal>
                     <h1 className='title'>Une équipe <span className='underline'>complète</span> <br/>

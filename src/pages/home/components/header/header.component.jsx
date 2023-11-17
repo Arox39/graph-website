@@ -1,6 +1,6 @@
 
 import './header.styles.scss'
-import headerImage from "../../../../assets/animate_element/Composition_1.webm"
+import headerImage from "../../../../assets/animate_element/phone.webm"
 import { Link } from 'react-router-dom'
 import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
 import Reveal from '../../../../components/animation/Reveal.jsx'

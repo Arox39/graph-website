@@ -1,8 +1,8 @@
 import './project.style.scss'
 import './project.responsive.scss'
-import { useEffect, useState } from 'react'
+
 import Footer from '../../components/footer/footer.component'
-import desktop from '../../assets/img/Illustration Projet.svg'
+import desktop from '../../assets/animate_element/projet.webm'
 import CardContainer from './component/card-container/card-container.component'
 import Allard from '../../assets/img/projets/Allard/Allard_Page-Projet.png'
 import Casarella from '../../assets/img/projets/Casarella/Casarella_Page-Projet.png'
@@ -107,7 +107,10 @@ const Project = () => {
                 <Reveal>
                     <p className='more'>Cliquez sur les projets pour en savoir plus !</p>
                 </Reveal>
-                <img className='illustration' src={desktop} alt='illustration'/>
+                <video className='illustration' autoPlay muted>
+                    <source src={desktop} type='video/webm'/>
+                    votre navigateur ne supporte pas la balise video.
+                </video>
             </header>
             <CardContainer cards={cards}/>
             <Footer/>

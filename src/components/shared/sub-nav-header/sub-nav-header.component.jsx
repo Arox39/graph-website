@@ -14,7 +14,10 @@ const SubNavHeader = ({title, citation, subtitle, subcontent, img}) => {
                 <p className='citation'>“{ReactHtmlParser(citation)}”</p>
             </Reveal>
             
-            <img src={img} className='header-img' alt='illustration' />
+            <video className='header-img' autoPlay muted>
+                <source src={img} type='video/webm'/>
+                votre navigateur ne supporte pas la balise video.
+            </video>
 
     
             <div className='sub-content'>

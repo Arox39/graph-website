@@ -1,7 +1,7 @@
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import './social.style.scss'
 import './social.responsive.scss'
-import headerImg from '../../../assets/img/Illustration Social.svg'
+import headerImg from '../../../assets/animate_element/social.webm'
 import Footer from '../../../components/footer/footer.component'
 import blueArrow from '../../../assets/img/ArrowBleu.svg'
 
@@ -20,7 +20,7 @@ const GridElement = ({title, blueGridVisible, greyGridVisible, content}) => {
                 </h1>
             </Reveal>
             <Reveal>
-            <p className='content'>{content}</p>
+                <p className='content'>{content}</p>
             </Reveal>
             {blueGridVisible && (
                 <img className='blueGrid' src={blueGrid} alt='blue grid' />

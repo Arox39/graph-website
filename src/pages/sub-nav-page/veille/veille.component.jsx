@@ -1,5 +1,5 @@
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
-import headerImg from '../../../assets/img/Illustration Veille.svg'
+import headerImg from '../../../assets/animate_element/veille.webm'
 import SubContent from './subcontent/subcontent.component'
 import Footer from '../../../components/footer/footer.component'
 const Veille = () => {

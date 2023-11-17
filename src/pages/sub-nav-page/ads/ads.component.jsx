@@ -1,7 +1,7 @@
 import './ads.style.scss'
 import './ads.responsive.scss'
 
-import headerImg from '../../../assets/img/Illustration Ads.svg'
+import headerImg from '../../../assets/animate_element/ads.webm'
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import Footer from '../../../components/footer/footer.component'
 import blueArrow from '../../../assets/img/ArrowBleu.svg'

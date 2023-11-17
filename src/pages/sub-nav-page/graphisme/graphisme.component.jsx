@@ -5,7 +5,7 @@ import greyGrid from '../../../assets/img/BG-PG.svg'
 import blueGrid from '../../../assets/img/BG-PB.svg'
 
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
-import headerImg from '../../../assets/img/Illustration Graphisme.svg'
+import headerImg from '../../../assets/animate_element/graphisme.webm'
 import Footer from '../../../components/footer/footer.component'
 import Reveal from '../../../components/animation/Reveal'
 
