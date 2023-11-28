@@ -1,7 +1,9 @@
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
-import headerImg from '../../../assets/animate_element/veille.webm'
+
 import SubContent from './subcontent/subcontent.component'
+
 import Footer from '../../../components/footer/footer.component'
+import headerImg from '../../../assets/animate_element/veille.webm'
 const Veille = () => {
     return (
         <div>
@@ -18,5 +20,4 @@ const Veille = () => {
     </div>
     )
 }
-
 export default Veille

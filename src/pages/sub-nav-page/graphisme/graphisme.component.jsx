@@ -1,14 +1,14 @@
 import './graphisme.style.scss'
 import './graphisme.responsive.scss'
-import blueArrow from '../../../assets/img/ArrowBleu.svg'
-import greyGrid from '../../../assets/img/BG-PG.svg'
-import blueGrid from '../../../assets/img/BG-PB.svg'
 
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import headerImg from '../../../assets/animate_element/graphisme.webm'
 import Footer from '../../../components/footer/footer.component'
-import Reveal from '../../../components/animation/Reveal'
+import Reveal from '../../../components/animation/Reveal.component'
 
+import blueArrow from '../../../assets/img/ArrowBleu.svg'
+import greyGrid from '../../../assets/img/BG-PG.svg'
+import blueGrid from '../../../assets/img/BG-PB.svg'
 
 const Graphisme = () => {
     return (
@@ -21,8 +21,6 @@ const Graphisme = () => {
             subcontent="L'identité visuelle représentent votre entreprise, le logo, les couleurs, les typographies et les icônes. Chez GraphiLeaf, nous créons une <strong>identité visuelle unique</strong> pour votre entreprise qui vous permettra de vous démarquer de la concurrence et de renforcer la reconnaissance de votre marque."
             img={headerImg}
             />
-
-
             <section className='sub-part'>
                 <Reveal>
                     <div className='title-container'>
@@ -50,16 +48,14 @@ const Graphisme = () => {
                             <p className='description'>
                                 Nous proposons des services de design web afin d'améliorer l'apparence de votre site web. Nous créons des designs modernes, épurés et <strong>adaptés à votre identité</strong> visuelle pour une expérience utilisateur optimale. Nous pouvons également concevoir des pages de destination (landing pages), des maquettes de site web ainsi que des bannières publicitaires.
                             </p>
-                        </Reveal>
-                        
+                        </Reveal>  
                 </div>
-
                 <div className='right'>
                     <Reveal overflow={"visible"} delay={0.2}>
-                    <div className='title-container'>
-                        <h1>Retouche d'images</h1>
-                        <img src={blueArrow} className='blueArrow' alt='blueArrow'/>
-                    </div>
+                        <div className='title-container'>
+                            <h1>Retouche d'images</h1>
+                            <img src={blueArrow} className='blueArrow' alt='blueArrow'/>
+                        </div>
                     </Reveal>
                     <Reveal delay={0.2}>
                         <p className='description'>
@@ -73,5 +69,4 @@ const Graphisme = () => {
         </div>
     )
 }
-
 export default Graphisme

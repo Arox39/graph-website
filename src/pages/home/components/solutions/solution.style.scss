@@ -2,34 +2,32 @@
 {
     position: relative;
     top: -6.5vw;
-    font-size: 1.3vw;
-    z-index: -1;
     margin: 0 !important;
-
-   
+    z-index: -1;
+    font-size: 1.3vw;
     .top-container 
     {
-        background-color: #e9e8e3;
-        transform: translateY(-0.00001px);
-        padding-top: 16.25vw;
-        z-index: -10000;
-        padding-left: 9.75vw;
+        padding:16.25vw 0 0 9.75vw;
+    
         height: 26.75vw;
         border-radius: 4.5vw;
+
+        background-color: #e9e8e3;
         .solution-title
         {
-            font-weight: 700;
             font-size: 2.6vw;
+            font-weight: 700;
         }
         .solution-subtitle 
         {
-            color: #018EBB;
             margin: 1vw 0 1.6vw 0;
             font-weight: 700;
+            color: #018EBB;
         }
         .solution-citation
         {
             max-width: 50%;
+
             line-height: 2vw;
             font-style: italic;
         }
@@ -37,12 +35,13 @@
 }
 .bubble-container 
 {
-    position: relative;
-    top: -15vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
+    position: relative;
+    top: -15vw;
     .reveal div
     {
         display: flex;
@@ -55,77 +54,85 @@
     {
         position: absolute;
         right: -1.75vw;
-        height: 4.8vw;
         top: -2.4vw;
+        
         z-index: -1;
+        height: 4.8vw;
     }
-    
+
     .bubble
     {
         position: relative;
+        
         margin: 1.6vw 3.25vw;
-        background-color: #FAF9F2;
-        border-radius: 2.34vw;
-        box-shadow: 0px 0.25vw 0.5vw 0px #00001825;
+        
         height: 12vw;
         width: 21.5vw;
-        transition: transform 0.3s ease-in-out;
+        border-radius: 2.34vw;
+        box-shadow: 0px 0.25vw 0.5vw 0px #00001825;
         
+        transition: transform 0.3s ease-in-out;
+        background-color: #FAF9F2;
         .bubble-link 
         {
             display: block;
-            border-radius: 2.3vw;
+            
             height: 12vw;
             width: 100%;
+            border-radius: 2.3vw;
             background-color: inherit;
-            height: 12vw;
         }
         .bubble-title
         {
-            position: relative;
             display: inline-block;
+            position: relative;
+            
+            margin: 2.6vw 0 2vw 2.25vw;
+            
+            max-width: 50%;
             font-size: 1.56vw;
             font-weight: 600;
-            margin: 2.6vw 0 2vw 2.25vw;
-            max-width: 50%;
         }
         .bubble-title::after 
         {
             content: "";
+            position: absolute;
+            bottom: -0.65vw;
+            left: 0;
+
             height: 0.26vw;
             width: 100%;
-            left: 0;
-            bottom: -0.65vw;
-            position: absolute;
             background-color:#018EBB;
         }
         .bubble-content
         {
-            line-height: 1.2vw;
-            font-size: 0.8vw;
             margin-left: 2.25vw;
             max-width: 75%;
+            
+            line-height: 1.2vw;
+            font-size: 0.8vw;
         }
-    
         .arrow-effect
         {
             position: absolute;
-            background-color: #000018;
+            right: 1.3vw;
+            top: 1.3vw;
+
             height: 2.8vw;
             width:2.8vw;
             border-radius: 100%;
-            right: 1.3vw;
-            top: 1.3vw;
+            
+            background-color: #000018;
             transition: all 0.3s ease-in-out;
             .arrow-effect img
             {
                 position: absolute;
                 top: 50%;
                 left: 53%;
+            
                 transform: translate(-50%, -50%);
                 transition: all 0.3s ease-in-out;
             }
-            
         }
         &:hover
         {

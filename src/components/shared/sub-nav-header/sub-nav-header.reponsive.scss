@@ -4,11 +4,11 @@
         margin-left: 0;
         .title
         {
-            margin-left: 10vw;
+            margin: 13vw 0 0 10vw;
+            
+            line-height: 9vw;
             font-size: 5vw;
             text-align: left;
-            line-height: 9vw;
-            margin-top: 7vh;
             span:first-of-type
             {
                 border-width: 0.75vw !important;
@@ -16,12 +16,12 @@
         }
         .citation 
         {
-            margin: 3.5vh auto !important;
-            font-size: 3vw !important;
-            text-align: left;
-            line-height: 5vw;
-            margin-left: 10vw!important;
+            margin:7vw auto 7vw 10vw!important;
+
             max-width: 85% !important;
+            line-height: 5vw;
+            text-align: left;
+            font-size: 3vw !important;
             br 
             {
                 display: none !important;
@@ -31,23 +31,21 @@
         {
             display: none !important;
         }
-        
-    .sub-content
-    {
-        max-width: 80vw;
-        margin: auto;
-        padding: 5vw;
-        height:fit-content;
-        border-radius: 5vw;
-
-        .sub-description 
+        .sub-content
         {
-            font-size: 3vw !important;
-            margin-top: 4vw;
-            line-height: 5vw;
-        }
+            margin: auto;
+            padding: 5vw;
 
-    }
+            max-width: 80vw;
+            height:fit-content;
+            border-radius: 5vw;
+            .sub-description 
+            {
+                margin-top: 4vw;
+                line-height: 5vw;
+                font-size: 3vw !important;
+            }
+        }
     }
     .title-container
     {
@@ -58,8 +56,9 @@
         .blueArrow 
         {
             margin-left: 3vw;
-            transform: rotate(90deg);
+            
             height: 4vw;
+            transform: rotate(90deg);
         }   
     }   
 }

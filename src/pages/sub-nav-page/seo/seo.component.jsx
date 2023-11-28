@@ -3,12 +3,12 @@ import './seo.responsive.scss'
 
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import Footer from '../../../components/footer/footer.component'
+import Reveal from '../../../components/animation/Reveal.component'
+
 import headerImg from '../../../assets/animate_element/seo.webm'
 import blueArrow from '../../../assets/img/ArrowBleu.svg'
 import greyGrid from '../../../assets/img/BG-PG.svg'
 import blueGrid from '../../../assets/img/BG-PB.svg'
-import Reveal from '../../../components/animation/Reveal'
-
 
 const Seo = () => {
     return (
@@ -21,7 +21,6 @@ const Seo = () => {
             subcontent="L'optimisation de votre site web est la première étape pour améliorer<strong> votre visibilité en ligne.</strong>  Chez GraphiLeaf, nous <strong>analysons</strong> et <strong>optimisons</strong> chaque aspect de votre site web, de la structure des pages au contenu, en passant par les balises méta. Notre objectif est de rendre votre site web convivial pour les moteurs de recherche et de le positionner en <strong>haut des résultats.</strong>"
             img={headerImg}
             />
-
             <section className='keywords'>
                 <Reveal>
                     <h1 className='keywords-title seo-title'>
@@ -50,8 +49,6 @@ const Seo = () => {
                     <img className='blueGrid blueGrid-bot' src={blueGrid} alt='blue grid'/>
                 </section>
             </Reveal>
-
-
             <section className='suivie'>\
                 <Reveal>
                     <h1 className='seo-title'>
@@ -59,24 +56,21 @@ const Seo = () => {
                         <span><img className='blueArrow' src={blueArrow} alt='blueArrow' /></span>
                     </h1>
                 </Reveal>
-
                 <div className='suivie-content'>
-                <div className='suivie-element'>
-                    <Reveal overflow={"visible"}>
-                        Nous ne nous contentons pas d'optimiser votre site web une fois et de partir. Nous surveillons constamment les performances de votre site, en utilisant des outils avancés pour suivre les classements, le trafic et les conversions. Cette approche nous permet d'ajuster notre stratégie en temps réel pour des résultats optimaux.
-                    </Reveal>
+                    <div className='suivie-element'>
+                        <Reveal overflow={"visible"}>
+                            Nous ne nous contentons pas d'optimiser votre site web une fois et de partir. Nous surveillons constamment les performances de votre site, en utilisant des outils avancés pour suivre les classements, le trafic et les conversions. Cette approche nous permet d'ajuster notre stratégie en temps réel pour des résultats optimaux.
+                        </Reveal>
                     </div>
-                <div className='suivie-element'>
-                    <Reveal overflow={"visible"} delay={0.2}>
-                        Que vous souhaitiez améliorer la visibilité de votre site web existant ou que vous commenciez à partir de zéro, notre expertise en SEO vous aidera à atteindre les sommets des résultats de recherche et à attirer plus de visiteurs qualifiés sur votre site. Découvrez comment nous pouvons mettre en œuvre une stratégie sur mesure pour votre entreprise.
-                    </Reveal>
-                </div>
-
+                    <div className='suivie-element'>
+                        <Reveal overflow={"visible"} delay={0.2}>
+                            Que vous souhaitiez améliorer la visibilité de votre site web existant ou que vous commenciez à partir de zéro, notre expertise en SEO vous aidera à atteindre les sommets des résultats de recherche et à attirer plus de visiteurs qualifiés sur votre site. Découvrez comment nous pouvons mettre en œuvre une stratégie sur mesure pour votre entreprise.
+                        </Reveal>
+                    </div>
                 </div>
             </section>
             <Footer />
         </div>
     )
 }
-
 export default Seo

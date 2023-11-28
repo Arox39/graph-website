@@ -1,11 +1,15 @@
 import './form.styles.scss'
+
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+
+import Input from '../../component/input/input.component'
+import Reveal from '../../../../components/animation/Reveal.component';
+import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
+
 import greyGrid from '../../../../assets/img/BG-PG.svg'
 import blueGrid from '../../../../assets/img/BG-PB.svg'
-import Input from '../../component/input/input.component'
-import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
-import Reveal from '../../../../components/animation/Reveal';
+
 const defaultFormFields = {
     user_name:'',
     nom:'',
@@ -15,7 +19,6 @@ const defaultFormFields = {
     message: '', 
     
 }
-
 
 const Form = () => {
     
@@ -34,7 +37,6 @@ const Form = () => {
               console.log(error.text);
           });
       };
-
 
     const handleChange = (event) => {
         const {name, value } = event.target
@@ -55,7 +57,6 @@ const Form = () => {
                 name='user_name'
                 value={user_name}
                 />
-
                 <Input 
                 label='Nom' 
                 type='text' 
@@ -64,7 +65,6 @@ const Form = () => {
                 name='nom'
                 value={nom}
                 />
-
             </div>
 
             <div className='double-row'>
@@ -76,7 +76,6 @@ const Form = () => {
                 name='user_email'
                 value={user_email}
                 />
-
                 <Input 
                 label='Numéro de Téléphone' 
                 type='tel' 
@@ -85,10 +84,8 @@ const Form = () => {
                 name='user_num'
                 value={user_num}
                 />
-
             </div>
             <div className='simple-row'>
-
                 <Input 
                 label='Object de votre prise de contact' 
                 type='text' 
@@ -99,7 +96,6 @@ const Form = () => {
                 />
             </div>
             <div className='simple-row'>
-
                 <Input 
                 label='Expliquez nous votre projet' 
                 type='textarea' 
@@ -111,13 +107,10 @@ const Form = () => {
             </div>
             <button type='submit' className='submit-btn btn'>Envoyer <ArrowEffect bgcolor='#faf9f2' arrowColor='black'/></button>
 
-
-
             <img className='greyGrid' src={greyGrid} alt='grey grid' />
             <img className='blueGrid' src={blueGrid} alt='blue grid' />
         </form>
         </Reveal>
     )
 }
-
 export default Form

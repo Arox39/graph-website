@@ -1,29 +1,31 @@
 @media screen and (max-width:768px) {
     .ads
     {
-
         .blueArrow
         {
-            height: 4vw;
             margin-left: 2vw;
+            height: 4vw;
         }
         .campagne, .strategie
         {
-            width: 90%;
             margin: 15vw auto;
-            border-radius: 5vw;
             padding: 4vw 0;
+
+            width: 90%;
+            border-radius: 5vw;
             .simple-title 
             {
                 display: flex;
-                font-size: 4vw;
+            
                 margin: 0 0 3vw 4vw;
+                font-size: 4vw;
             }
             .simple-content
             {
                 margin: 0 4vw;
-                font-size: 3vw;
+            
                 line-height: 4.3vw;
+                font-size: 3vw;
             }
             .blueGrid 
             {
@@ -32,15 +34,16 @@
             }
             .blueGrid, .greyGrid
             {
-                height: 8vw;
                 position: absolute;
                 z-index: -1;
+            
+                height: 8vw;
             }
         }
         .strategie 
         {
-            box-shadow: -0.13vw 0.26vw 0.52vw rgba(0, 0, 0, 0.25);
             margin-bottom: 10vw;
+            box-shadow: -0.13vw 0.26vw 0.52vw rgba(0, 0, 0, 0.25);
             .greyGrid 
             {
                 bottom: -4vw;
@@ -50,22 +53,24 @@
                     top: -4vw;
                 }
             }
-
         }
         .ads-double 
         {
             flex-direction: column;
+            
             padding-bottom: 5vw;
-            box-shadow: -0.75vw 0.75vw 0px #018EBB;
-            width: 90%;
-            border-radius: 5vw;
+            
             height: fit-content;
+            width: 90%;
+            box-shadow: -0.75vw 0.75vw 0px #018EBB;
+            border-radius: 5vw;
             .double-element
             {
                 .double-title
                 {
                     display: flex;
                     margin-top: 5vw;
+            
                     font-size: 4vw;
                 }
                 .double-content
@@ -75,6 +80,5 @@
                 }
             }
         }
-
     }   
 }

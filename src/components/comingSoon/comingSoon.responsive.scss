@@ -3,9 +3,10 @@
     {
         .responsiveComingSoon 
         {
+            display: block;
+
             position: relative;
             top: -15vw;
-            display: block;
         }    
         .comingImage 
         {
@@ -15,18 +16,21 @@
         {
             top: 150vw;
             left:50%;
-            transform: translateX(-50%);
-            height: 10vw;
-            width: 84vw;
+            
             margin:auto;
             padding: 0 1vw 0 3vw;
+
+            width: 84vw;
+            height: 10vw;
             border: 1px solid #000018;
             font-size: 3.5vw;
+
+            transform: translateX(-50%);
             span 
             {
+                margin-left: auto;
                 height: 8vw;    
                 width: 8vw;
-                margin-left: auto;
                 img 
                 {
                     height: 3vw;

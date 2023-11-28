@@ -1,12 +1,14 @@
 import './video.style.scss'
 import './video.responsive.scss'
+
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
+import Footer from '../../../components/footer/footer.component'
+import Reveal from '../../../components/animation/Reveal.component'
+
 import headerImg from '../../../assets/animate_element/video.webm'
 import blueArrow from '../../../assets/img/ArrowBleu.svg'
 import blueGrid from '../../../assets/img/BG-PB.svg'
 import greyGrid from '../../../assets/img/BG-PG.svg'
-import Footer from '../../../components/footer/footer.component'
-import Reveal from '../../../components/animation/Reveal'
 
 const Video = () => {
     return (
@@ -45,7 +47,6 @@ const Video = () => {
                             Instagram Reels est une fonctionnalité qui permet aux utilisateurs de créer et de partager des vidéos <strong>courtes et engageantes</strong> sur Instagram. Nous pouvons vous aidons à atteindre votre public cible et créer du <strong>contenu de marque qui attire l'attention.</strong> Que vous cherchiez à lancer une campagne publicitaire ou simplement à créer du contenu pour votre page Instagram,<strong>nous vous aiderons à réussir avec Instagram Reels.</strong>
                         </p>
                     </Reveal>
-
                 </div>
                 <div className='social-network'>
                     <Reveal delay={0.3}>
@@ -59,13 +60,10 @@ const Video = () => {
                             YouTube est l’un des plus <strong>grand moteur de recherche</strong> au monde, avec plusieurs milliards d'utilisateurs actifs mensuels. Nous vous aidons à tirer parti de cette plateforme pour atteindre un public plus large et augmenter <strong> votre visibilité en ligne.</strong> Que vous cherchiez à lancer une chaîne YouTube ou à créer des vidéos de marque, <strong>nous vous aiderons ons à réussir sur YouTube.</strong>
                         </p>
                     </Reveal>
-
                 </div>
 
                 <img src={greyGrid} className='greyGrid' alt='grey grid' />
             </section>
-
-
             <section className='description-container'>
                 <Reveal>
                     <h2>
@@ -78,11 +76,8 @@ const Video = () => {
                 </Reveal>
                 <img className='blueGrid' src={blueGrid} alt='blue grid'/>
             </section>
-
-
             <Footer />
         </div>
     )
 }
-
 export default Video

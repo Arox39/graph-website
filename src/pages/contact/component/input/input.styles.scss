@@ -2,36 +2,43 @@
 {
     .form-label
     {
-        position: absolute;
+        pointer-events:none;
+        
         display: flex;
         flex-direction: column;
-        width: 48.5%;
-        transition: all 0.2s ease-in-out;
+
+        position: absolute;
+        
         margin: 1.85vw 1.70vw;
+        
+        width: 48.5%;
         font-size: 1.05vw;
-        pointer-events:none;
         font-weight:500 ;
+        transition: all 0.2s ease-in-out;
     }
     .shrink
     {
         transform: translateY(-1vw);
+
         font-size: 0.8vw;
         color: #005570;
     }
     input,
     textarea
     {
-        padding: 1.62vw 1.3vw;
-        border: none;
-        outline: none;
-        border-radius: 1.3vw;
         position: relative;
-        font-family: 'Poppins';
-        font-size: 1.05vw;
-        background-color: #FAF9F2;
+
+        padding: 1.62vw 1.3vw;
+        
         flex: 1;
         width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 1.3vw;
         
+        background-color: #FAF9F2;
+        font-size: 1.05vw;
+        font-family: 'Poppins';
     }
     input:focus ~ .form-label,
     textarea:focus ~ .form-label
@@ -46,9 +53,7 @@
     }
     textarea
     {
-        resize: none;
         height: 16.26vw;
+        resize: none;
     }
-
-   
 }

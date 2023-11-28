@@ -3,29 +3,29 @@
     {
         .seo-title
         {
-            font-size: 4vw;
             margin-bottom: 4vw;
+            font-size: 4vw;
             span img 
             {
-                height: 3vw;
                 margin-left: 2vw;
+                height: 3vw;
             }
         }
-        
         .keywords 
         {
             margin: 10vw auto 15vw;
             width: 90%;
             .keywords-content
             {
-                font-size: 3vw;
                 max-width: 100%;
+
                 line-height: 4vw;
+                font-size: 3vw;
             }
             h1 
             {
-                font-size: 4vw;
                 margin-bottom: 5vw;
+                font-size: 4vw;
             }
             .greyGrid
             {
@@ -34,13 +34,11 @@
         }
         .quality 
         {
-            width: 90%;
             margin: auto;
-            border-radius: 5vw;
-            padding-top:5vw;
-            padding-bottom: 2vw;
+            padding: 5vw 0 2vw 0;
+            width: 90%;
             height: fit-content;
-            
+            border-radius: 5vw;
             .quality-title 
             {
                 margin: 0 5vw;
@@ -48,15 +46,17 @@
             .quality-content 
             {
                 margin: 5vw;
+
                 text-align: justify;
-                font-size: 3vw;
                 line-height: 4.5vw;
+                font-size: 3vw;
             }
             .blueGrid 
             {
-                height: 9vw;
                 position: absolute;
                 z-index: -1;
+                
+                height: 9vw;
             }
             .blueGrid-top
             {
@@ -72,30 +72,32 @@
         .suivie 
         {
             margin-top: 20vw;
-    
             .suivie-content
             {
                 display: flex;
                 flex-direction: column;
-                height: fit-content;
-                margin: auto;
-                margin-bottom: 7.5vw;
+
+                margin: auto auto 7.5vw auto;
+                
                 width: 95%;
+                height: fit-content;
                 .suivie-element 
                 {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
 
+                    padding: 5vw 3vw;
+
                     height: fit-content;
                     width: 84vw;
-
-                    padding: 5vw 3vw;
                     border-radius: 5vw;
+                    box-shadow: -0.13vw 0.26vw 0.52vw rgba(0, 0, 0, 0.25);
+                    
                     line-height: 4vw;
                     font-size: 3vw;
-                    box-shadow: -0.13vw 0.26vw 0.52vw rgba(0, 0, 0, 0.25);
-                    &:first-child{
+                    &:first-child
+                    {
                         margin-bottom: 10vw;
                     }
                 }

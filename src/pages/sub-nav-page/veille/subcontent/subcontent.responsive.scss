@@ -3,74 +3,73 @@
     {
         h1
         {
-            font-size: 4vw;
             margin-top: 0.5vw;
+            font-size: 4vw;
             span img
             {
                 margin-left: 2vw !important;
                 height: 3vw !important;
             }
         }
-
-
         .veille-description 
         {
             margin: 15vw auto 10vw;
             width: 90%;
             .description-title
             {
-                font-size: 4vw;
                 margin-bottom: 5vw;
+                font-size: 4vw;
             }
             .description-content
             {
+                max-width: 100%;
+         
                 line-height: 4.5vw;
                 font-size: 3vw;
-                max-width: 100%;
             }
             .grey-grid 
             {
                display: none;
             }
         }
-
-
-
         .media 
         {
             .media-title
             {
-                width: fit-content;
                 display: flex;
                 align-items: center;
+
                 padding: 2vw 3vw;
-                border-radius: 5vw;
                 margin: 0 auto 8vw;
-                font-size: 3.5vw;
+                
+                width: fit-content;
+                border-radius: 5vw;
                 box-shadow: 0 0.4vw 0.52vw rgba(0, 0, 24, 0.1);
                 
+                font-size: 3.5vw;
             }
             .media-content
             {
                 display: flex;
                 flex-direction: column;
+                
+                margin: auto auto 7.5vwauto;
+
                 height: fit-content;
-                margin: auto;
-                margin-bottom: 7.5vw;
                 width: 95%;
                 .media-element
                 {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    border-radius: 5vw;
+
                     padding-bottom: 5vw;
+                    border-radius: 5vw;
                     &:first-child
                     {
                         margin-right: 0vw;
                         margin-bottom: 5vw;
                     }
-
                     .element-title
                     {
                         margin:5vw 0 3vw 0;
@@ -78,6 +77,7 @@
                     .element-description 
                     {
                         margin:0 5vw;
+
                         font-size: 3vw;
                         line-height: 5vw;
                     }
@@ -85,19 +85,17 @@
                     {
                         display: none;
                     }
-                    
                 }
             }
         }
-
         .analyse 
         {
+            padding: 3vw 0;
+            margin: 15vw auto;
+         
             height: fit-content;
             width: 95%;
-            margin: 15vw auto;
-            padding: 3vw 0;
             border-radius: 5vw;
-
             .analyse-title
             {
                 margin-left: 5vw;
@@ -106,15 +104,17 @@
             .analyse-content
             {
                 margin: 3vw 0 3vw 5vw;
+
                 font-size: 2.5vw;
                 line-height: 4.5vw;
             }
             .first-blue-grid, .second-blue-grid
             {
                 position: absolute;
-                height: 7vw;
-                z-index: -1;
                 left: 15vw;
+                
+                z-index: -1;
+                height: 7vw;
             }
             .first-blue-grid
             {
@@ -124,11 +124,6 @@
             {
                 bottom: -4vw;
             }
-
-
-
-
         }
-
     }
 }

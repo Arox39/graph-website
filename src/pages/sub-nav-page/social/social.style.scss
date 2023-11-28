@@ -5,53 +5,58 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 82vw;
-        margin: 10vw auto;
 
+        margin: 10vw auto;
+        width: 82vw;
         .grid-element 
         {
-            width: 40%;
-            margin: 2vw;
             position: relative;
-            height: fit-content;
-            background-color: #FAF9F2;
+            
+            margin: 2vw;
             padding: 1.3vw;
+            
+            width: 40%;
+            height: fit-content;
             border-radius: 2.3vw;
             box-shadow: 0px 4px 8px rgba(0, 0, 24, 0.07);
+            
+            background-color: #FAF9F2;
             .blueGrid 
             {
                 position: absolute;
-                z-index: -1;
-                transform: rotate(90deg);
                 bottom: 1.5vw;
                 right: -6vw;
+            
+                z-index: -1;
+                transform: rotate(90deg);
             }
             .greyGrid 
             {
                 position: absolute;
-                z-index: -1;
-                transform: rotate(90deg);
                 top: -0.7vw;
                 left: -5.5vw;
+            
+                z-index: -1;
+                transform: rotate(90deg);
             }
             .element-title
             {
-                font-size: 1.8vw;
-                font-weight:500 ;
                 margin-bottom: 1.80vw;
 
+                font-size: 1.8vw;
+                font-weight:500 ;
                 span img 
                 {
+                    margin-left: 1vw;
                     height: 1.2vw;
                     transform: rotate(90deg);
-                    margin-left: 1vw;
                 }
             }
             .content
             {
-                font-size: 1.17vw;
                 text-align: justify;
                 line-height: 1.9vw;
+                font-size: 1.17vw;
             }
         }
     }

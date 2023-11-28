@@ -5,22 +5,25 @@
         bottom: -2vw;
         .btn 
         {
-            position: relative;
-            height: 10vw;
-            width: fit-content;
-            margin:auto;
-            margin-bottom: 10vw;
-            padding: 0 0.5vw 0 3vw;
-            border: 1px solid #000018;
-            border-radius: 5vw;
             display: flex;
             align-items: center;
+
+            position: relative;
+
+            margin:auto auto 10vw auto;
+            padding: 0 0.5vw 0 3vw;
+            
+            height: 10vw;
+            width: fit-content;
+            border: 1px solid #000018;
+            border-radius: 5vw;
+
             font-size: 3vw;
             .arrow-effect 
             {
+                margin-left: 2vw;
                 height: 8vw;
                 width: 8vw;
-                margin-left: 2vw;
                 img 
                 {
                     height: 3vw;
@@ -29,10 +32,11 @@
         }
         .footer 
         {
-            height: 25vw !important;
-            width: 100vw !important;
-            max-width: 100% !important;
             padding: 2vw 0;
+
+            max-width: 100% !important;
+            width: 100vw !important;
+            height: 25vw !important;
             border-radius: 10vw 10vw 0 0 !important;
             
             .footer-social
@@ -52,7 +56,8 @@
             .btn 
             {
                display: none !important;
-        }   }
+            }   
+        }
     }
 }
 

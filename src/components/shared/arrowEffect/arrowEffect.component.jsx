@@ -1,9 +1,15 @@
 import './arrowEffect.style.scss'
 import './arrowEffect.repsonsive.scss'
+
+// fleche blanche
 import arrowW from '../../../assets/img/Arrow.svg'
 import arrowW2 from '../../../assets/img/Arrow2.svg'
+ 
+// fleche noir 
 import arrowB from '../../../assets/img/ArrowB.svg'
 import arrowB2 from '../../../assets/img/Arrow2B.svg'
+
+// flech bleu
 import arrowBleu from '../../../assets/img/ArrowBleu.svg'
 import arrowBleu2 from '../../../assets/img/Arrow2Bleu.svg'
 

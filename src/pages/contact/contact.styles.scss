@@ -3,6 +3,7 @@
     .contact-title 
     {
         margin: 9vw 0 0 10.3vw;
+
         font-size: 3.1vw;
         font-weight: 700;
     }
@@ -10,17 +11,17 @@
     {
         margin: 1vw 0 0 10.3vw;
         font-size: 1.3vw;
-
         .blueArrow 
         {
             position: relative;
             top: 0.15vw;
-            transform: rotate(90deg);
+
             margin-left: 0.65vw;
+            
             height: 1vw;
+            transform: rotate(90deg);
         }
     }
-
     .bubble-illu-container 
     {
         position: absolute;
@@ -32,11 +33,12 @@
         }
         .bubble-content
         {
-            font-size: 1.56vw;
             position: relative;
             top: -12.46vw;
             left: 3.54vw;
+
             line-height: 2.3vw;
+            font-size: 1.56vw;
             font-weight: 700;
             .bubble-underline 
             {
@@ -48,68 +50,64 @@
             }
         }
     }
-
     .btn-section 
     {
-        position: absolute;
         display: flex;
         flex-direction: column;
+
+        position: absolute;
         right: 11vw;
         top: 44.5vw;
-
         .btn 
         {
             display: flex;
             align-items: center;
+
             position: relative;
 
-            padding: 0.30vw 0;
-            width: fit-content;
+            padding: 0.30vw 0 0.30vw 1.3vw;
             margin-bottom: 1.62vw;
-            padding-left: 1.3vw;
 
-            color: #faf9f2;
-            background-color: #000018;
-            font-family: 'poppins';
-            font-size: 1.3vw;
-
+            width: fit-content;
             border: none;
             border-radius: 2.35vw;
+
+            font-size: 1.3vw;
+            font-family: 'poppins';
+            color: #faf9f2;
+            background-color: #000018;
+
             transition: all 0.3s ease-in-out;
             .arrow-effect
             {
-                background-color: white !important;
                 display: block;
+            
                 margin-right: 0.3vw;
+                background-color: white !important;
             }
         }
         .blueGrid 
         {
             position: absolute;
-            height: 5vw;
             bottom: -2vw;
             right: 0.6vw;
+            
             z-index: -1;
+            height: 5vw;
         }
     }
-
-
-
-
-
-
-
-
     .grey-background
     {
         position: absolute;
-        height: 37vw;
         left: 0;
-        border-radius: 4.55vw;
         right: 0;
         top: 42vw;
-        background-color: #E9E8E3;
+     
         z-index: -1;
+        height: 37vw;
+        border-radius: 4.55vw;
+        
+        background-color: #E9E8E3;
     }
     .footer-container
     {

@@ -5,30 +5,28 @@
 
     .solution-title
     {
-        font-weight: 500;
         margin-bottom: 3.25vw;
+
+        font-weight: 500;
         font-size: 1.3vw;
     }
     .solution-list 
     {
         margin-left: 3.25vw;
-        
         .solution-element
         {
-            list-style-type: disc;
+            margin-top:0.8vw;
+
             color: #018EBB;
             font-size: 1.3vw;
-            margin-top:0.8vw;
+            list-style-type: disc;
             span 
             {
                 font-size: 1vw;
             }
-            &:hover 
+            &:hover .btn
             {
-                .btn 
-                {
-                    box-shadow: none;
-                }
+                box-shadow: none;
             }
         }
 
@@ -45,18 +43,20 @@
     }
     .solution-btn 
     {
-        padding-left:1.3vw ;
-        margin-top:4vw;
-        font-size: 1.3vw;
-        
-        background-color: #018EBB;
+        cursor: pointer;
         display: flex;
         align-items: center;
-        border-radius: 6.25vw;
+        
+        padding-left:1.3vw ;
+        margin-top:4vw;
+
         width: 21.8vw;
-        color: #Faf9f2;
         height: 2.6vw;
-        cursor: pointer;
+        border-radius: 6.25vw;
+
+        font-size: 1.3vw;
+        background-color: #018EBB;
+        color: #Faf9f2;
 
         transition: transform 0.3s ease-in-out;
         .arrow-effect

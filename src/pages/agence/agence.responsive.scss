@@ -6,11 +6,11 @@
             margin-left: 0;
             .title 
             {
-                font-size: 5vw;
-                margin-left: 7.5vw;
+                margin: 14vw 0 0 7.5vw;
+                
                 text-align: left;
+                font-size: 5vw;
                 line-height: 9vw;
-                margin-top: 7vh;
                 .underline 
                 {
                     border-width:1vw ;
@@ -19,25 +19,28 @@
             .presentation 
             {
                 position: relative;
-                font-size: 3vw;
+                
                 margin: 5vw;
                 padding: 3.5vw;
-                border-radius: 5vw;
+                
                 max-width: 90%;
+                border-radius: 5vw;
+                
                 line-height: 4vw;
+                font-size: 3vw;
                 box-shadow: -0.5vw 0.6vw 2vw rgba(0, 0, 24, 0.15);
             }
-            .agence-illustration 
-            {
-                display: none;
-            }
         }
-
+        .agence-illustration 
+        {
+            display: none;
+        }
         .team 
         {
-            max-width: 80vw;
             margin: 12vw 10vw;
             padding: 5vw;
+
+            max-width: 80vw;
             border-radius: 5vw;
             .title 
             {
@@ -48,11 +51,10 @@
                     border-width:0.5vw ;
                 }
             }
-
             .team-content
             {
-                margin-top: 5vw;
-                margin-right: 3.25vw;
+                margin: 5vw 3.25vw 0 0;
+
                 font-size: 3vw;
                 line-height: 4vw;
                 .blue 
@@ -60,84 +62,78 @@
                     font-weight: 500;
                 }
             }
-
-
             .blue-grid 
             {
                 height: 10vw;
             }
-
         }
-
         .agence-solution-container 
         {
-           
             position: relative;
             margin: 10vw;
-
             .solution-title
             {
-                font-weight: 500;
                 margin-bottom: 3.25vw;
-                font-size: 3.3vw;
 
+                font-weight: 500;
+                font-size: 3.3vw;
             }
             .solution-list 
             {
-
-                margin-left: -10vw;
-                width: 90vw;
-                padding-left:10vw;
                 display: flex;
-                justify-content: flex-start;
                 flex-wrap: wrap;
+                justify-content: flex-start;
+                
+                margin-left: -10vw;
+                padding-left:10vw;
+                
+                width: 90vw;
                 .solution-element
                 {
                     &:nth-child(2), &:nth-child(4), &:nth-child(6)
                     {
-                        position:relative;
-                        
+                        position:relative;        
                         top: 10vw;
                     }
-                    position: relative;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
                     text-align: left;
-                    
-                    width: 33%;
-                    height: 15vw;
-                    line-height:4vw;
-                    font-size: 3.3vw;
+
+                    position: relative;
 
                     padding:0 5vw;
                     margin-right: 5%;
                     margin-top:3.5vw;
 
+                    width: 33%;
+                    height: 15vw;
+                    box-shadow:10px 0px 27px rgba(0, 0, 0, 0.15);
                     border-bottom: 1vw solid #018EBB;
                     border-radius: 1vw;
+                    
+                    line-height:4vw;
+                    font-size: 3.3vw;
                     list-style-type: none;
-                    box-shadow:10px 0px 27px rgba(0, 0, 0, 0.15);
                     a 
                     {
                         display: block;
                     }
-                    
                     .specification 
                     {
                         display: none;
                     }
                     span 
                     {
-
                         position: absolute; 
                         top: 50%;
                         right: 10%;
                         img
                         {
                             top: 0;
-                            height: 2.8vw;
+
                             margin-left: 1.5vw;
+                            height: 2.8vw;
                         }
                     }
                 }
@@ -154,31 +150,28 @@
                         top: 50%;
                     }
                 }
-
             }
             .grey-grid
             {
                 display: none;
             }
-
             .solution-btn 
             {
                 display: none;
             }
         }
-
         .why 
         {
-            width: 92vw;
             margin: 10vw 4vw;
-            border-radius:5vw;
             padding: 5vw 0 0.1vw 0;
-
+            
+            width: 92vw;
             height: fit-content;
+            border-radius:5vw;
             .title
             {
-                font-size: 4vw;
                 margin: 0 11vw;
+                font-size: 4vw;
                 .blue 
                 {
                     border-width: 0.5vw !important;
@@ -189,8 +182,8 @@
             {
                 flex-direction:column;
                 justify-content: center;
+
                 margin: 5vw 5vw 10vw 10vw;
-                margin-left: 10vw;
 
                 font-size: 3vw;
                 line-height: 4.3vw;
@@ -198,22 +191,20 @@
                 {
                     margin-left: 0 !important;
                     max-width: 100%;
-                    
                 }
                 .right
                 {
                     margin-top: 5vw;
                     max-width: 100%;
-
                     ul 
                     {
                         margin: 0 2vw;
-
                         li 
                         {
-                            list-style-type: disc;
-                            color: #018EBB;
                             margin-top:2vw ;
+                            
+                            color: #018EBB;
+                            list-style-type: disc;
                             span 
                             {
                                 color: #000018;

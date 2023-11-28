@@ -1,22 +1,25 @@
 
 import './header.styles.scss'
-import headerImage from "../../../../assets/animate_element/phone.webm"
-import { Link } from 'react-router-dom'
-import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
-import Reveal from '../../../../components/animation/Reveal.jsx'
-const Header = () => {
 
+import { Link } from 'react-router-dom'
+
+import Reveal from '../../../../components/animation/Reveal.component'
+import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
+
+import headerImage from "../../../../assets/animate_element/phone.webm"
+
+const Header = () => {
     return (
         <header className='homeHeader'>
             <Reveal>
-                <h1 className='title'> L'agence de <span className='underline'>communication</span> <br/>
-                & <span className='blue'> de marketing digital.</span></h1>
+                <h1 className='title'>
+                    L'agence de <span className='underline'>communication</span> <br/>
+                    & <span className='blue'> de marketing digital.</span>
+                </h1>
             </Reveal>
-            
             <Reveal>
                 <h3 className='homeCitation'>"Cultivons ensemble votre image"</h3>
             </Reveal>
-            
             <Reveal>
                 <p className='description'>GraphiLeaf cultive l'image de marque de ses clients et aide les entreprises à raconter leur histoire unique grâce à une stratégie de communication efficace et des designs visuels de qualité.</p>
             </Reveal>
@@ -30,7 +33,6 @@ const Header = () => {
                 <source src={headerImage} type='video/webm'/>
                 votre navigateur ne supporte pas la balise video.
             </video>
-
         </header>
     )
 }

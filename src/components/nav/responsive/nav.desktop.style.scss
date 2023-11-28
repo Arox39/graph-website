@@ -5,29 +5,32 @@
 @mixin effet {
     content: "";
     position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 0.11vw;
     bottom: -0.52vw;
     left: 0;
+
+    width: 100%;
+    height: 0.11vw;
     border-radius: 0.65vw;
     background-color: #018EBB;
+    
     transform-origin: bottom right;
+    transform: scaleX(0);
     transition: transform 0.2s ease-out;
     
 }
 @mixin effetHover {
-    transform: scaleX(1);
     transform-origin: bottom left;
+    transform: scaleX(1);
 }
 
 .scroll 
 {
-    box-shadow: 0 0.13vw 1vw rgba(0, 0, 24, 0.07);
     top: 1.3vw !important;
-    width: 90% !important;
+    
     padding-right: 0.8vw !important;
 
+    width: 90% !important;
+    box-shadow: 0 0.13vw 1vw rgba(0, 0, 24, 0.07);
     .sub-nav
     {
         transform: translateX(-50.5%);
@@ -37,27 +40,29 @@
 
 .navbar 
 {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 6.5vw;
-    background-color: #FAF9F2;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3.9vw; 
-    width: calc(90% - 2.4vw);
-    padding: 0 1.6vw;
-    z-index: 1000;
-    background-color: none;
+    
     position: fixed;
+    left: 50%;
     top: 2vw;
+
+    z-index: 1000;
+    padding: 0 1.6vw;
+
+    width: calc(90% - 2.4vw);
+    height: 3.9vw; 
+    border-radius: 6.5vw;
+    background-color: #FAF9F2;
+
+    transform: translateX(-50%);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     .logo-container 
     {
-        height: 100%;
         display: flex;
         align-items: center;
+        height: 100%;
         .logo 
         {
             position: relative;
@@ -92,40 +97,43 @@
             margin-left: 3.2vw;
             .btn 
             {
-
                 display: flex;
                 align-items: center;
-                border-radius: 6.5vw;
+                
                 padding: 0.3vw 0 0.3vw 1.3vw;
+                
+                border-radius: 6.5vw;
                 font-size: 1.3vw;
-                color: #FAF9F2;
-                transition: transform 0.25s ease-in-out;
                 background-color: #018EBB;
+                color: #FAF9F2;
+                
+                transition: transform 0.25s ease-in-out;
             }
         }
-
-       
     }
 }
 
 .sub-nav 
 {
-    position: fixed;
-    display: none;
-    top: 0.5vw;
-    background-color: #FAF9F2;
-    z-index: 10;
-    transform: translateX(-49%);
-    width: 93vw;
-    height: 17.5vw;
-    border-radius: 2.3vw;
-    padding-left: 4vw;
-    box-shadow: 0 0.13vw 1vw rgba(0, 0, 24, 0.07);
+    display: none; // devient display grid quand visible
     align-items: center;
     justify-content: space-evenly;
     grid-template-columns: 22.77vw 22.77vw 22.77vw 22.77vw;
-    margin: 1.6vw;
+    
+    position: fixed;
+    top: 0.5vw;
 
+    z-index: 10;
+    padding-left: 4vw;
+    margin: 1.6vw;
+    
+    height: 17.5vw;
+    width: 93vw;
+    border-radius: 2.3vw;
+    box-shadow: 0 0.13vw 1vw rgba(0, 0, 24, 0.07);
+    background-color: #FAF9F2;
+
+    transform: translateX(-49%);
     .sub-nav-element 
     {
         position: relative;
@@ -139,22 +147,24 @@
         }
         .content 
         {
-            max-width:85%;
-            font-size: 0.8vw;
             margin-top: 0.65vw;
-            color: #005570;
+            max-width:85%;
+
             line-height: 1.17vw;
+            font-size: 0.8vw;
+            color: #005570;
         }
         .arrow-effect 
         {
-            margin-left: 1.3vw;
             position: relative;
+            margin-left: 1.3vw;
             img
             {
                 position: absolute;
-                height: 0.9vw;
                 top: 50%;
                 left: 53%;
+                
+                height: 0.9vw;
                 transform: translate(-58%, -50%);
                 transition: all 0.3s ease-in-out;
             }
@@ -172,17 +182,16 @@
             {
                 opacity: 1;
             }
-              
         }
-
     }
 }
 .declencheur 
 {
-    height: 3.2vw;
+    cursor: pointer;
+
     display: flex;
     align-items: center;
-    cursor: pointer;
+    height: 3.2vw;
 }
 .declencheur:hover .sub-nav
 {
@@ -190,29 +199,26 @@
     position: absolute;
     z-index: 20;
 }
-
-
 .sub-nav-container 
 {
-    position: relative;
     display: flex;
     align-items: center;
+
+    position: relative;
     .arrow
     {
-        transform: rotate(45deg);
         display: inline-block;
         vertical-align: bottom;
-        transition: all 0.4s ease;
-        margin-left: 0.8vw;
+        
+        margin: 0 0 -0.32vw 0.8vw;
         height: 1vw;
-        margin-bottom: -0.32vw;
+        
+        transform: rotate(45deg);
+        transition: all 0.4s ease;
     }
     &:hover .arrow 
     {
         transform: rotate(90deg);
         margin-bottom: 0;
     }
-
-
-
 }

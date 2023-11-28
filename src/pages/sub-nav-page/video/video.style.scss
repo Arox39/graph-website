@@ -2,45 +2,50 @@
 {
     .sub-part 
     {
-        position: relative;
         display: flex;
         justify-content:center;
         align-items: baseline;
+
+        position: relative;
+        
         margin: 7.8vw 4vw;
-
-        height: 16vw;
         padding: 0 1.3vw 1vw 1.3vw;
+        
+        height: 16vw;
         border-bottom: 0.52vw solid #018EBB;
-        background-color: #000018;
         border-radius: 2.3vw;
+        
         color: #FAF9F2;
-
+        background-color: #000018;
         .social-network
         {
             display: flex;
-            flex-direction:column ;
+            flex-direction:column;
             align-items: center;
             flex: 1;
+
             padding: 1.3vw 1.6vw;
             .sub-title
             {
+                margin-top: 0.5vw;
+            
                 font-size: 1.3vw;
                 font-weight: 500;
-                margin-top: 0.5vw;
                 span img
                 {
-                    transform: rotate(90deg);
                     margin-left: 0.85vw;
                     height: 1.1vw;
+                    transform: rotate(90deg);
                 }
             }
             .content
             {
                 margin-top: 1.63vw;
-                font-size: 0.85vw;
-                font-weight: 400;
+            
                 text-align: justify;
                 line-height: 1.27vw;
+                font-size: 0.85vw;
+                font-weight: 400;
                 strong 
                 {
                     color: #018EBB;
@@ -49,45 +54,50 @@
         }
         .greyGrid 
         {
-            height: 5vw;
             position: absolute;
-            z-index: -1;
             right: -5.4vw;
+            z-index: -1;
+     
+            height: 5vw;
             transform: rotate(90deg);
         }
     }
-
     .description-container 
     {
         position: relative;
-        width: 74vw;
-        height: 10vw;
+     
         margin: 5vw auto 10vw;
         padding: 2vw 0 1.3vw 0;
-        background-color: #FAF9F2;
+     
+        width: 74vw;
+        height: 10vw;
         box-shadow: -0.13vw 0.26vw 0.52vw rgba(0, 0, 0, 0.15);
         border-radius: 2.3vw;
-
+     
+        background-color: #FAF9F2;
         h2 
         {
+            margin: 0 0 2vw 2.5vw;
+            
             font-size: 1.6vw;
             font-weight: 500;
-            margin: 0 0 2vw 2.5vw;
         }
         p 
         {
-            font-size: 1.3vw;
             margin: 0 2.5vw;
+
+            font-size: 1.3vw;
             line-height: 2.14vw;
         }
         .blueGrid
         {
-            z-index: -1;
-            height: 5vw;
             position: absolute;
-            transform: rotate(90deg);
             top: 0;
             left: -5.7vw;
+            
+            z-index: -1;
+            height: 5vw;
+            transform: rotate(90deg);
         }
     }
     .responsive-arrow 

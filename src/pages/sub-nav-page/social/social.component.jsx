@@ -1,13 +1,14 @@
-import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import './social.style.scss'
 import './social.responsive.scss'
-import headerImg from '../../../assets/animate_element/social.webm'
-import Footer from '../../../components/footer/footer.component'
-import blueArrow from '../../../assets/img/ArrowBleu.svg'
 
+import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
+import Footer from '../../../components/footer/footer.component'
+import Reveal from '../../../components/animation/Reveal.component'
+
+import headerImg from '../../../assets/animate_element/social.webm'
+import blueArrow from '../../../assets/img/ArrowBleu.svg'
 import blueGrid from '../../../assets/img/BG-PB.svg'
 import greyGrid from '../../../assets/img/BG-PG.svg'
-import Reveal from '../../../components/animation/Reveal'
 
 const GridElement = ({title, blueGridVisible, greyGridVisible, content}) => {
 
@@ -44,7 +45,6 @@ const Social = () => {
             img={headerImg}
             />
 
-
             <section className="social-grid">
                 <GridElement title="Audit de réseaux sociaux" greyGridVisible={true} content="Nous effectuons un audit complet de vos réseaux sociaux existants pour comprendre ce qui fonctionne et ce qui peut être amélioré. Cela nous permet de créer une stratégie de gestion des réseaux sociaux sur mesure pour répondre à vos besoins spécifiques." />
 
@@ -57,14 +57,9 @@ const Social = () => {
                 <GridElement title="Gestion discord" content="Avec des millions d'utilisateurs actifs chaque jour, Discord est l'endroit idéal pour établir une communauté en ligne. Nous vous aiderons à gérer votre serveur Discord en créant une stratégie de communication efficace, en créant du contenu engageant et en modérant." />
 
                 <GridElement title="Campagne publicitaire" content="Nous créons et gérons des campagnes publicitaires ciblées sur les réseaux sociaux pour maximiser votre retour sur investissement et atteindre un public plus large." />
-
-
-
             </section>
-
             <Footer />
         </div>
     )
 }
-
 export default Social

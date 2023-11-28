@@ -1,4 +1,3 @@
-import Reveal from '../../../../components/animation/Reveal'
 import './input.styles.scss'
 
 const Input = ({label, ...otherProps}) => {
@@ -10,14 +9,10 @@ const Input = ({label, ...otherProps}) => {
             ) :(
                 <input {...otherProps}/>
             )}
-            <label className={`${
-                otherProps.value ? 'shrink' : ''
-            } form-label`}>
-            {label}
+            <label className={`${otherProps.value ? 'shrink' : ''} form-label`}>
+                {label}
             </label>
         </div>
     )
 }
-
-
 export default Input

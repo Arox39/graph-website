@@ -4,23 +4,26 @@
 }
 .card 
 {
+    cursor: pointer;
     position: relative;
+
+    overflow: hidden;
+    margin: 2.1vw;
+    
     height: 20vw;
     width: 36vw;
-    background-color: #faf9f2;
-    margin: 2.1vw;
     border-radius: 2.34vw;
-    overflow: hidden;
-    cursor: pointer;
     box-shadow: 0 0 25px rgba(0, 0, 24, 0.15);
     
+    background-color: #faf9f2;
     .bgimg 
     {
+        filter: blur(0px);
+        z-index: -2;
+
         height: 100%;
         width: 100%;
-        filter: blur(0px);
         transition: all 0.3s ease-in-out;
-        z-index: -2;
     }
     .responsive-description 
     {
@@ -31,36 +34,36 @@
         position: absolute;
         top: 65%;
         left: 10%;
-        font-size: 1.3vw;
+        
         opacity: 0;
+        
+        font-size: 1.3vw;
         transform: translateY(4.55vw);
-        color: #018EBB;
         transition: all 0.3s ease-in-out;
+        color: #018EBB;
     }
     .title-container 
     {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);    
-        bottom: 10%;
-
         display: flex;
         align-items: center;
         justify-content: space-between;
 
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translateX(-50%);    
+        
         width: 82.5%;
         padding: 1.5vw 1.8vw 1.5vw 2.25vw;
+        border-radius: 2.34vw;
+        border-bottom: 4px solid #018EBB;
+        box-shadow: 0px 0px 15px rgba(0, 0, 24, 0.1);
+        
         background-color: #FAF9F2;
         font-size: 2.6vw;
         font-weight: 600;
 
-        border-radius: 2.34vw;
-        border-bottom: 4px solid #018EBB;
-        box-shadow: 0px 0px 15px rgba(0, 0, 24, 0.1);
         transition: all 0.3s ease-in-out;
-
-
-
         .arrow-effect img
         {
             height: 1.3vw;
@@ -68,15 +71,14 @@
     }
     &:hover
     {
-        
         .bgimg 
         {
             filter: blur(0.2vw);
         }
         .description 
         {
-            transform: translateY(0px);
             opacity: 1;
+            transform: translateY(0px);
         }
         .title-container 
         {
@@ -93,5 +95,4 @@
             transform: translate(-0.64vw, -0.5vw);
         }
     }
-
 }

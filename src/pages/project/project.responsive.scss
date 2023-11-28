@@ -6,17 +6,16 @@
             margin-left: 0;
             .more 
             {
-                margin-top: 2.27vw;
+                margin: 2.27vw 0 0 10vw;
                 font-size: 3vw;
-                margin-left: 10vw;
             }
             .title 
             {
-                font-size: 5vw;
+                margin: 14vw 0 0 10vw;
+                
                 text-align: left;
-                margin-left: 10vw;
                 line-height: 9vw;
-                margin-top: 7vh;
+                font-size: 5vw;
                 .underline 
                 {
                     border-width:1vw ;
@@ -24,11 +23,12 @@
             }
             .citation 
             {
-                margin: 4vw auto !important;
-                font-size: 3.5vw !important;
-                text-align: left;
+                margin: 4vw auto 4vw 10vw!important;
+                
                 max-width: 90% !important;
-                margin-left: 10vw !important;
+                
+                text-align: left;
+                font-size: 3.5vw !important;
                 line-height: 5vw;
                 br 
                 {
@@ -42,12 +42,10 @@
         }
         .example-container
         {
-
             .sort-bar
             {
-                height: 4vw;
                 margin-bottom: 7vw;
-
+                height: 4vw;
                 .active 
                 {
                     background-color: #018EBB;
@@ -55,27 +53,28 @@
                 }
                 .sort-element
                 {
-                    margin-right:3vw;
-                    font-size: 3vw;
                     padding: 2vw;
+                    margin-right:3vw;
+
+                    font-size: 3vw;
                 }
             }
-
             .card-container 
             {
                 flex-direction:column ;
                 align-items: center;
                 justify-content: center;
-                width: 95vw;
+             
                 margin: 0 2.5vw;
+                width: 95vw;
             }
-        
         }
         .card 
         {
+            margin: 3vw 0;
+
             height: 52vw;
             width: 93.6vw;
-            margin: 3vw 0;
             border-radius: 8vw;
             .description 
             {
@@ -84,107 +83,104 @@
             .responsive-description 
             {
                 display: inline;
+            
                 position: relative;
                 top: 0vw;
-                font-size: 2.5vw;
-                color: #018EBB;
-                font-weight: 400;
+            
                 margin: 0.5vw;
+            
+                font-size: 2.5vw;
+                font-weight: 400;
+                color: #018EBB;
             }
             .title-container 
             {
                 left: 50%;
-                transform: translateX(-50%);    
                 bottom: 10%;
+                transform: translateX(-50%);    
 
-                width: 82.5%;
                 padding: 3.4vw;
-                font-size: 2.6vw;
-
+                
+                width: 82.5%;
                 border-radius: 5vw;
                 border-bottom: 3.5px solid #018EBB;
                 box-shadow: 0px 0px 15px rgba(0, 0, 24, 0.1);
 
-
-
+                font-size: 2.6vw;
                 .arrow-effect img
                 {
                     height: 3vw;
                 }
             }
-
-
-
-           
         }
         .overlay 
         {
             top: 0;
+            bottom: 0;
+            left: 50%;
+            
+            z-index: 9999; 
+            
             width: 100vw;
             height: 100vh;
-
-
-            left: 50%;
             border-radius: 0;
-            bottom: 0;
-            z-index: 9999; 
             .overlay-container
             {
                 height: 100%;
             }
-        
             .first-bg
             {
                 width: 100% ;
             }
-        
             .second-bg 
             {
-        
-                height: fit-content;
-                width: 100%;
-                margin-top: -1vw;
                 display:flex; 
                 align-items: center;
                 flex-direction: column;
+                
+                margin-top: -1vw;
+                
+                height: fit-content;
+                width: 100%;
                 .text-part
                 {
-                    font-size: 3vw;
-                    font-weight: 200;
-                    flex: 0;
-                    padding: 20vw 0vw;
-                    overflow: hidden;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    flex: 0;
+
+                    overflow: hidden;
+                
+                    padding: 20vw 0vw;
+                
+                    font-size: 3vw;
+                    font-weight: 200;
                     p
                     {
-                        text-align: justify;
                         padding: 0 10vw;
+                    
+                        text-align: justify;
                         line-height: 5vw;
-        
                         span
                         {
-                            font-weight: 200 ;
                             font-size: 2.5vw; 
+                            font-weight: 200;
                         }
                     }
                 }
                 .image-part 
                 {
                     flex: 1;
+
                     width: 100%;
                     height: fit-content;
                 }
             }
-        
-        
             .third-bg 
             {
                 display: flex;
                 flex-direction: column;
                 height: fit-content;
-        
                 .left-img, .right-img
                 {
                     width: 100%;
@@ -207,27 +203,23 @@
             }
             .back, .prev
             {
-                
                 height: 15vw !important;
                 width: 15vw !important;
-
                 img
                 {
                     height: 5vw;
                 }
                 &:hover
                 {
-                img:first-of-type
-                {
-                    opacity: 1;
-                    transform: translate(-50%, -50%) rotate(180deg);
-                }
-                  
-                img:last-of-type 
-                {
-                    opacity: 0;
-                }
-                  
+                    img:first-of-type
+                    {
+                        opacity: 1;
+                        transform: translate(-50%, -50%) rotate(180deg);
+                    }
+                    img:last-of-type 
+                    {
+                        opacity: 0;
+                    }
                 }
             }
             .back

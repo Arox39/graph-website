@@ -1,7 +1,6 @@
 @media screen and (max-width: 768px) {
     .dev-web 
     {
-
         .title 
         {
             br 
@@ -11,29 +10,30 @@
         }
         .e-com 
         {
-            width: 84vw;
             margin: 10vw auto;
-            border-radius:5vw;
             padding:5vw 3vw;
-            height: fit-content;
 
+            width: 84vw;
+            height: fit-content;
+            border-radius:5vw;
             .ecom-content
             {
                 margin:0 2vw;
+
+                text-align: justify;
                 line-height: 4vw;
                 font-size: 2.5vw;
-                text-align: justify;
             }
             .ecom-title
             {
+                margin-bottom: 4vw;
+                
                 font-size: 4vw;
                 font-weight:500 ;
-                margin-bottom: 4vw;
-
                 span img 
                 {
-                    height: 3vw;
                     margin-left: 2vw;
+                    height: 3vw;
                 }
             }
             .blueGrid 
@@ -41,40 +41,38 @@
                 display: none;
             }
         }
-
         .web-content 
         {
-            height: fit-content;
-            margin-bottom: 12vw;
             display: flex;
             flex-direction: column;
+            
+            margin-bottom: 12vw;
+            height: fit-content;
             .content-element 
             {
-                width: 80vw;
                 padding: 5vw;
-                border-radius: 5vw;
                 margin-bottom: 10vw;
+            
+                width: 80vw;
+                border-radius: 5vw;
                 .element-title
-                {
-                    
-                    font-size: 4vw;
+                {        
                     margin-bottom: 5vw;
-
+                    font-size: 4vw;
                     .blueArrow 
                     {
-                        height: 3.5vw;
                         margin-left: 3vw;
+                        height: 3.5vw;
                     }
-
                 }
                 .element-content
                 {
-                    font-size: 3vw;
                     margin: 0;
+                    
+                    font-size: 3vw;
                     line-height: 5vw;
                 }
             }
         }
-
     }
 }

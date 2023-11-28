@@ -15,7 +15,7 @@ import linkedin from '../../assets/img/Reseaux-Linkedin.svg'
 import CGU from '../../assets/pdf/CGU.pdf'
 import mentionLegals from '../../assets/pdf/Mentions_legales.pdf'
 import politiqueDeConfidentialite from '../../assets/pdf/Politique_de_confidentialite.pdf'
-import Reveal from '../animation/Reveal'
+import Reveal from '../animation/Reveal.component'
 
 const FooterBtn = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -26,6 +26,7 @@ const FooterBtn = () => {
         };
 
         window.addEventListener('resize', handleResize);
+        // le lancer deja une fois au cas ou on est deja mobile est que ce n'est pas une resize de la page
         handleResize();
 
         return () => {
@@ -48,7 +49,7 @@ const FooterBtn = () => {
                         <p className='footer-content'>Boostez votre présence en ligne dès maintenant !</p>
                         <ArrowEffect />
                     </Link>
-                    <div className='greybg'></div>
+                    <div className='grey-bg'></div>
                     <img className='grey-grid' src={greyGrid} alt='grey grid' />
                 
             </div>

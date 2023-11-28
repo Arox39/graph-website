@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom'
 import './who.style.scss'
 
+import { Link } from 'react-router-dom'
+
 import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
+import Reveal from '../../../../components/animation/Reveal.component'
 
 import social from '../../../../assets/animate_element/presentation.webm' 
-import Reveal from '../../../../components/animation/Reveal'
-
 const Who = () => {
     return (
         
@@ -21,17 +21,16 @@ const Who = () => {
             </Reveal>
             <Reveal>
                 <Link to={'../agence'} className='who-link'>
-                <p>En découvrir plus sur <strong>GraphiLeaf</strong> </p>
-                <ArrowEffect arrowColor='blue'/>
+                    <p>En découvrir plus sur <strong>GraphiLeaf</strong> </p>
+                    <ArrowEffect arrowColor='blue'/>
                 </Link>
             </Reveal>
             <video className='who-illustration' autoPlay loop muted>
                 <source src={social} type='video/webm'/>
                 votre navigateur ne supporte pas la balise video.
             </video>
-            </div>
+        </div>
 
     )
 }
-
 export default Who

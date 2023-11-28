@@ -1,14 +1,14 @@
 import './subcontent.style.scss'
 import './subcontent.responsive.scss'
 
+import Reveal from '../../../../components/animation/Reveal.component'
+
 import greyGrid from '../../../../assets/img/BG-PG.svg'
 import blueGrid from '../../../../assets/img/BG-PB.svg'
 import blueArrow from '../../../../assets/img/ArrowBleu.svg'
-import Reveal from '../../../../components/animation/Reveal'
 const SubContent = () => {
     return (
         <div className='veille-content'>
-
             <section className='veille-description'>   
                 <img className='grey-grid' src={greyGrid} alt='grey grid'/>
                 <Reveal>
@@ -22,11 +22,10 @@ const SubContent = () => {
                     à ces tendances et opportunités.</p>
                 </Reveal>
             </section>
-
             <section className='media'>
                 <Reveal overflow={"visible"}>
                     <h1 className='media-title'>
-                    Surveillance des médias et de la concurrence 
+                        Surveillance des médias et de la concurrence 
                         <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
                     </h1>
                 </Reveal>
@@ -59,23 +58,22 @@ const SubContent = () => {
                     </div>
                 </div>
             </section>
-                <section className='analyse'>
-                    <img className='first-blue-grid' src={blueGrid} alt='blue-grid' />
-                    <img className='second-blue-grid' src={blueGrid} alt='blue-grid' />
-                    <Reveal>
-                        <h1 className='analyse-title'>Analyse et rapports 
-                            <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
-                        </h1>
-                    </Reveal>
-                    <Reveal>
-                        <p className='analyse-content'>Nous analysons les données pour identifier les tendances émergentes 
-                        et les opportunités de croissance dans votre secteur d'activité. Nous fournissons également des rapports
-                        réguliers pour vous informer des dernières tendances et des développements importants dans votre secteur
-                        d'activité. Ces rapports peuvent vous aider à prendre des décisions éclairées et à rester au courant des 
-                        évolutions de votre marché.</p>
-                    </Reveal>
-                </section>
-
+            <section className='analyse'>
+                <img className='first-blue-grid' src={blueGrid} alt='blue-grid' />
+                <img className='second-blue-grid' src={blueGrid} alt='blue-grid' />
+                <Reveal>
+                    <h1 className='analyse-title'>Analyse et rapports 
+                        <span><img className='blueArrow' src={blueArrow} alt='blue arrow'/></span>
+                    </h1>
+                </Reveal>
+                <Reveal>
+                    <p className='analyse-content'>Nous analysons les données pour identifier les tendances émergentes 
+                    et les opportunités de croissance dans votre secteur d'activité. Nous fournissons également des rapports
+                    réguliers pour vous informer des dernières tendances et des développements importants dans votre secteur
+                    d'activité. Ces rapports peuvent vous aider à prendre des décisions éclairées et à rester au courant des 
+                    évolutions de votre marché.</p>
+                </Reveal>
+            </section>
         </div>
     )
 }

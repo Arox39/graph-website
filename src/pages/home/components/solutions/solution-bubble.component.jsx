@@ -1,27 +1,25 @@
+import './solution.style.scss'
+
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import grid from '../../../../assets/img/BG-PB.svg'
+
 import ArrowEffect from '../../../../components/shared/arrowEffect/arrowEffect.component'
-import './solution.style.scss'
-import Reveal from '../../../../components/animation/Reveal'
+import Reveal from '../../../../components/animation/Reveal.component'
+
+import grid from '../../../../assets/img/BG-PB.svg'
+
 const SolutionBubbleItem = ({title, link, content, gridVisible}) => {
-
-
 return (
     <div className='bubble btn'>
-    <Link to={link} className='bubble-link'>
-        <h1 className='bubble-title'>{title}</h1>
-        <p className='bubble-content'>{content}</p>
-        <ArrowEffect />
-    </Link>
-    <img className={`blue-grid ${gridVisible}`} src={grid} alt='grid of circle'/> 
+        <Link to={link} className='bubble-link'>
+            <h1 className='bubble-title'>{title}</h1>
+            <p className='bubble-content'>{content}</p>
+            <ArrowEffect />
+        </Link>
+        <img className={`blue-grid ${gridVisible}`} src={grid} alt='grid of circle'/> 
     </div>
-        )
+    )
 }
-        
-        
-
-
 const SolutionBubble = () => {
     const [isMobile, setIsMobile] = useState(false);
 
@@ -49,7 +47,6 @@ const SolutionBubble = () => {
             <Reveal hauteur={75} overflow={"visible"} delay={!isMobile ? 0.3 : 0}>
                 <SolutionBubbleItem title="Social management" link="social" content="Gérez efficacement votre présence en ligne grâce à notre service de gestion de réseaux et de serveurs Discord." gridVisible=""/>            
             </Reveal>
-
             <Reveal hauteur={75} overflow={"visible"}>
                 <SolutionBubbleItem title="Dev Web" link="devWeb" content="Créez des sites web innovants et fonctionnels pour propulser votre présence en ligne." gridVisible="hide"/>            
             </Reveal>
@@ -71,5 +68,4 @@ const SolutionBubble = () => {
         </div>
     )
 }
-
 export default SolutionBubble

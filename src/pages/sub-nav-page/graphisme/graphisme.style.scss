@@ -2,57 +2,63 @@
 {
     .sub-part 
     {
-        margin: 7.5vw 10.5vw;
         position: relative;
+        margin: 7.5vw 10.5vw;
         .content
         {
-            font-size: 1.3vw;
+            margin-top: 2.1vw;
             max-width: 85%;
+
             text-align: justify;
             line-height: 1.95vw;
-            margin-top: 2.1vw;
+            font-size: 1.3vw;
         }
         .grey-grid
         {
             position: absolute;
-            transform: rotate(90deg) translateY(137%);
-            z-index: -1;
             top: -0.35vw;
+            
+            z-index: -1;
+            transform: rotate(90deg) translateY(137%);
+            
             height: 5vw;
-
         }
     }
-
     .description-container
     {
-        position: relative;
         display: flex;
-        width: 80%;
+     
+        position: relative;
+        
         margin: auto;
         margin-bottom: 10vw !important;
         padding: 3vw 4vw;
+        
+        width: 80%;
         border-radius: 4vw;
         background-color: #E9E8E3;
         .left
         {
             margin-right: 6vw;
         }
-
         .description 
         {
             margin-top: 2vw;
+            
+            text-align: justify;
             font-size: 1.3vw;
             line-height: 1.95vw;
-            text-align: justify;
         }
         .blueGrid
         {
             position: absolute;
-            z-index: -1;
-            transform: rotate(90deg);
             bottom: 3.1vw;
             right: -6vw;
+            
+            z-index: -1;
+            
             height: 5vw;
+            transform: rotate(90deg);
         }
     }    
 }

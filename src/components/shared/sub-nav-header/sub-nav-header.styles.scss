@@ -2,32 +2,30 @@
 {
     margin-left: 10.5vw;
     position: relative;
-
     .header-img
     {
         position: absolute;
         top: 12vw;
         right: 6vw;
+        
         height: 45vw;
     }
-
-
     .sub-content
     {
         margin-top: 3.9vw;
-        max-width: 44vw;
         padding: 2.8vw 2.3vw;
+
+        max-width: 44vw;
         height: fit-content;
+        border-radius: 2.3vw;
         text-align: justify;
         background-color: #E9E8E3;
-        border-radius: 2.3vw;
-
         .sub-description 
         {
-            font-size: 1.3vw;
             margin-top: 2.5vw;
+        
+            font-size: 1.3vw;
             line-height: 2vw;
         }
-
     }
 }

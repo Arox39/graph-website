@@ -1,7 +1,6 @@
 /* Eric Meyer's Reset CSS */
 /* v2.0 | 20110126 */
 /* License: none (public domain) */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,14 +21,14 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section 
+{
   display: block;
 }
-
-body {
+body 
+{
   line-height: 1;
 }
 Link, a
@@ -37,35 +36,35 @@ Link, a
   text-decoration: none;
   color: black;
 }
-ol, ul {
+ol, ul 
+{
   list-style: none;
 }
-
-blockquote, q {
+blockquote, q 
+{
   quotes: none;
 }
-
 blockquote:before, blockquote:after,
-q:before, q:after {
+q:before, q:after 
+{
   content: '';
   content: none;
 }
-
-table {
+table 
+{
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 body 
 {
   background-color: #faf9f2;
   font-family: 'Poppins', sans-serif;
 
 }
-
 .title
 {
   margin-top: 12vw;
+
   font-size: 3.1vw;
   font-weight: 700;
   line-height: 4.7vw;
@@ -80,30 +79,25 @@ body
 }
 .title-container
 {
-    display: flex;
-    align-items: center;
-    h1
-    {
-        font-size: 2.1vw;
-        font-weight:500;
-    }
-    .blueArrow 
-    {
-        margin-left: 1vw;
-        transform: rotate(90deg);
-        height: 1.2vw;
-    }   
+  display: flex;
+  align-items: center;
+  h1
+  {
+    font-size: 2.1vw;
+    font-weight:500;
+  }
+  .blueArrow 
+  {
+    margin-left: 1vw;
+    height: 1.2vw;
+    transform: rotate(90deg);
+  }   
 }
 .citation 
 {
-  font-size: 1.3vw;
   margin-top: 3.9vw;
+  
+  font-size: 1.3vw;
   line-height: 1.9vw;
   font-style: italic;
 }
-
-$f-s12: 12px;
-$f-s16: 16px;
-$f-s20: 20px;
-
-

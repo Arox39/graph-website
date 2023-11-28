@@ -1,13 +1,14 @@
 import './ads.style.scss'
 import './ads.responsive.scss'
 
-import headerImg from '../../../assets/animate_element/ads.webm'
 import SubNavHeader from '../../../components/shared/sub-nav-header/sub-nav-header.component'
 import Footer from '../../../components/footer/footer.component'
+import Reveal from '../../../components/animation/Reveal.component'
+
+import headerImg from '../../../assets/animate_element/ads.webm'
 import blueArrow from '../../../assets/img/ArrowBleu.svg'
 import blueGrid from '../../../assets/img/BG-PB.svg'
 import greyGrid from '../../../assets/img/BG-PG.svg'
-import Reveal from '../../../components/animation/Reveal'
 
 const Ads = () => {
     return (
@@ -28,7 +29,8 @@ const Ads = () => {
                     </h1>
                 </Reveal>
                 <Reveal>
-                    <p className='simple-content'>Des <strong>campagnes publicitaires performantes</strong> sont essentielles pour obtenir des résultats tangibles. Nous optimisons constamment vos campagnes pour <strong>maximiser votre retour sur investissement.</strong> Grâce à des stratégies adaptées à votre entreprise, nous vous aidons à obtenir <strong> des résultats concrets,</strong> que ce soit en termes de ventes, de prospects ou de notoriété.
+                    <p className='simple-content'>
+                    Des <strong>campagnes publicitaires performantes</strong> sont essentielles pour obtenir des résultats tangibles. Nous optimisons constamment vos campagnes pour <strong>maximiser votre retour sur investissement.</strong> Grâce à des stratégies adaptées à votre entreprise, nous vous aidons à obtenir <strong> des résultats concrets,</strong> que ce soit en termes de ventes, de prospects ou de notoriété.
                     </p>
                 </Reveal>
                 <img className="blueGrid" src={blueGrid} alt='blueGrid' />
@@ -42,7 +44,8 @@ const Ads = () => {
                         </h1>
                     </Reveal>
                     <Reveal overflow={"visible"}>
-                        <p className='double-content'>Nous maîtrisons la publicité en ligne sur diverses plateformes, de Google Ads à Facebook Ads en passant par TikTok et Instagram. En utilisant les plateformes les plus appropriées pour votre entreprise, nous élargissons votre portée et maximisons votre visibilité sur le web.
+                        <p className='double-content'>
+                        Nous maîtrisons la publicité en ligne sur diverses plateformes, de Google Ads à Facebook Ads en passant par TikTok et Instagram. En utilisant les plateformes les plus appropriées pour votre entreprise, nous élargissons votre portée et maximisons votre visibilité sur le web.
                         </p>
                     </Reveal>
                 </div>
@@ -54,7 +57,8 @@ const Ads = () => {
                         </h1>
                     </Reveal>
                     <Reveal overflow={"visible"}>
-                        <p className='double-content'>La transparence est essentielle. Nous fournissons des rapports détaillés sur les performances de vos annonces pour que vous puissiez suivre les résultats de près. Comprenez ce qui fonctionne le mieux et prenez des décisions éclairées pour optimiser vos campagnes publicitaires.
+                        <p className='double-content'>
+                        La transparence est essentielle. Nous fournissons des rapports détaillés sur les performances de vos annonces pour que vous puissiez suivre les résultats de près. Comprenez ce qui fonctionne le mieux et prenez des décisions éclairées pour optimiser vos campagnes publicitaires.
                         </p>
                     </Reveal>
                 </div>
@@ -73,10 +77,8 @@ const Ads = () => {
                 <img className='greyGrid' src={greyGrid} alt='greyGrid'/>
                 <img className='greyGrid' src={greyGrid} alt='greyGrid'/>
             </section>
-
             <Footer/>
         </div>
     )
 }
-
 export default Ads

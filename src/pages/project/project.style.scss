@@ -1,19 +1,20 @@
 .projectHeader 
 {
-    margin-left: 10.4vw;
     position: relative;
+    margin-left: 10.4vw;
     .more 
     {
         margin-top: 2.27vw;
+        
         font-size: 1.5vw;
         font-style: italic;
     }
-
     .illustration 
     {
-        height:32.5vw;
         position: absolute;
         right: 8vw;
         bottom: -8vw;
+     
+        height:32.5vw;
     }
 }

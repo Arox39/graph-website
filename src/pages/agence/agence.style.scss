@@ -4,53 +4,58 @@
     .presentation 
     {
         position: relative;
-        font-size: 1.3vw;
-        margin-top: 4.22vw;
+
         padding: 2.27vw;
-        text-align: justify;
-        background-color: #FAF9F2;
-        border-radius: 2.35vw;
+        margin-top: 4.22vw;
+        
         max-width: 48%;
-        line-height: 2vw;
+        border-radius: 2.35vw;
         box-shadow: -0.13vw 0.26vw 0.5vw rgba(0, 0, 24, 0.15);
+        
+        font-size: 1.3vw;
+        text-align: justify;
+        line-height: 2vw;
+        background-color: #FAF9F2;
     }
 }
 .agence-illustration 
 {
     position: absolute;
-    height:40vw;
     top: 15vw;
-
-    z-index: 1;
     right:5vw;
+    
+    z-index: 1;
+
+    height:40vw;
 }
 
 .team 
 {
-    position: relative;
-
+    
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    max-width: 42.6vw;
-    margin-left: auto;
-    margin-top: 12vw;
-    margin-right: 10.5vw;
+
+    position: relative;
+
+    margin:12vw 10.5vw 0 auto ;
     padding: 3.57vw 5.2vw;
-    background-color: #E9E8E3;
+
+    max-width: 42.6vw;
     border-radius: 2.34vw;
+    background-color: #E9E8E3;
     .title 
     {
         margin-top: 0;
+
         font-size: 2.6vw;
         text-align: right;
     }
-
     .team-content
     {
+        margin: 2.6vw 3.25vw 0 0;
+
         text-align: justify;
-        margin-top: 2.6vw;
-        margin-right: 3.25vw;
         font-size: 1.3vw;
         line-height: 2vw;
         .blue 
@@ -58,36 +63,31 @@
             font-weight: 500;
         }
     }
-
-
     .blue-grid 
     {
         position: absolute;
-        transform: rotate(90deg) translateY(48%);
-        z-index: -10;
         left: -3vw;
         top: 1.7vw;
+
+        z-index: -10;
+        transform: rotate(90deg) translateY(48%);
     }
-
 }
-
-
 .why 
 {
-    background-color: #E9E8E3;
-    width: 92vw;
-    margin: 0 4vw;
-    margin-bottom: 10vw;
-    border-radius:4.55vw;
+    margin: 0 4vw 10vw 4vw;
     padding: 2.8vw 0 0.1vw 0;
-
+    
+    width: 92vw;
     height: fit-content;
+    border-radius:4.55vw;
+    
+    background-color: #E9E8E3;
     .title
     {
-        font-size: 2.6vw;
         margin: 0 11vw;
+        font-size: 2.6vw;
     }
-
     .why-content
     {
         .reveal 
@@ -95,10 +95,13 @@
             display: inline;
             width: fit-content;
         }
+
         display: flex;
-        font-size: 1.3vw;
-        margin: 3vw 2.5vw;
         text-align: justify;
+        
+        margin: 3vw 2.5vw;
+        
+        font-size: 1.3vw;
         line-height: 2.1vw;
         strong
         {
@@ -109,7 +112,6 @@
         {
             margin-left:5vw;
             max-width:73%;
-            
         }
         .right
         {
@@ -117,13 +119,14 @@
             ul 
             {
                 margin: 0vw 3vw;
-
                 li 
                 {
+                    margin-top:2vw ;
+                    
+                    max-width: 80%;
+                    
                     list-style-type: disc;
                     color: #018EBB;
-                    margin-top:2vw ;
-                    max-width: 80%;
                     span 
                     {
                         color: #000018;
